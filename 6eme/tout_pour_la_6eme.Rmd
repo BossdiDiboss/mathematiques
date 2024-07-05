@@ -26,3 +26,14 @@ output: pdf_document
 
 # Introduction
 
+Les mathématiques sont bien plus que des nombres et des formules : ce sont des outils puissants qui nous aident à comprendre le monde qui nous entoure, à résoudre des problèmes complexes et à développer notre capacité à penser de manière critique. Ce livre, conçu spécifiquement pour les élèves de 6ème, est une invitation à explorer ce monde fascinant des mathématiques.
+
+À travers les différentes séquences de ce livre, nous allons plonger dans les principales branches des mathématiques qui seront abordées cette année. Chaque séquence a été soigneusement élaborée pour introduire progressivement les concepts mathématiques fondamentaux, tout en fournissant des exemples concrets et des exercices pour renforcer votre compréhension.
+
+Nous commencerons par explorer les nombres entiers, apprendre à les manipuler et à comprendre leur place dans le système numérique. Ensuite, nous entrerons dans le monde de la géométrie, où nous découvrirons les formes, les lignes et les angles. Les opérations sur les nombres entiers seront également au programme, suivi de l'étude des distances, des cercles et des concepts de fractions.
+
+Chaque séquence offre une opportunité d'apprendre de manière interactive et engageante. Nous utiliserons des outils comme la programmation pour explorer des concepts abstraits d'une manière tangible et pratique. De la proportionnalité à l'étude des angles et des formes géométriques, chaque sujet a été choisi pour enrichir votre compréhension des mathématiques et vous préparer à des défis plus complexes à l'avenir.
+
+Ce livre n'est pas seulement un manuel scolaire, mais un guide pour vous aider à développer des compétences mathématiques essentielles qui vous serviront tout au long de votre parcours éducatif et au-delà. Nous espérons que vous trouverez ce voyage à travers les mathématiques aussi enrichissant que stimulant.
+
+Bienvenue dans le monde captivant des mathématiques de la 6ème année!
