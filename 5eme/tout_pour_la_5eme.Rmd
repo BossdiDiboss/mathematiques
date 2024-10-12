@@ -5,7 +5,7 @@
   \begin{titlepage}
 \centering
 \vspace*{2cm}  % Ajustez l'espace selon vos besoins
-    \includegraphics[width=10cm]{LogoMath.png}% Insérez votre logo
+    \includegraphics[width=10cm]{logo_5eme.png}% Insérez votre logo
     \vspace{1.5cm}  % Ajustez l'espace selon vos besoins
 \Huge
 \newline
@@ -24,5 +24,133 @@ Attoumani Ibrahim
 
 \newpage
 
-# Introduction
+\newpage
+\section{\textcolor{blue}{Introduction}}
+
+Les mathématiques ne sont pas simplement une matière à étudier en classe, elles constituent un langage universel qui nous aide à comprendre et à expliquer le monde qui nous entoure. Des formes géométriques que l’on retrouve dans la nature, aux chiffres que l’on manipule dans notre quotidien, les mathématiques sont partout. En tant qu’élève de 5ème, tu es sur le point de franchir une nouvelle étape dans ton apprentissage, et ce manuel est là pour t'accompagner dans cette belle aventure.\\
+
+
+\textbf{Pourquoi les mathématiques sont-elles si importantes ?} Parce qu'elles développent ta capacité à réfléchir de manière logique, à résoudre des problèmes et à prendre des décisions éclairées. Dans ce manuel, nous avons rassemblé les concepts fondamentaux que tu vas explorer cette année. Que tu travailles sur des fractions, des nombres relatifs, la géométrie ou encore les statistiques, chaque chapitre te fournira des explications claires et accessibles, accompagnées d'exemples concrets issus de situations réelles.\\
+
+Notre objectif est de te donner les outils nécessaires pour réussir non seulement à l'école, mais aussi dans la vie de tous les jours. Les mathématiques te préparent à de nombreux défis, car elles t'aident à comprendre le raisonnement derrière chaque problème et à trouver des solutions logiques. Par exemple, savoir calculer des pourcentages peut t'aider à faire des choix intelligents lors de tes achats, et comprendre la géométrie peut être utile si tu t'intéresses à l’architecture ou au design.\\
+
+Ce manuel a été conçu pour que tu puisses apprendre à ton rythme. Chaque chapitre suit une progression claire : nous commençons par les bases, puis nous développons progressivement vers des notions plus avancées. À chaque étape, des exercices variés sont proposés pour tester tes connaissances, t’entraîner, et surtout renforcer ta compréhension. Ne crains pas de faire des erreurs, car c'est en se trompant que l'on progresse. Chaque difficulté est une opportunité d'apprendre quelque chose de nouveau.\\
+
+En plus des chapitres traditionnels, tu trouveras aussi des défis mathématiques et des activités ludiques pour t'amuser tout en apprenant. Ces exercices visent à rendre les mathématiques plus dynamiques et stimulantes. Nous voulons que tu vois les mathématiques non pas comme une simple accumulation de formules à mémoriser, mais comme un outil puissant qui t’aidera à mieux appréhender le monde.\\
+
+\textbf{La curiosité et la persévérance} seront tes alliées tout au long de cette année. Si certaines notions te semblent complexes au premier abord, n’abandonne pas ! Avec un peu de pratique et beaucoup de patience, tu comprendras que même les concepts les plus difficiles peuvent devenir simples et fascinants. Plus tu progresseras, plus tu prendras confiance en tes capacités.\\
+
+Alors, prêt à relever le défi ? Ce manuel est ton compagnon de route pour cette année scolaire, et nous espérons qu’il t’aidera à réussir avec brio tout en prenant plaisir à découvrir les merveilles des mathématiques.\\
+
+Bonne lecture et surtout, bon voyage au cœur des mathématiques !
+
+\newpage
+
+\section{\textcolor{blue}{Chapitre 1 : Les Fractions}}
+
+\subsection{\textcolor{red}{Les Fractions Simples}}
+\subsubsection{\textcolor{green}{Définition et Représentation}}
+\subsubsection{\textcolor{green}{Simplification des Fractions}}
+\subsubsection{\textcolor{green}{Fractions Équivalentes}}
+
+\subsection{\textcolor{red}{Opérations sur les Fractions}}
+\subsubsection{\textcolor{green}{Addition et Soustraction de Fractions}}
+\subsubsection{\textcolor{green}{Multiplication de Fractions}}
+\subsubsection{\textcolor{green}{Division de Fractions}}
+
+\subsection{\textcolor{red}{Exercices et Corrections}}
+
+\section{\textcolor{blue}{Chapitre 2 : Les Nombres Décimaux et Fractionnaires}}
+
+\subsection{\textcolor{red}{Définition des Nombres Décimaux}}
+\subsubsection{\textcolor{green}{Lire et Écrire des Nombres Décimaux}}
+\subsubsection{\textcolor{green}{Comparaison et Encadrement des Nombres Décimaux}}
+
+\subsection{\textcolor{red}{Opérations sur les Nombres Décimaux}}
+\subsubsection{\textcolor{green}{Addition et Soustraction de Nombres Décimaux}}
+\subsubsection{\textcolor{green}{Multiplication et Division par un Décimal}}
+
+\subsection{\textcolor{red}{Conversions entre Fractions et Décimaux}}
+
+\subsection{\textcolor{red}{Exercices et Corrections}}
+
+\section{\textcolor{blue}{Chapitre 3 : Proportionnalité}}
+
+\subsection{\textcolor{red}{Notion de Proportionnalité}}
+\subsubsection{\textcolor{green}{Propriétés de la Proportionnalité}}
+\subsubsection{\textcolor{green}{Tableaux de Proportionnalité}}
+\subsubsection{\textcolor{green}{Pourcentages et Proportionnalité}}
+
+\subsection{\textcolor{red}{Résolution de Problèmes de Proportionnalité}}
+
+\subsection{\textcolor{red}{Exercices et Corrections}}
+
+\newpage
+
+\section{\textcolor{blue}{Chapitre 4 : Géométrie Plane}}
+
+\subsection{\textcolor{red}{Polygones et Triangles}}
+\subsubsection{\textcolor{green}{Propriétés des Polygones}}
+\subsubsection{\textcolor{green}{Classification des Triangles}}
+\subsubsection{\textcolor{green}{Somme des Angles dans un Triangle}}
+
+\subsection{\textcolor{red}{Aires et Périmètres}}
+\subsubsection{\textcolor{green}{Calcul du Périmètre de Figures Simples}}
+\subsubsection{\textcolor{green}{Calcul de l'Aire de Rectangles, Carrés, et Triangles}}
+
+\subsection{\textcolor{red}{Symétrie Axiale}}
+\subsubsection{\textcolor{green}{Définition et Propriétés}}
+\subsubsection{\textcolor{green}{Symétrie d’un Segment, d’un Cercle}}
+
+\subsection{\textcolor{red}{Exercices et Corrections}}
+
+\section{\textcolor{blue}{Chapitre 5 : Géométrie de l'Espace}}
+
+\subsection{\textcolor{red}{Solides et Volumes}}
+\subsubsection{\textcolor{green}{Cylindre, Cône, Sphère : Définition et Propriétés}}
+\subsubsection{\textcolor{green}{Volumes de Solides : Formules}}
+
+\subsection{\textcolor{red}{Sections de Solides}}
+
+\subsection{\textcolor{red}{Exercices et Corrections}}
+
+\section{\textcolor{blue}{Chapitre 6 : Les Nombres Relatifs}}
+
+\subsection{\textcolor{red}{Définition des Nombres Relatifs}}
+\subsubsection{\textcolor{green}{Représentation des Nombres Relatifs sur une Droite Numérique}}
+\subsubsection{\textcolor{green}{Addition et Soustraction de Nombres Relatifs}}
+
+\subsection{\textcolor{red}{Opérations sur les Nombres Relatifs}}
+\subsubsection{\textcolor{green}{Multiplication et Division}}
+\subsubsection{\textcolor{green}{Priorités Opératoires avec Nombres Relatifs}}
+
+\subsection{\textcolor{red}{Exercices et Corrections}}
+
+\section{\textcolor{blue}{Chapitre 7 : Statistiques et Probabilités}}
+
+\subsection{\textcolor{red}{Introduction aux Statistiques}}
+\subsubsection{\textcolor{green}{Effectifs et Fréquences}}
+\subsubsection{\textcolor{green}{Tableaux et Graphiques Statistiques}}
+
+\subsection{\textcolor{red}{Introduction aux Probabilités}}
+\subsubsection{\textcolor{green}{Notions de Base des Probabilités}}
+\subsubsection{\textcolor{green}{Expériences Aléatoires et Événements}}
+
+\newpage
+
+\subsection{\textcolor{red}{Exercices et Corrections}}
+
+\section{\textcolor{blue}{Chapitre 8 : Programmation}}
+
+\subsection{\textcolor{red}{Initiation à l'Algorithme}}
+\subsubsection{\textcolor{green}{Définitions et Concepts de Base}}
+\subsubsection{\textcolor{green}{Premier Algorithme Simple : Boucles et Conditions}}
+
+\subsection{\textcolor{cyan}{Récapitulatif de la Programmation}}
+
+\subsection{\textcolor{red}{Exercices et Corrections}}
+
+\section{\textcolor{blue}{Annexe}}
+
+\subsection{\textcolor{red}{Bibliographie}}
 
