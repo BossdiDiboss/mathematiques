@@ -31,6 +31,7 @@
 \usetikzlibrary{shapes.geometric, calc}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
+\usepackage{multicol}
 
 % Define colors
 \definecolor{navyblue}{rgb}{0.0, 0.0, 0.5}
@@ -294,15 +295,15 @@ Bienvenue dans le monde captivant des mathématiques de la 6ème année!\\
 
 \vspace{0.5cm}
 
-\textcolor{purple}{**Comparer** des entiers naturels consiste à déterminer lequel est plus grand ou plus petit. Les signes utilisés pour comparer sont \(<\) (inférieur à), \(>\) (supérieur à), \(\leq\) (inférieur ou égal à), et \(\geq\) (supérieur ou égal à).}
+\textcolor{purple}{**Comparer** des entiers naturels consiste à déterminer lequel est plus grand ou plus petit. Les signes utilisés pour comparer sont \(<\) (strictement inférieur à), \(>\) (strictement supérieur à), \(\leq\) (inférieur ou égal à), et \(\geq\) (supérieur ou égal à).}
 
 \vspace{0.5cm}
 
 \begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, title=\textcolor{white}{Exemples}, sharp corners=southwest]
 
 \begin{itemize}
-    \item \textcolor{red}{\(3 < 5\) (trois est inférieur à cinq)}
-    \item \textcolor{red}{\(7 > 4\) (sept est supérieur à quatre)}
+    \item \textcolor{red}{\(3 < 5\) (trois est strictement inférieur à cinq)}
+    \item \textcolor{red}{\(7 > 4\) (sept est strictement supérieur à quatre)}
     \item \textcolor{red}{\(6 \leq 6\) (six est inférieur ou égal à six)}
     \item \textcolor{red}{\(9 \geq 2\) (neuf est supérieur ou égal à deux)}
 \end{itemize}.
@@ -436,7 +437,7 @@ Pour mieux visualiser l'intercalation d'un nombre, regardons la représentation 
 
 \vspace{0.5cm}
 
-\begin{tcolorbox}[colback=orange!10!white, colframe=yellow!80!black, title=\textcolor{white}{Exercices}, 
+\begin{tcolorbox}[colback=orange!10!white, colframe=yellow!80!black, title=\textcolor{white}{Application directe}, 
                   sharp corners=south]
     \textbf{Exercice 1 :} Trouvez les nombres entiers naturels entre 10 et 20.
 
@@ -492,7 +493,7 @@ Pour mieux visualiser l'intercalation d'un nombre, regardons la représentation 
 \begin{tcolorbox}[colback=cyan!10!white, colframe=red!75!black, title=\textcolor{white}{Définition}, 
                   sharp corners=southwest]
 
-\textcolor{black}{Les entiers relatifs incluent les entiers naturels ainsi que leurs opposés négatifs. Ces nombres permettent de représenter des quantités au-dessous de zéro, comme les températures négatives ou les dettes.}
+\textcolor{black}{Les entiers relatifs incluent les entiers naturels ainsi que leurs opposés négatifs. Ces nombres permettent de représenter des quantités en dessous de zéro, comme les températures négatives ou les dettes.}
 \end{tcolorbox}
 
 \textcolor{purple}{Dans cette sous-section, nous apprendrons à écrire ces nombres en toutes lettres et à les représenter sur une demi-droite graduée.}
@@ -561,8 +562,8 @@ Pour mieux visualiser l'intercalation d'un nombre, regardons la représentation 
 
 \begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, title=\textcolor{white}{Exemples}, sharp corners=southwest]
 \begin{itemize}
-    \item \textcolor{red}{-3 < -1 (moins trois est inférieur à moins un)}
-    \item \textcolor{red}{2 > -4 (deux est supérieur à moins quatre)}
+    \item \textcolor{red}{-3 < -1 (moins trois est strictement inférieur à moins un)}
+    \item \textcolor{red}{2 > -4 (deux est strictement supérieur à moins quatre)}
     \item \textcolor{red}{$-2 \leq 0$ (moins deux est inférieur ou égal à zéro)}
     \item \textcolor{red}{$3 \geq -1$ (trois est supérieur ou égal à moins un)}
 \end{itemize}.
@@ -595,7 +596,7 @@ Pour mieux visualiser l'intercalation d'un nombre, regardons la représentation 
 \end{itemize}
 \end{tcolorbox}
 
-\begin{tcolorbox}[colback=yellow!10!white, colframe=yellow!80!black, title=\textcolor{white}{Exercices}, sharp corners=southwest]
+\begin{tcolorbox}[colback=yellow!10!white, colframe=yellow!80!black, title=\textcolor{white}{Application directe}, sharp corners=southwest]
 
 \textcolor{purple}{
 Écris les entiers relatifs suivants en toutes lettres :
@@ -611,15 +612,9 @@ Pour mieux visualiser l'intercalation d'un nombre, regardons la représentation 
 \vspace{0.4cm}
 
 \textcolor{purple}{
-Place les entiers relatifs suivants sur la demi-droite graduée : $-3$, $-1$, $2$, $4$, $-2$.
+Tracez une demi-droite graduée, puis placez-y les entiers relatifs suivants : $-3$, $-1$, $2$, $4$, $-2$.
 }
-\begin{center}
-\begin{tikzpicture}
-\draw[->] (-5.5,0) -- (5.5,0); % ligne de la demi-droite
-\foreach \x in {-5,-4,-3,-2,-1,0,1,2,3,4,5} % graduations et labels
-    \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
-\end{tikzpicture}
-\end{center}
+
 
 \end{tcolorbox}
 
@@ -653,11 +648,11 @@ Place les entiers relatifs suivants sur la demi-droite graduée : $-3$, $-1$, $2
     \item \textcolor{red}{\(3 + 5 = 8\)}
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}
     % Capsule orange clair
-    \fill[orange!20] (-0.5, -0.5) rectangle (8.5, 1.5);
+    \fill[orange!20] (-0.5, -0.5) rectangle (10, 1.5);
 
     % Rectangles pour le nombre 3
     \fill[blue!70] (0.2, 0) rectangle (1.2, 1);
@@ -687,11 +682,11 @@ Place les entiers relatifs suivants sur la demi-droite graduée : $-3$, $-1$, $2
     \item \textcolor{red}{\(-3 + 4 = 1\)}
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}
     % Capsule orange clair
-    \fill[orange!20] (-0.5, -0.5) rectangle (8.5, 1.5);
+    \fill[orange!20] (-0.5, -0.5) rectangle (9, 1.5);
 
     % Rectangles pour le nombre -3 (négatifs en rouge)
     \fill[red!70] (0.2, 0) rectangle (1.2, 1);
@@ -732,7 +727,7 @@ Place les entiers relatifs suivants sur la demi-droite graduée : $-3$, $-1$, $2
 \centering
 \begin{tikzpicture}
     % Capsule orange clair
-    \fill[orange!20] (-0.5, -0.5) rectangle (8.5, 1.5);
+    \fill[orange!20] (-0.5, -0.5) rectangle (16.5, 1.5);
 
     % Rectangles pour le nombre 7
     \fill[blue!70] (0.2, 0) rectangle (1.2, 1);
@@ -766,15 +761,17 @@ Place les entiers relatifs suivants sur la demi-droite graduée : $-3$, $-1$, $2
 \caption{Illustration de \(7 - 2\) avec des rectangles}
 \end{figure}
 
+\vspace{0.4cm}
+
 \begin{itemize}
     \item \textcolor{red}{\(-5 - 2 = -7\)}
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}
     % Capsule orange clair
-    \fill[orange!20] (-0.5, -0.5) rectangle (8.5, 1.5);
+    \fill[orange!20] (-0.5, -0.5) rectangle (16.5, 1.5);
 
     % Rectangles pour le nombre -5 (négatifs en rouge)
     \fill[red!70] (0.2, 0) rectangle (1.2, 1);
@@ -808,6 +805,7 @@ Place les entiers relatifs suivants sur la demi-droite graduée : $-3$, $-1$, $2
 \caption{Illustration de \(-5 - 2\) avec des rectangles}
 \end{figure}
 
+\vspace{0.3cm}
 
 \subsubsection{\textcolor{green}{Multiplications}}
 
@@ -844,26 +842,24 @@ Place les entiers relatifs suivants sur la demi-droite graduée : $-3$, $-1$, $2
 \end{tabular}
 \end{tcolorbox}
 
-\vspace{0.2cm}
+\vspace{0.3cm}
 
-Exemples :
-
-\begin{tcolorbox}[colback=cyan!10!white, colframe=orange!75!black, title=\textcolor{white}{Multiplications}, sharp corners=southwest]
+\begin{tcolorbox}[colback=cyan!10!white, colframe=orange!75!black, title=\textcolor{white}{Exemples}, sharp corners=southwest]
 \centering
 \begin{minipage}{0.45\textwidth}
 \centering
-\textcolor{white}{Multiplication de 10 avec 5} \\
+\textcolor{blue}{Multiplication de 10 avec 5} \\
 \opmul[voperator=bottom, displayshiftintermediary=none]{10}{5}
 \end{minipage}%
 \hfill
 \begin{minipage}{0.45\textwidth}
 \centering
-\textcolor{white}{Multiplication de 12 avec 11} \\
+\textcolor{blue}{Multiplication de 12 avec 11} \\
 \opmul[voperator=bottom, displayshiftintermediary=none]{12}{11}
 \end{minipage}
 \end{tcolorbox}
 
-\begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, sharp corners=south, boxrule=0.8mm, title=Explication des Multiplications]
+\begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, sharp corners=south, boxrule=0.8mm, title=Explication des Exemples]
     \textbf{Multiplication de 10 par 5 :}
     \[
     \opmul[voperator=bottom, displayshiftintermediary=none]{10}{5}
@@ -913,7 +909,7 @@ Exemples :
 \begin{tcolorbox}[colback=cyan!10!white, colframe=red!75!black, title=\textcolor{white}{Définition},
                   sharp corners=southwest]
                   
-\textcolor{black}{Multiple : Un multiple d'un nombre est le produit de ce nombre par un autre nombre entier. Par exemple, 24 est un multiple de 4 (car \(4 \times 6 = 24\)).}
+\textcolor{black}{ Un multiple d'un nombre est le produit de ce nombre par un autre nombre entier. Par exemple, 24 est un multiple de 4 (car \(4 \times 6 = 24\)).}
 \end{tcolorbox}
 
 \subsubsection{\textcolor{green}{Division Euclidienne}}
@@ -923,7 +919,7 @@ Exemples :
 \begin{tcolorbox}[colback=cyan!10!white, colframe=red!75!black, title=\textcolor{white}{Définition}, 
                   sharp corners=southwest]
 
-\textcolor{black}{La division euclidienne consiste à diviser un nombre, appelé dividende, par un autre nombre, appelé diviseur, pour obtenir un quotient et un reste. Cette division est utile pour déterminer combien de fois un nombre peut être réparti en parts égales, et ce qui reste.}
+\textcolor{black}{La division euclidienne consiste à diviser un nombre, appelé \textcolor{red}{dividende}, par un autre nombre, appelé \textcolor{red}{diviseur}, pour obtenir un \textcolor{red}{quotient} et un \textcolor{red}{reste}. Cette division est utile pour déterminer combien de fois un nombre peut être réparti en parts égales, et ce qui reste.}
 \end{tcolorbox}
 
 \vspace{0.5cm}
@@ -1067,7 +1063,7 @@ Il est possible de mélanger les opérations d'addition, de soustraction, de mul
     \end{itemize}
 \end{itemize}
 
-\textcolor{purple}{En suivant cet ordre des opérations, nous pouvons résoudre les expressions mathématiques de manière précise et cohérente.}
+\textcolor{purple}{En respectant cet ordre des opérations, nous pouvons résoudre les expressions mathématiques de manière précise et cohérente.}
 
 \subsection{\textcolor{red}{Exercices et Corrections}}
 
@@ -1240,7 +1236,7 @@ Il est possible de mélanger les opérations d'addition, de soustraction, de mul
     \]
     En effet, si nous divisons 37 par 5, nous obtenons un quotient de 7 et un reste de 2. Voici le calcul détaillé :
     \[
-    \opidiv{37}{5}
+    \opidiv[displayintermediary=all,voperation=top]{37}{5}
     \]
     On peut vérifier que :
     \[
@@ -1311,7 +1307,7 @@ Il est possible de mélanger les opérations d'addition, de soustraction, de mul
     \begin{itemize}
         \item Si une boîte contient 54 bonbons et qu’on veut les partager également entre 6 amis, chaque ami recevra :
         \[
-        \opidiv{54}{6} 
+        \opidiv[displayintermediary=all,voperation=top]{54}{6} 
         \]
         Chaque ami recevra 9 bonbons.
     \end{itemize}
@@ -1328,7 +1324,7 @@ Il est possible de mélanger les opérations d'addition, de soustraction, de mul
 \begin{tcolorbox}[colback=cyan!10!white, colframe=red!75!black, title=\textcolor{white}{Définition}, 
                   sharp corners=southwest]
 
-\textcolor{black}{Les \textbf{nombres décimaux} sont des nombres qui ont une partie entière et une partie fractionnaire, séparées par une virgule (ou un point en anglais). Par exemple, dans le nombre 3,75, 3 est la partie entière et 75 est la partie fractionnaire. Les nombres décimaux permettent de représenter des valeurs plus précises entre les entiers.}
+\textcolor{black}{Les \textbf{nombres décimaux} sont des nombres qui ont une partie entière et une partie fractionnaire, séparées par une virgule (ou un point en anglais). Par exemple, dans le nombre "$3,75$", 3 est la partie entière et 75 est la partie fractionnaire. Les nombres décimaux permettent de représenter des valeurs plus précises entre les entiers.}
 
 \end{tcolorbox}
 
@@ -1469,23 +1465,23 @@ Il est possible de mélanger les opérations d'addition, de soustraction, de mul
 \vspace{0.2cm}
 
 \begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, sharp corners=south, boxrule=0.8mm, title=Exemple d'Addition]
-    \textbf{Additionnez 3.45 et 2.67 :}
+    \textbf{Additionnez 3,45 et 2,67 :}
     \[
-    \opadd[displayintermediary=all,voperation=top]{3.45}{2.67}
+    \opadd[displayintermediary=all,voperation=top]{3,45}{2,67}
     \]
     \textcolor{red}{(Alignez les virgules, ajoutez les chiffres de droite à gauche, et reportez si nécessaire.)}
     
-    \textbf{Explication :} Ici, nous avons aligné les nombres selon leurs virgules. On additionne chaque colonne en commençant par la droite. Le résultat est 6.12, car 5 + 7 = 12, on place 2 et on reporte 1.
+    \textbf{Explication :} Ici, nous avons aligné les nombres selon leurs virgules. On additionne chaque colonne en commençant par la droite. Le résultat est 6,12, car 5 + 7 = 12, on place 2 et on reporte 1.
 \end{tcolorbox}
 
 \begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, sharp corners=south, boxrule=0.8mm, title=Exemple d'Addition]
-    \textbf{Additionnez 7.89 et 4.1 :}
+    \textbf{Additionnez 7,89 et 4,1 :}
     \[
-    \opadd[displayintermediary=all,voperation=top]{7.89}{4.10}
+    \opadd[displayintermediary=all,voperation=top]{7,89}{4,10}
     \]
     \textcolor{red}{(Complétez les zéros pour aligner les colonnes correctement.)}
     
-    \textbf{Explication :} Nous avons aligné les nombres en ajoutant un zéro à 4.1 pour obtenir 4.10. La somme est alors 11.99, où chaque colonne est additionnée correctement.
+    \textbf{Explication :} Nous avons aligné les nombres en ajoutant un zéro à 4,1 pour obtenir 4,10. La somme est alors 11,99, où chaque colonne est additionnée correctement.
 \end{tcolorbox}
 
 \subsubsection{\textcolor{green}{Soustraction de Nombres Décimaux}}
@@ -1503,23 +1499,23 @@ Il est possible de mélanger les opérations d'addition, de soustraction, de mul
 \vspace{0.2cm}
 
 \begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, sharp corners=south, boxrule=0.8mm, title=Exemple de Soustraction]
-    \textbf{Soustrayez 5.6 de 8.3 :}
+    \textbf{Soustrayez 5,6 de 8,3 :}
     \[
-    \opsub[displayintermediary=all,voperation=top]{8.30}{5.60}
+    \opsub[displayintermediary=all,voperation=top]{8,30}{5,60}
     \]
     \textcolor{red}{(Alignez les virgules et empruntez si nécessaire.)}
     
-    \textbf{Explication :} Nous avons aligné les nombres en ajoutant un zéro à 5.6 pour obtenir 5.60. La soustraction se fait colonne par colonne, avec emprunt si nécessaire pour obtenir 2.70.
+    \textbf{Explication :} Nous avons aligné les nombres en ajoutant un zéro à 5,6 pour obtenir 5,60. La soustraction se fait colonne par colonne, avec emprunt si nécessaire pour obtenir 2,70.
 \end{tcolorbox}
 
 \begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, sharp corners=south, boxrule=0.8mm, title=Exemple de Soustraction]
-    \textbf{Soustrayez 3.45 de 6.2 :}
+    \textbf{Soustrayez 3,45 de 6,2 :}
     \[
-    \opsub[displayintermediary=all,voperation=top]{6.20}{3.45}
+    \opsub[displayintermediary=all,voperation=top]{6,20}{3,45}
     \]
     \textcolor{red}{(Complétez les zéros pour une soustraction correcte.)}
     
-    \textbf{Explication :} Nous avons aligné les nombres en ajoutant un zéro à 6.2 pour obtenir 6.20. La soustraction est effectuée colonne par colonne, avec un résultat de 2.75.
+    \textbf{Explication :} Nous avons aligné les nombres en ajoutant un zéro à 6,2 pour obtenir 6,20. La soustraction est effectuée colonne par colonne, avec un résultat de 2,75.
 \end{tcolorbox}
 
 \subsection{\textcolor{red}{Multiplication et Division de Nombres Décimaux}}
@@ -1539,9 +1535,9 @@ Il est possible de mélanger les opérations d'addition, de soustraction, de mul
 \vspace{0.2cm}
 
 \begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, sharp corners=south, boxrule=0.8mm, title=Exemple de Multiplication]
-    \textbf{Multipliez 2.5 par 3.4 :}
+    \textbf{Multipliez 2,5 par 3,4 :}
     \[
-    \opmul[displayintermediary=all]{2.5}{3.4}
+    \opmul[displayintermediary=all]{2,5}{3,4}
     \]
     \textcolor{red}{(Ignorez les virgules pour multiplier, puis placez la virgule dans le produit en fonction du nombre total de décimales.)}
     
@@ -1549,13 +1545,13 @@ Il est possible de mélanger les opérations d'addition, de soustraction, de mul
 \end{tcolorbox}
 
 \begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, sharp corners=south, boxrule=0.8mm, title=Exemple de Multiplication]
-    \textbf{Multipliez 4.12 par 1.3 :}
+    \textbf{Multipliez 4,12 par 1,3 :}
     \[
     \opmul[displayintermediary=all]{4.12}{1.3}
     \]
     \textcolor{red}{(Ignorez les virgules pour multiplier, puis placez la virgule dans le produit en fonction du nombre total de décimales.)}
     
-    \textbf{Explication :} Nous avons multiplié 412 par 13 pour obtenir 5356. Comme il y a trois chiffres après la virgule au total, nous plaçons la virgule après trois chiffres, obtenant 5.356.
+    \textbf{Explication :} Nous avons multiplié 412 par 13 pour obtenir 5356. Comme il y a trois chiffres après la virgule au total, nous plaçons la virgule après trois chiffres, obtenant 5,356.
 \end{tcolorbox}
 
 \subsubsection{\textcolor{green}{Division de Nombres Décimaux}}
@@ -1573,13 +1569,13 @@ Il est possible de mélanger les opérations d'addition, de soustraction, de mul
 \vspace{0.2cm}
 
 \begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, sharp corners=south, boxrule=0.8mm, title=Exemple de Division]
-    \textbf{Divisez 7.2 par 1.5 :}
+    \textbf{Divisez 7,2 par 1,5 :}
     \[
-    \opidiv[displayintermediary=all,voperation=top]{7.2}{1.5}
+    \opidiv[displayintermediary=all,voperation=top]{7,2}{1,5}
     \]
     \textcolor{red}{(Déplacez la virgule dans le dividende et le diviseur pour simplifier la division.)}
     
-    \textbf{Explication :} En déplaçant la virgule dans les deux nombres, nous obtenons une division entière. Diviser 72 par 15 donne 4.8.
+    \textbf{Explication :} En déplaçant la virgule dans les deux nombres, nous obtenons une division entière. Diviser 72 par 15 donne 4,8.
 \end{tcolorbox}
 
 \begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, sharp corners=south, boxrule=0.8mm, title=Exemple de Division]
@@ -1615,16 +1611,16 @@ Il est possible de mélanger les opérations d'addition, de soustraction, de mul
     Les nombres décimaux sont des nombres qui utilisent une virgule pour séparer les parties entières des parties fractionnaires. Cette section vous aidera à comprendre comment utiliser ces nombres dans divers contextes.
 
     \textbf{1. Conversion des Nombres Entiers en Nombres Décimaux :}
-    Pour convertir un nombre entier en nombre décimal, vous ajoutez une virgule à la fin du nombre, suivie de zéros. Par exemple, 45 devient 45.00.
+    Pour convertir un nombre entier en nombre décimal, vous ajoutez une virgule à la fin du nombre, suivie de zéros. Par exemple, 45 devient 45,00.
 
     \textbf{2. Lecture et Écriture des Nombres Décimaux :}
-    Savoir lire et écrire les nombres décimaux est crucial pour comprendre leur valeur. Par exemple, 3.76 se lit "trois virgule soixante-seize".
+    Savoir lire et écrire les nombres décimaux est crucial pour comprendre leur valeur. Par exemple, 3,76 se lit "trois virgule soixante-seize".
 
     \textbf{3. Comparaison des Nombres Décimaux :}
-    Pour comparer les nombres décimaux, comparez d'abord les chiffres avant la virgule, puis les chiffres après la virgule. Par exemple, 2.75 est plus grand que 2.5.
+    Pour comparer les nombres décimaux, comparez d'abord les chiffres avant la virgule, puis les chiffres après la virgule. Par exemple, 2,75 est plus grand que 2,5.
 
     \textbf{4. Arrondissement des Nombres Décimaux :}
-    L'arrondissement permet de simplifier les nombres décimaux en les rendant plus faciles à utiliser. Par exemple, 4.678 arrondi à deux chiffres après la virgule est 4.68.
+    L'arrondissement permet de simplifier les nombres décimaux en les rendant plus faciles à utiliser. Par exemple, 4,678 arrondi à deux chiffres après la virgule est 4,68.
 
     \textbf{5. Opérations avec les Nombres Décimaux :}
     Les opérations de base (addition, soustraction, multiplication, division) avec les nombres décimaux suivent les mêmes principes que pour les entiers, mais nécessitent une attention particulière à la position de la virgule.
@@ -1648,59 +1644,59 @@ Il est possible de mélanger les opérations d'addition, de soustraction, de mul
 
         \item \textbf{Lecture :} Écrivez en toutes lettres les nombres décimaux suivants :
             \begin{enumerate}
-                \item 0.85
-                \item 4.32
-                \item 7.1
-                \item 12.9
-                \item 0.007
+                \item 0,85
+                \item 4,32
+                \item 7,1
+                \item 12,9
+                \item 0,007
             \end{enumerate}
 
         \item \textbf{Comparaison :} Placez les nombres décimaux suivants dans l'ordre croissant :
             \begin{enumerate}
-                \item 3.56, 3.5, 3.60
-                \item 2.75, 2.7, 2.76
-                \item 1.89, 1.8, 1.88
+                \item 3,56; 3,5; 3,60
+                \item 2,75; 2,7; 2,76
+                \item 1.89; 1.8; 1.88
             \end{enumerate}
 
         \item \textbf{Arrondissement :} Arrondissez les nombres décimaux suivants à deux chiffres après la virgule :
             \begin{enumerate}
-                \item 5.678
-                \item 9.123
-                \item 3.456
-                \item 7.891
-                \item 2.345
+                \item 5,678
+                \item 9,123
+                \item 3,456
+                \item 7,891
+                \item 2,345
             \end{enumerate}
 
         \item \textbf{Addition :} Effectuez les additions suivantes :
             \begin{enumerate}
-                \item 4.56 + 3.45
-                \item 12.78 + 2.34
-                \item 7.90 + 0.65
-                \item 5.12 + 8.22
+                \item 4,56 + 3,45
+                \item 12,78 + 2,34
+                \item 7,90 + 0,65
+                \item 5,12 + 8,22
             \end{enumerate}
 
         \item \textbf{Soustraction :} Effectuez les soustractions suivantes :
             \begin{enumerate}
-                \item 9.87 - 4.56
-                \item 15.00 - 3.21
-                \item 7.45 - 2.30
-                \item 10.10 - 5.05
+                \item 9,87 - 4,56
+                \item 15,00 - 3,21
+                \item 7,45 - 2,30
+                \item 10,10 - 5,05
             \end{enumerate}
 
         \item \textbf{Multiplication :} Effectuez les multiplications suivantes :
             \begin{enumerate}
-                \item 2.5 × 4
-                \item 6.3 × 3
-                \item 1.2 × 7
-                \item 5.6 × 5
+                \item 2,5 × 4
+                \item 6,3 × 3
+                \item 1,2 × 7
+                \item 5,6 × 5
             \end{enumerate}
 
         \item \textbf{Division :} Effectuez les divisions suivantes :
             \begin{enumerate}
-                \item 8.4 ÷ 2
-                \item 9.6 ÷ 3
-                \item 7.5 ÷ 5
-                \item 12.0 ÷ 4
+                \item 8,4 ÷ 2
+                \item 9,6 ÷ 3
+                \item 7,5 ÷ 5
+                \item 12,0 ÷ 4
             \end{enumerate}
     \end{enumerate}
 \end{tcolorbox}
@@ -1708,55 +1704,55 @@ Il est possible de mélanger les opérations d'addition, de soustraction, de mul
 \begin{tcolorbox}[colback=green!10!white, colframe=green!75!black, sharp corners=south, boxrule=0.8mm, title=Corrections]
     \textbf{1. Conversion :}
     \begin{itemize}
-        \item 17 devient 17.00
-        \item 92 devient 92.00
-        \item 123 devient 123.00
-        \item 500 devient 500.00
-        \item 1000 devient 1000.00
+        \item 17 devient 17,00
+        \item 92 devient 92,00
+        \item 123 devient 123,00
+        \item 500 devient 500,00
+        \item 1000 devient 1000,00
     \end{itemize}
 
     \textbf{2. Lecture :}
     \begin{itemize}
-        \item 0.85 se lit "zéro virgule quatre-vingt-cinq"
-        \item 4.32 se lit "quatre virgule trente-deux"
-        \item 7.1 se lit "sept virgule un"
-        \item 12.9 se lit "douze virgule neuf"
-        \item 0.007 se lit "zéro virgule zéro zéro sept"
+        \item 0,85 se lit "zéro virgule quatre-vingt-cinq"
+        \item 4,32 se lit "quatre virgule trente-deux"
+        \item 7,1 se lit "sept virgule un"
+        \item 12,9 se lit "douze virgule neuf"
+        \item 0,007 se lit "zéro virgule zéro zéro sept"
     \end{itemize}
 
     \textbf{3. Comparaison :}
     \begin{itemize}
-        \item Ordre croissant : 3.5, 3.56, 3.60
-        \item Ordre croissant : 2.7, 2.75, 2.76
-        \item Ordre croissant : 1.8, 1.88, 1.89
+        \item Ordre croissant : 3,5; 3,56; 3,60
+        \item Ordre croissant : 2,7; 2,75; 2,76
+        \item Ordre croissant : 1,8; 1,88; 1,89
     \end{itemize}
 
     \textbf{4. Arrondissement :}
     \begin{itemize}
-        \item 5.678 arrondi à deux chiffres après la virgule devient 5.68
-        \item 9.123 arrondi à deux chiffres après la virgule devient 9.12
-        \item 3.456 arrondi à deux chiffres après la virgule devient 3.46
-        \item 7.891 arrondi à deux chiffres après la virgule devient 7.89
-        \item 2.345 arrondi à deux chiffres après la virgule devient 2.35
+        \item 5,678 arrondi à deux chiffres après la virgule devient 5,68
+        \item 9,123 arrondi à deux chiffres après la virgule devient 9,12
+        \item 3,456 arrondi à deux chiffres après la virgule devient 3,46
+        \item 7,891 arrondi à deux chiffres après la virgule devient 7,89
+        \item 2,345 arrondi à deux chiffres après la virgule devient 2,35
     \end{itemize}
 
     \textbf{5. Addition :}
     \begin{itemize}
-        \item 4.56 + 3.45 = 8.01
+        \item 4,56 + 3,45 = 8,01
         \[
-        \opadd[displayintermediary=all,voperation=top]{4.56}{3.45}
+        \opadd[displayintermediary=all,voperation=top]{4,56}{3,45}
         \]
-        \item 12.78 + 2.34 = 15.12
+        \item 12,78 + 2,34 = 15,12
         \[
-        \opadd[displayintermediary=all,voperation=top]{12.78}{2.34}
+        \opadd[displayintermediary=all,voperation=top]{12,78}{2,34}
         \]
-        \item 7.90 + 0.65 = 8.55
+        \item 7,90 + 0,65 = 8,55
         \[
         \opadd[displayintermediary=all,voperation=top]{7.90}{0.65}
         \]
-        \item 5.12 + 8.22 = 13.34
+        \item 5,12 + 8,22 = 13,34
         \[
-        \opadd[displayintermediary=all,voperation=top]{5.12}{8.22}
+        \opadd[displayintermediary=all,voperation=top]{5,12}{8,22}
         \]
     \end{itemize}
 \end{tcolorbox}
@@ -1764,41 +1760,41 @@ Il est possible de mélanger les opérations d'addition, de soustraction, de mul
 \begin{tcolorbox}[colback=green!10!white, colframe=green!75!black, sharp corners=south, boxrule=0.8mm, title=Corrections]
     \textbf{6. Soustraction :}
     \begin{itemize}
-        \item 9.87 - 4.56 = 5.31
+        \item 9,87 - 4,56 = 5,31
         \[
-        \opsub[displayintermediary=all,voperation=top]{9.87}{4.56}
+        \opsub[displayintermediary=all,voperation=top]{9,87}{4,56}
         \]
-        \item 15.00 - 3.21 = 11.79
+        \item 15,00 - 3,21 = 11,79
         \[
-        \opsub[displayintermediary=all,voperation=top]{15.00}{3.21}
+        \opsub[displayintermediary=all,voperation=top]{15,00}{3,21}
         \]
-        \item 7.45 - 2.30 = 5.15
+        \item 7,45 - 2,30 = 5,15
         \[
-        \opsub[displayintermediary=all,voperation=top]{7.45}{2.30}
+        \opsub[displayintermediary=all,voperation=top]{7,45}{2,30}
         \]
-        \item 10.10 - 5.05 = 5.05
+        \item 10,10 - 5,05 = 5,05
         \[
-        \opsub[displayintermediary=all,voperation=top]{10.10}{5.05}
+        \opsub[displayintermediary=all,voperation=top]{10,10}{5,05}
         \]
     \end{itemize}
 
     \textbf{7. Multiplication :}
     \begin{itemize}
-        \item 2.5 × 4 = 10.0
+        \item 2,5 × 4 = 10,0
         \[
-        \opmul[displayintermediary=all]{2.5}{4}
+        \opmul[displayintermediary=all]{2,5}{4}
         \]
-        \item 6.3 × 3 = 18.9
+        \item 6,3 × 3 = 18,9
         \[
         \opmul[displayintermediary=all]{6.3}{3}
         \]
-        \item 1.2 × 7 = 8.4
+        \item 1,2 × 7 = 8,4
         \[
-        \opmul[displayintermediary=all]{1.2}{7}
+        \opmul[displayintermediary=all]{1,2}{7}
         \]
-        \item 5.6 × 5 = 28.0
+        \item 5,6 × 5 = 28,0
         \[
-        \opmul[displayintermediary=all]{5.6}{5}
+        \opmul[displayintermediary=all]{5,6}{5}
         \]
     \end{itemize}
 \end{tcolorbox}
@@ -1857,11 +1853,10 @@ Il est possible de mélanger les opérations d'addition, de soustraction, de mul
 
 \begin{tcolorbox}[colback=cyan!10!white, colframe=red!75!black, title=\textcolor{white}{Définition}, 
                   sharp corners=southwest]
-    Une \textbf{fraction} est une expression mathématique qui représente une partie d'un tout. Elle est composée de deux nombres : le numérateur (au-dessus de la barre de fraction), qui indique combien de parties sont prises, et le dénominateur (en dessous de la barre de fraction), qui indique en combien de parties égales le tout est divisé.
+    Une \textbf{fraction} est une expression mathématique qui représente une partie d'un tout. Elle est composée de deux nombres : le \textcolor{}{numérateur} (au-dessus de la barre de fraction), qui indique combien de parties sont prises, et le \textcolor{}{dénominateur} (en dessous de la barre de fraction), qui indique en combien de parties égales le tout est divisé.
 \end{tcolorbox}
 
-\vspace{0.2cm}
-
+\vspace{0.2cm},
 \begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, sharp corners=south, boxrule=0.8mm, title=\textcolor{white}{Exemple}]
     Considérons la fraction \(\frac{2}{5}\). Cela signifie que nous avons 2 parts sur un total de 5 parts égales. Par exemple, si un gâteau est divisé en 5 parts égales, prendre 2 parts correspond à la fraction \(\frac{2}{5}\) du gâteau.
 
@@ -2010,8 +2005,36 @@ Il est possible de mélanger les opérations d'addition, de soustraction, de mul
 \vspace{0.2cm}
 
 \begin{tcolorbox}[colback=purple!10!white, colframe=purple!75!black, title=\textcolor{white}{Note}, sharp corners=south, boxrule=0.8mm]
-    \textcolor{purple}{\textbf{Note:} Les illustrations ci-dessus montrent les fractions de \(\frac{1}{2}\) à \(\frac{1}{10}\) sous forme de parts égales d'un cercle. La portion colorée en vert représente la partie de la fraction par rapport au total.}
+    \textcolor{purple}{ Les illustrations ci-dessus montrent les fractions de \(\frac{1}{2}\) à \(\frac{1}{10}\) sous forme de parts égales d'un cercle. La portion colorée en vert représente la partie de la fraction par rapport au total.}
 \end{tcolorbox}
+
+\vspace{0.2cm}
+
+\begin{tcolorbox}[colback=cyan!10!white, colframe=brown!75!black, title=\textcolor{white}{Nouvelle Représentation des Fractions}, sharp corners=southwest]
+    Pour comprendre les fractions sur une droite graduée, nous allons utiliser une nouvelle approche, qui est aussi savoureuse : une tablette de chocolat ! 
+
+    Imaginez une tablette de chocolat qui contient une seule rangée de petits carrés alignés, avec exactement \textbf{6 petits carrés} dans cette rangée. Chaque petit carré représente \textbf{une unité} sur la droite graduée. En utilisant cette tablette, on peut représenter visuellement des fractions en prenant des carrés entiers ou des parties de carrés, pour comprendre facilement où elles se situent entre les nombres entiers sur la droite.
+
+    Par exemple, si nous voulons représenter la fraction \(\frac{3}{2}\) :
+    
+    \begin{itemize}
+        \item Prenons d’abord \textbf{3 petits carrés} sur la tablette. 
+        \item Ensuite, pour obtenir la fraction \(\frac{3}{2}\), partageons ces 3 carrés en deux moitiés, ce qui nous donne \textbf{1 carré entier plus une moitié de carré}.
+    \end{itemize}
+
+    \textbf{Sur la droite graduée :} Si nous plaçons cette quantité sur une droite graduée, cela nous donne $1,5$ ou \textbf{1 carré entier plus une demi-unité}.
+
+    Cette méthode simple permet de visualiser facilement les fractions comme \(\frac{3}{2}\) et d’autres nombres qui ne tombent pas directement sur un nombre entier. Ainsi, la tablette de chocolat nous aide à comprendre les fractions comme des parties d’unités, prêtes à être placées sur une droite graduée !
+\end{tcolorbox}
+
+\vspace{0.2cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.60\linewidth]{Tablette de chocolat.png}
+    \caption{Illustration de la fraction \(\frac{3}{2}\) comme 1 carré entier et une demi-unité sur la droite graduée.}
+    \label{fig:enter-label}
+\end{figure}
 
 \subsubsection{\textcolor{green}{Opérations sur les fractions}}
 
@@ -2039,7 +2062,7 @@ Il est possible de mélanger les opérations d'addition, de soustraction, de mul
 
 \vspace{0.2cm}
 
-\begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, title=\textcolor{white}{Exemples d'Opérations}, sharp corners=southwest]
+\begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, title=\textcolor{white}{Exemples d'opérations}, sharp corners=southwest]
     \textcolor{purple}{\textbf{1. Addition de fractions avec dénominateurs identiques}}
     
     \[
@@ -2086,7 +2109,7 @@ Il est possible de mélanger les opérations d'addition, de soustraction, de mul
 
 \vspace{0.2cm}
 
-\begin{tcolorbox}[colback=purple!10!white, colframe=yellow!75!black, title=\textcolor{white}{Exercices d'Application}, sharp corners=south, boxrule=0.8mm]
+\begin{tcolorbox}[colback=purple!10!white, colframe=yellow!75!black, title=\textcolor{white}{Application directe}, sharp corners=south, boxrule=0.8mm]
     \textbf{1. Addition de fractions avec dénominateurs différents}
     
     \[
@@ -2191,6 +2214,10 @@ Il est possible de mélanger les opérations d'addition, de soustraction, de mul
     \textbf{19.} Divisez \(\frac{3}{4}\) par \(\frac{1}{2}\) et simplifiez votre réponse.
 
     \textbf{20.} Identifiez les fractions équivalentes suivantes : \(\frac{3}{9} = \_\_\_\_\_\ \).
+
+    \textbf{21.} Représentez la fraction \(\frac{5}{2}\) sur une droite graduée en utilisant une tablette de chocolat de 6 petits carrés alignés. Marquez les unités entières et la demi-unité.
+
+    \textbf{22.} Représentez la fraction \(\frac{7}{3}\) de la même manière sur une droite graduée en plaçant une unité entière et une demi-unité.
 \end{tcolorbox}
 
 \vspace{0.2cm}
@@ -2221,13 +2248,14 @@ Il est possible de mélanger les opérations d'addition, de soustraction, de mul
     \end{tabular}
 \end{tcolorbox}
 
+\vspace{0.2pt}
 
-\vspace{0.2cm}
 \begin{tcolorbox}[colback=blue!10!white, colframe=cyan!75!black, title=\textcolor{white}{Récapitulatif}, sharp corners=south, boxrule=0.8mm]
     En résumé :
     \begin{itemize}
         \item Les fractions représentent une partie d'un tout et sont composées d'un numérateur et d'un dénominateur.
         \item Les illustrations montrent comment les fractions se divisent visuellement dans un cercle.
+        \item \textbf{Représentation sur une tablette de chocolat} : Une tablette de chocolat divisée en petits carrés permet de visualiser des fractions sur une droite graduée en utilisant chaque carré comme unité de mesure.
         \item \textbf{Addition et Soustraction} : Assurez-vous que les dénominateurs sont identiques avant d'additionner ou de soustraire les numérateurs.
         \item \textbf{Multiplication} : Multipliez les numérateurs entre eux et les dénominateurs entre eux.
         \item \textbf{Division} : Multipliez la première fraction par l'inverse de la seconde.
@@ -2236,13 +2264,14 @@ Il est possible de mélanger les opérations d'addition, de soustraction, de mul
     \end{itemize}
 \end{tcolorbox}
 
+
 \subsection{\textcolor{red}{Proportionnalité}}
 
 \subsubsection{\textcolor{green}{Définitions}}
 
 \begin{tcolorbox}[colback=red!10!white, colframe=red!75!black, title=\textcolor{white}{Définition}, 
                   sharp corners=southwest]
-    La \textbf{proportionnalité} est une relation entre deux grandeurs qui varient de manière constante l'une par rapport à l'autre. on dit que deux suites de nombres sont proportionnelles quand, en multipliant (ou en divisant) par une même constante non nulle, les termes de l'une on obtient les termes de l'autre. Le facteur constant entre l'une et l'autre de ces suites est appelé coefficient de proportionnalité.
+    La \textbf{proportionnalité} est une relation entre deux grandeurs qui varient de manière constante l'une par rapport à l'autre. on dit que deux suites de nombres sont proportionnelles quand, en multipliant (ou en divisant) par une même constante non nulle, les termes de l'une on obtient les termes de l'autre. Le facteur constant entre l'une et l'autre de ces suites est appelé \textbf{coefficient de proportionnalité}.
 \end{tcolorbox}
 
 \vspace{0.2cm}
@@ -2903,7 +2932,7 @@ Il est possible de mélanger les opérations d'addition, de soustraction, de mul
 
 \vspace{0.2cm}
 
-\begin{tcolorbox}[colback=yellow!10!white, colframe=yellow!75!black, title=\textcolor{white}{Exercices supplémentaires}, sharp corners=south]
+\begin{tcolorbox}[colback=yellow!10!white, colframe=yellow!75!black, title=\textcolor{white}{Application directe}, sharp corners=south]
     \textbf{Exercice 3 :} Tracez deux droites parallèles \(d_1\) et \(d_2\) et vérifiez qu'elles ne se coupent pas.
 
     \textbf{Exercice 4 :} Tracez deux droites perpendiculaires et mesurez l'angle entre elles pour vérifier qu'il est de 90°.
@@ -2981,7 +3010,7 @@ Il est possible de mélanger les opérations d'addition, de soustraction, de mul
 
 \vspace{0.2cm}
 
-\begin{tcolorbox}[colback=yellow!10!white, colframe=yellow!75!black, title=\textcolor{white}{Exercices}, sharp corners=south]
+\begin{tcolorbox}[colback=yellow!10!white, colframe=yellow!75!black, title=\textcolor{white}{Application directe}, sharp corners=south]
     \textbf{Exercice 1 :} Tracez un rectangle de longueur 6 cm et de largeur 3 cm.
 
     \textbf{Exercice 2 :} Tracez un carré de côté 5 cm.
@@ -3050,7 +3079,7 @@ Il est possible de mélanger les opérations d'addition, de soustraction, de mul
 
 \vspace{0.2cm}
 
-\begin{tcolorbox}[colback=yellow!10!white, colframe=yellow!75!black, title=\textcolor{white}{Exercices}, sharp corners=south]
+\begin{tcolorbox}[colback=yellow!10!white, colframe=yellow!75!black, title=\textcolor{white}{Application directe}, sharp corners=south]
     \textbf{Exercice 1 :} Tracez un triangle équilatéral dont les côtés mesurent 4 cm.
 
     \textbf{Exercice 2 :} Calculez la somme des angles d’un triangle que vous avez tracé.
@@ -3119,7 +3148,7 @@ Il est possible de mélanger les opérations d'addition, de soustraction, de mul
 
 \vspace{0.2cm}
 
-\begin{tcolorbox}[colback=yellow!10!white, colframe=yellow!75!black, title=\textcolor{white}{Exercices}, sharp corners=south]
+\begin{tcolorbox}[colback=yellow!10!white, colframe=yellow!75!black, title=\textcolor{white}{Application directe}, sharp corners=south]
     \textbf{Exercice 1 :} Tracez un cercle de rayon 3 cm.
 
     \textbf{Exercice 2 :} Identifiez le centre et le rayon du cercle que vous avez tracé.
@@ -3195,10 +3224,10 @@ Il est possible de mélanger les opérations d'addition, de soustraction, de mul
         \node at (3.5, 0.2) {Sommet};
         \node at (5, -0.3) {Côté};
 
-        % Angle obtus
+        % Angle obtus corrigé à 120 degrés
         \draw[thick] (8,0) -- (10,0);
-        \draw[thick] (8,0) -- (9,2);
-        \draw (9.5, 0.7) node {120°};
+        \draw[thick] (8,0) -- ++(120:2); % Angle de 120 degrés
+        \draw (9.2, 0.7) node {120°};
         \draw[fill=red] (8,0) circle (3pt);
         \node at (7.5, 0.2) {Sommet};
         \node at (9, -0.3) {Côté};
@@ -3568,7 +3597,6 @@ Les solides les plus courants en géométrie de l'espace sont le cube, le pavé 
         \item \textbf{Exercice 15 :} 
             \begin{itemize}
                 \item Somme des angles : \(50° + 90° + 40° = 180°\). 
-                \item Remarque : Il s'agit d'une erreur, car la somme devrait être 180° et non 180°.
             \end{itemize}
     \end{itemize}
 
@@ -3581,8 +3609,8 @@ Les solides les plus courants en géométrie de l'espace sont le cube, le pavé 
 
 \subsubsection{\textcolor{green}{Définitions}}
 
-\begin{tcolorbox}[colback=red!10!white, colframe=red!75!black, title=\textcolor{white}{Définition : Symétrie Axiale}, sharp corners=south]
-     Deux figures sont dites symétriques par rapport à une droite (d) si elles se superposent par pliage le long de la droite (d).
+\begin{tcolorbox}[colback=red!10!white, colframe=red!75!black, title=\textcolor{white}{Définition :}, sharp corners=south]
+     Deux figures sont dites \textbf{symétriques} par rapport à une droite (d) si elles se superposent par pliage le long de la droite (d).
 \end{tcolorbox}
 
 \begin{figure}[H]
@@ -3698,8 +3726,8 @@ Une figure peut avoir plusieurs axes de symétrie, comme un carré, qui en poss�
 
 \vspace{0.2cm}
 
-\begin{tcolorbox}[colback=red!10!white, colframe=red!75!black, title=\textcolor{white}{Définition : Médiatrice}, sharp corners=south]
-    La médiatrice d'un segment est la droite qui coupe ce segment en son milieu et qui est perpendiculaire à ce segment. Chaque point situé sur la médiatrice est équidistant des deux extrémités du segment. Elle est également l'axe de symétrie du segment.
+\begin{tcolorbox}[colback=red!10!white, colframe=red!75!black, title=\textcolor{white}{Définition : }, sharp corners=south]
+    \textbf{La médiatrice} d'un segment est la droite qui coupe ce segment en son milieu et qui est perpendiculaire à ce segment. Chaque point situé sur la médiatrice est équidistant des deux extrémités du segment. Elle est également l'axe de symétrie du segment.
 \end{tcolorbox}
 
 \vspace{0.2cm}
@@ -3729,7 +3757,7 @@ Une figure peut avoir plusieurs axes de symétrie, comme un carré, qui en poss�
 
 \begin{tcolorbox}[colback=red!10!white, colframe=red!75!black, title=\textcolor{white}{Propriété}, sharp corners=south]
 
-Inversement, si un point est à égale distance des extrémités d'un segment, appartient à la médiatrice de ce segment.
+Inversement, si un point est à égale distance des extrémités d'un segment, il appartient à la médiatrice de ce segment.
 \end{tcolorbox}
 
 \vspace{0.35cm}
@@ -3771,8 +3799,8 @@ Dans un cerf-volant \( ABCD \) d'axe de symétrie \( (AC) \):
 
 \vspace{0.2cm}
 
-\begin{tcolorbox}[colback=red!10!white, colframe=red!75!black, title=\textcolor{white}{Définition : Bissectrice}, sharp corners=south]
-    La bissectrice d'un angle est la demi-droite qui partage cet angle en deux angles de meme mesre. Chaque point de la bissectrice est équidistant des deux côtés de l'angle. Elle est aussi un axe de symétrie pour cet angle.
+\begin{tcolorbox}[colback=red!10!white, colframe=red!75!black, title=\textcolor{white}{Définition : }, sharp corners=south]
+    \textbf{La bissectrice} d'un angle est la demi-droite qui partage cet angle en deux angles de meme mesre. Chaque point de la bissectrice est équidistant des deux côtés de l'angle. Elle est aussi un axe de symétrie pour cet angle.
 \end{tcolorbox}
 
 \vspace{0.2cm}
@@ -3826,17 +3854,17 @@ La bissectrice est une droite fondamentale dans la géométrie, notamment dans l
 
         \item \textbf{Exercice 7 :} Tracer un triangle isocèle dont un axe de symétrie est la droite \( d: x = 0 \). Indiquez les coordonnées des sommets du triangle et tracez son symétrique.
 
-        \item \textbf{Exercice 8 :} Un trapèze \( ABCD \) a deux bases parallèles \( AB \) et \( CD \), avec \( AB = 4 \) cm, \( CD = 6 \) cm, et la hauteur \( h = 3 \) cm. Tracer le symétrique du trapèze par rapport à sa hauteur.
+        \item \textbf{Exercice 8 :} Un trapèze \( ABCD \) a deux bases parallèles \( AB \) et \( CD \), avec \( AB = 2 \) cm, \( CD = 4 \) cm, et la hauteur \( h = 3 \) cm. Tracer le symétrique du trapèze par rapport à sa hauteur.
 
         \item \textbf{Exercice 9 :} Soit un hexagone régulier inscrit dans un cercle de centre \( O \) et de rayon 5 cm. Trouvez le nombre d'axes de symétrie de cet hexagone et expliquez votre démarche.
 
         \item \textbf{Exercice 10 :} Tracer un cerf-volant \( ABCD \) où \( AB = AC \) et \( BD \) est perpendiculaire à \( AC \). Indiquez l'axe de symétrie de la figure et vérifiez la propriété de la bissectrice.
         
-        \item \textbf{Exercice 11 :} Soit le triangle équilatéral \( ABC \) avec \( AB = BC = CA = 6 \) cm. Trouvez les trois axes de symétrie du triangle, et vérifiez si le centre du cercle circonscrit au triangle coïncide avec le point d'intersection de ces axes.
+        \item \textbf{Exercice 11 :} Soit le triangle équilatéral \( ABC \) avec \( AB = BC = CA = 4 \) cm. Trouvez les trois axes de symétrie du triangle, et vérifiez si le centre du cercle circonscrit au triangle coïncide avec le point d'intersection de ces axes.
 
         \item \textbf{Exercice 12 :} Dans un carré \( ABCD \), tracez ses deux diagonales \( AC \) et \( BD \). Montrez que ces diagonales sont des axes de symétrie du carré et vérifiez que \( AC \perp BD \). Trouvez également le point d'intersection des diagonales.
 
-        \item \textbf{Exercice 13 :} Un losange \( ABCD \) a pour diagonales \( AC \) et \( BD \), qui se coupent perpendiculairement en leur milieu. Trouvez les axes de symétrie du losange et montrez que chaque diagonale est un axe de symétrie de la figure.
+        \item \textbf{Exercice 13 :} Un losange \( ABCD \) a pour diagonales \( AC \) et \( BD \), qui se coupent perpendiculairement en leur milieu. Montrez que chaque diagonale est un axe de symétrie de la figure.
     \end{enumerate}
 \end{tcolorbox}
 
@@ -3895,7 +3923,7 @@ La bissectrice est une droite fondamentale dans la géométrie, notamment dans l
             \filldraw[red] (7,2) circle (2pt) node[below right] {$A'(7,2)$};
 
             \filldraw[blue] (5,6) circle (2pt) node[above left] {$B(5,6)$};
-            \filldraw[red] (3,6) circle (2pt) node[above right] {$B'(3,6)$};
+            \filldraw[red] (3,6) circle (2pt) node[above left] {$B'(3,6)$};
 
             \filldraw[blue] (3,8) circle (2pt) node[above left] {$C(3,8)$};
             \filldraw[red] (5,8) circle (2pt) node[above right] {$C'(5,8)$};
@@ -3936,21 +3964,22 @@ La bissectrice est une droite fondamentale dans la géométrie, notamment dans l
 
         \textbf{Exercice 4 :} Un triangle scalène n'a pas d'axe de symétrie car ses côtés et ses angles sont tous différents.
 
-        \begin{center}
-        \begin{tikzpicture}[scale=0.8]
-            % Axes
-            \draw[->] (-1,0) -- (6,0) node[right] {$x$};
-            \draw[->] (0,-1) -- (0,6) node[above] {$y$};
-            
-            % Triangle scalène
-            \draw[thick] (1,1) -- (5,1) -- (3,4.5) -- cycle;
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    % Axes
+    \draw[->] (-1,0) -- (6,0) node[right] {$x$};
+    \draw[->] (0,-1) -- (0,6) node[above] {$y$};
+    
+    % Triangle scalène
+    \draw[thick] (1,1) -- (5,2) -- (3,4.5) -- cycle;
 
-            % Sommets
-            \filldraw[blue] (1,1) circle (2pt) node[below left] {$(1,1)$};
-            \filldraw[blue] (5,1) circle (2pt) node[below right] {$(5,1)$};
-            \filldraw[blue] (3,4.5) circle (2pt) node[above right] {$(3,4.5)$};
-        \end{tikzpicture}
-        \end{center}
+    % Sommets
+    \filldraw[blue] (1,1) circle (2pt) node[below left] {$(1,1)$};
+    \filldraw[blue] (5,2) circle (2pt) node[below right] {$(5,2)$};
+    \filldraw[blue] (3,4.5) circle (2pt) node[above right] {$(3,4.5)$};
+\end{tikzpicture}
+\end{center}
+
 
         \textbf{Exercice 5 :} La médiatrice du segment \( [PQ] \) avec \( P(-2, 1) \) et \( Q(4, 1) \) est la droite \( x = 1 \).
 
@@ -3974,179 +4003,275 @@ La bissectrice est une droite fondamentale dans la géométrie, notamment dans l
             \draw[dashed, thick] (1,-1) -- (1,3) node[above right] {$x = 1$};
         \end{tikzpicture}
         \end{center}
+
+    La relation entre les points \( P \) et \( Q \) et leur médiatrice signifie que chaque point du segment \( [PQ] \) est à égale distance des deux points \( P \) et \( Q \), et la médiatrice est une droite perpendiculaire passant par le milieu de ce segment.
+
 \end{tcolorbox}
 
 \begin{tcolorbox}[colback=green!10!white, colframe=green!75!black, title=\textcolor{white}{Corrections des Exercices avec Graphiques}, sharp corners=south]
 
-        \textbf{Exercice 6 :} Soit le point \( A(3, 5) \) et la droite \( d : x = 1 \). Le symétrique de \( A \) par rapport à cette droite est le point \( A'( -1, 5 ) \), car la droite \( d \) est une droite verticale.
+        \textbf{Exercice 6 :} Le cercle symétrique du cercle de centre \( O(3,2) \) et de rayon 2 par rapport à la droite \( d : x = 5 \) est le cercle de centre \( O'(7,2) \) et de rayon 2.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+    % Axes
+    \draw[->] (-1,0) -- (10,0) node[right] {$x$};
+    \draw[->] (0,-1) -- (0,6) node[above] {$y$};
+    
+    % La droite d : x = 5
+    \draw[dashed, thick] (5,-1) -- (5,6) node[above right] {$x = 5$};
+    
+    % Cercle original de centre O(3,2) et de rayon 2
+    \draw[thick, blue] (3,2) circle (2);
+    \filldraw[blue] (3,2) circle (2pt) node[below left] {$O(3,2)$};
+    
+    % Cercle symétrique de centre O'(7,2) et de rayon 2
+    \draw[thick, red] (7,2) circle (2);
+    \filldraw[red] (7,2) circle (2pt) node[below right] {$O'(7,2)$};
+
+    % Ligne de symétrie entre O et O'
+    \draw[dashed] (3,2) -- (7,2);
+\end{tikzpicture}
+\end{center}
+
+
+
+        \textbf{Exercice 7 :} Le triangle original a pour sommets \( A(-2,4) \), \( B(-1,1) \), \( C(-5,1) \) et son symétrique par rapport à la droite \( d : x = 0 \) a pour sommets \( A'(2,4) \), \( B'(1,1) \), et \( C'(5,1) \).
+
 
         \begin{center}
-        \begin{tikzpicture}[scale=0.6]
-            % Axes
-            \draw[->] (-3,0) -- (5,0) node[right] {$x$};
-            \draw[->] (0,-1) -- (0,6) node[above] {$y$};
-            
-            % La droite d
-            \draw[dashed, thick] (1,-1) -- (1,6) node[above right] {$x = 1$};
+\begin{tikzpicture}[scale=0.8]
+    % Axes
+    \draw[->] (-6,0) -- (6,0) node[right] {$x$};
+    \draw[->] (0,-1) -- (0,6) node[above] {$y$};
 
-            % Points A et A'
-            \filldraw[blue] (3,5) circle (2pt) node[above right] {$A(3,5)$};
-            \filldraw[red] (-1,5) circle (2pt) node[above left] {$A'(-1,5)$};
+    % Axe de symétrie d
+    \draw[dashed, thick] (0,-1) -- (0,6) node[above right] {$d : x = 0$};
 
-            % Ligne de symétrie
-            \draw[dashed] (3,5) -- (-1,5);
-        \end{tikzpicture}
-        \end{center}
+    % Triangle original
+    \filldraw[blue] (-3,4) circle (2pt) node[above left] {$A(-2,4)$};
+    \filldraw[blue] (-1,1) circle (2pt) node[below right] {$B(-1,1)$};
+    \filldraw[blue] (-5,1) circle (2pt) node[below left] {$C(-5,1)$};
+    \draw[thick, blue] (-3,4) -- (-1,1) -- (-5,1) -- cycle;
 
-        \textbf{Exercice 7 :} Symétrie centrale : Le symétrique du point \( B(4, 2) \) par rapport à l'origine est \( B'(-4, -2) \).
+    % Symétrique du triangle par rapport à d
+    \filldraw[red] (3,4) circle (2pt) node[above right] {$A'(2,4)$};
+    \filldraw[red] (1,1) circle (2pt) node[below right] {$B'(1,1)$};
+    \filldraw[red] (5,1) circle (2pt) node[below right] {$C'(5,1)$};
+    \draw[thick, red, dashed] (3,4) -- (1,1) -- (5,1) -- cycle;
 
-        \begin{center}
-        \begin{tikzpicture}[scale=0.6]
-            % Axes
-            \draw[->] (-5,0) -- (5,0) node[right] {$x$};
-            \draw[->] (0,-5) -- (0,5) node[above] {$y$};
-            
-            % Points B et B'
-            \filldraw[blue] (4,2) circle (2pt) node[above right] {$B(4,2)$};
-            \filldraw[red] (-4,-2) circle (2pt) node[below left] {$B'(-4,-2)$};
+    % Lignes reliant les sommets originaux et leurs symétriques
+    \draw[dashed] (-3,4) -- (3,4);
+    \draw[dashed] (-1,1) -- (1,1);
+    \draw[dashed] (-5,1) -- (5,1);
+\end{tikzpicture}
+\end{center}
 
-            % Ligne reliant les points
-            \draw[dashed] (4,2) -- (-4,-2);
-        \end{tikzpicture}
-        \end{center}
+        \textbf{Exercice 8 :} Soit un trapèze \( ABCD \) avec les sommets \( A(-4,3) \), \( B(-2,3) \), \( C(-1,1) \), \( D(-5,1) \), où \( AB = 2 \) cm et \( CD = 4 \) cm. Le symétrique de ce trapèze par rapport à la hauteur passant par \( x = -1 \) est le trapèze \( A'B'C'D' \) avec les sommets \( A'(0,3) \), \( B'(2,3) \), \( C'(3,1) \), \( D'(-1,1) \).
 
-        \textbf{Exercice 8 :} Soit le point \( P(3, -4) \) et la droite \( d : y = 0 \). Le symétrique de \( P \) par rapport à cette droite est \( P'(3, 4) \), car \( d \) est l'axe des abscisses.
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    % Axes
+    \draw[->] (-6,0) -- (6,0) node[right] {$x$};
+    \draw[->] (0,-1) -- (0,6) node[above] {$y$};
 
-        \begin{center}
-        \begin{tikzpicture}[scale=0.6]
-            % Axes
-            \draw[->] (-5,0) -- (5,0) node[right] {$x$};
-            \draw[->] (0,-5) -- (0,5) node[above] {$y$};
-            
-            % La droite d
-            \draw[dashed, thick] (-5,0) -- (5,0) node[below right] {$y = 0$};
+    % Axe de symétrie
+    \draw[dashed, thick] (-1,-1) -- (-1,6) node[above right] {$\text{axe de symétrie } x = -1$};
 
-            % Points P et P'
-            \filldraw[blue] (3,-4) circle (2pt) node[below right] {$P(3,-4)$};
-            \filldraw[red] (3,4) circle (2pt) node[above right] {$P'(3,4)$};
+    % Trapèze original
+    \coordinate (A) at (-4,3); % Point A
+    \coordinate (B) at (-2,3); % Point B
+    \coordinate (C) at (-1,1); % Point C
+    \coordinate (D) at (-5,1); % Point D
 
-            % Ligne reliant les points
-            \draw[dashed] (3,-4) -- (3,4);
-        \end{tikzpicture}
-        \end{center}
+    % Trapèze original points and lines
+    \filldraw[blue] (A) circle (2pt) node[above left=4pt] {$A(-4,3)$};
+    \filldraw[blue] (B) circle (2pt) node[above right=4pt] {$B(-2,3)$};
+    \filldraw[blue] (C) circle (2pt) node[below left=4pt] {$C(-1,1)$};
+    \filldraw[blue] (D) circle (2pt) node[below left=4pt] {$D(-5,1)$};
+    \draw[thick, blue] (A) -- (B) -- (C) -- (D) -- cycle;
+
+    % Trapèze symétrique
+    \coordinate (A') at (0,3); % Point A'
+    \coordinate (B') at (2,3); % Point B'
+    \coordinate (C') at (3,1); % Point C'
+    \coordinate (D') at (-1,1); % Point D'
+
+    % Trapèze symétrique points and lines
+    \filldraw[red] (A') circle (2pt) node[above right=4pt] {$A'(0,3)$};
+    \filldraw[red] (B') circle (2pt) node[above right=4pt] {$B'(2,3)$};
+    \filldraw[red] (C') circle (2pt) node[below right=4pt] {$C'(3,1)$};
+    \filldraw[red] (D') circle (2pt) node[below right=4pt] {$D'(-1,1)$};
+    \draw[thick, red, dashed] (A') -- (B') -- (C') -- (D') -- cycle;
+
+    % Lignes reliant les sommets originaux et leurs symétriques
+    \draw[dashed] (A) -- (A');
+    \draw[dashed] (B) -- (B');
+    \draw[dashed] (C) -- (C');
+    \draw[dashed] (D) -- (D');
+
+    % Hauteur en vert
+    \draw[thick, green] (-1,1) -- (-1,3) node[midway, left=5pt] {$h = 3 \, \text{cm}$};
+
+\end{tikzpicture}
+\end{center}
 \end{tcolorbox}
 
 \begin{tcolorbox}[colback=green!10!white, colframe=green!75!black, title=\textcolor{white}{Corrections des Exercices avec Graphiques}, sharp corners=south]
 
-        \textbf{Exercice 9 :} Soit le segment \( [AB] \) avec \( A(2, 2) \) et \( B(6, 2) \). Sa médiatrice est la droite \( x = 4 \), car le milieu du segment est \( M(4, 2) \) et la médiatrice est perpendiculaire au segment.
+        \textbf{Exercice 9 :} Soit un hexagone régulier inscrit dans un cercle de centre \( O \) et de rayon 5 cm.
 
-        \begin{center}
-        \begin{tikzpicture}[scale=0.6]
-            % Axes
-            \draw[->] (-1,0) -- (7,0) node[right] {$x$};
-            \draw[->] (0,-1) -- (0,5) node[above] {$y$};
-            
-            % Segment AB
-            \draw[thick] (2,2) -- (6,2);
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.3\linewidth]{axes de symétries.png}
+            \caption{L'hexagone régulier inscrit dans un cercle}
+            \label{fig:enter-label}
+        \end{figure}
 
-            % Points A et B
-            \filldraw[blue] (2,2) circle (2pt) node[below left] {$A(2,2)$};
-            \filldraw[blue] (6,2) circle (2pt) node[below right] {$B(6,2)$};
+        Un hexagone régulier inscrit dans un cercle a 6 axes de symétrie, comprenant 3 axes passant par les sommets et 3 axes passant par les milieux des côtés. Chaque axe de symétrie divise l'hexagone en deux parties égales et superposables. Par conséquent, un hexagone régulier a un total de 6 axes de symétrie.
 
-            % Milieu du segment AB
-            \filldraw[red] (4,2) circle (2pt) node[above right] {$M(4,2)$};
+        \vspace{0.3cm}
 
-            % Médiatrice
-            \draw[dashed, thick] (4,-1) -- (4,5) node[above right] {$x = 4$};
-        \end{tikzpicture}
-        \end{center}
+       \begin{multicols}{2} % Crée une colonne pour le texte et une pour le schéma
 
-        \textbf{Exercice 10 :} Soit le carré \( ABCD \) avec les sommets \( A(1, 1), B(1, 4), C(4, 4), D(4, 1) \). Les axes de symétrie sont les deux diagonales \( y = x \) et \( y = -x + 5 \), ainsi que les axes verticaux et horizontaux passant par les milieux des côtés.
+\textbf{Exercice 10 :} Dans un cerf-volant \( ABCD \) d'axe de symétrie \( (BD) \):
+\begin{itemize}
+    \item \( AB = BC \)
+    \item \( AD = CD \)
+    \item \( \widehat{BAD} = \widehat{BCD} \)
+    \item \( AC \perp BD \)
+\end{itemize}
 
-        \begin{center}
-        \begin{tikzpicture}[scale=0.6]
-            % Axes
-            \draw[->] (-1,0) -- (5,0) node[right] {$x$};
-            \draw[->] (0,-1) -- (0,5) node[above] {$y$};
-            
-            % Carré ABCD
-            \draw[thick] (1,1) -- (1,4) -- (4,4) -- (4,1) -- cycle;
+\columnbreak % Passe à la colonne suivante pour le schéma
 
-            % Sommets
-            \filldraw[blue] (1,1) circle (2pt) node[below left] {$A(1,1)$};
-            \filldraw[blue] (1,4) circle (2pt) node[above left] {$B(1,4)$};
-            \filldraw[blue] (4,4) circle (2pt) node[above right] {$C(4,4)$};
-            \filldraw[blue] (4,1) circle (2pt) node[below right] {$D(4,1)$};
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+    % Axes
+    \draw[->] (-2,0) -- (6,0) node[right] {$x$};
+    \draw[->] (0,-2) -- (0,6) node[above] {$y$};
+    
+    % Cerf-volant ABCD
+    \draw[thick] (1,2) -- (3,4) -- (5,2) -- (3,-1) -- cycle;
 
-            % Axes de symétrie
-            \draw[dashed, thick] (1,1) -- (4,4) node[above right] {$y = x$};
-            \draw[dashed, thick] (4,1) -- (1,4) node[above left] {$y = -x + 5$};
-        \end{tikzpicture}
-        \end{center}
+    % Sommets
+    \filldraw[blue] (1,2) circle (2pt) node[below left] {$A(1,2)$};
+    \filldraw[blue] (3,4) circle (2pt) node[above left] {$B(3,4)$};
+    \filldraw[blue] (5,2) circle (2pt) node[above right] {$C(5,2)$};
+    \filldraw[blue] (3,-1) circle (2pt) node[below right] {$D(3,-1)$};
 
-\textbf{Exercice 11 :} Le triangle \( ABC \) a pour sommets \( A(1, 1) \), \( B(5, 1) \), \( C(3, 4) \). Son centre de gravité \( G \) est donné par les coordonnées \( G\left( \frac{1+5+3}{3}, \frac{1+1+4}{3} \right) = G(3, 2) \).
+    % Axes de symétrie
+    \draw[dashed, thick] (1,2) -- (5,2) node[above left] {$y = 2$};
+    \draw[dashed, thick] (3,4) -- (3,-1) node[above left] {$x = 3$};
+\end{tikzpicture}
+\end{center}
 
-        \begin{center}
-        \begin{tikzpicture}[scale=0.6]
-            % Axes
-            \draw[->] (-1,0) -- (6,0) node[right] {$x$};
-            \draw[->] (0,-1) -- (0,6) node[above] {$y$};
-            
-            % Triangle
-            \draw[thick] (1,1) -- (5,1) -- (3,4) -- cycle;
+\end{multicols}
 
-            % Sommets
-            \filldraw[blue] (1,1) circle (2pt) node[below left] {$(1,1)$};
-            \filldraw[blue] (5,1) circle (2pt) node[below right] {$(5,1)$};
-            \filldraw[blue] (3,4) circle (2pt) node[above right] {$(3,4)$};
-            \filldraw[red] (3,2) circle (2pt) node[above right] {$G(3,2)$};
-        \end{tikzpicture}
-        \end{center}
+    \textbf{Exercice 11 :} Le triangle \( ABC \) a pour sommets \( A(1, 1) \), \( B(5, 1) \), \( C(3, 4.5) \). Son centre de gravité \( G \) est donné par les coordonnées 
+    \[
+    G\left( \frac{1+5+3}{3}, \frac{1+1+4.5}{3} \right) = G(3, \frac{13}{6}) \simeq G(3, 2.16).
+    \]
+
+    \begin{center}
+    \begin{tikzpicture}[scale=0.6]
+        % Axes
+        \draw[->] (-1,0) -- (6,0) node[right] {$x$};
+        \draw[->] (0,-1) -- (0,6) node[above] {$y$};
+        
+        % Triangle
+        \draw[thick] (1,1) -- (5,1) -- (3,4.5) -- cycle;
+
+        % Sommets
+        \filldraw[blue] (1,1) circle (2pt) node[below left] {$(1,1)$};
+        \filldraw[blue] (5,1) circle (2pt) node[below right] {$(5,1)$};
+        \filldraw[blue] (3,4.5) circle (2pt) node[above right] {$(3,4.5)$};
+        \filldraw[red] (3,2.16) circle (2pt) node[above right] {$G(3,2.16)$};
+
+        % Cercle circonscrit
+        \draw[red, thick] (3, 2.16) circle (2.5); % Cercle circonscrit
+
+        % Axes de symétrie
+        \draw[blue, dashed] (3,0) -- (3,5); % Axe vertical passant par G
+        \draw[blue, dashed] (1,1) -- (6,4); % Axe de symétrie passant par A et C
+        \draw[blue, dashed] (5,1) -- (0,4); % Axe de symétrie passant par B et C
+    \end{tikzpicture}
+    \end{center}
+
 \end{tcolorbox}
+
 
 \begin{tcolorbox}[colback=green!10!white, colframe=green!75!black, title=\textcolor{white}{Corrections des Exercices avec Graphiques}, sharp corners=south]
 
-        \textbf{Exercice 12 :} Les points \( A(2, 2) \), \( B(6, 2) \), \( C(4, 6) \) forment un triangle isocèle. Sa hauteur \( h \) est le segment \( [CD] \) perpendiculaire à \( AB \) en \( D(4, 2) \).
+        \textbf{Exercice 12 :} \textbf{Axes de symétrie :} Dans un carré \(ABCD\), les diagonales \( AC \) et \( BD \) divisent la figure en deux parties identiques. Ainsi, chaque diagonale est un axe de symétrie du carré. Toute rotation de \( 180^\circ \) autour du point \( O \) ou toute réflexion le long de l’une des diagonales laisse le carré inchangé.
 
-        \begin{center}
-        \begin{tikzpicture}[scale=0.6]
-            % Axes
-            \draw[->] (0,0) -- (7,0) node[right] {$x$};
-            \draw[->] (0,0) -- (0,7) node[above] {$y$};
+        \vspace{0.2cm}
 
-            % Triangle
-            \draw[thick] (2,2) -- (6,2) -- (4,6) -- cycle;
+       \textbf{Perpendicularité des diagonales :} Les diagonales \( AC \) et \( BD \) sont perpendiculaires. Comme le carré est une figure régulière avec des angles droits, ses diagonales se croisent toujours à angle droit.
 
-            % Sommets
-            \filldraw[blue] (2,2) circle (2pt) node[below left] {$A(2,2)$};
-            \filldraw[blue] (6,2) circle (2pt) node[below right] {$B(6,2)$};
-            \filldraw[blue] (4,6) circle (2pt) node[above right] {$C(4,6)$};
-            \filldraw[red] (4,2) circle (2pt) node[below right] {$D(4,2)$};
 
-            % Hauteur
-            \draw[dashed, thick] (4,2) -- (4,6);
-        \end{tikzpicture}
-        \end{center}
+\begin{center}
+\begin{tikzpicture}[scale=1.5]
+    % Carré ABCD
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (2,0);
+    \coordinate (C) at (2,2);
+    \coordinate (D) at (0,2);
+    
+    % Tracé du carré
+    \draw[thick] (A) -- (B) -- (C) -- (D) -- cycle;
+    
+    % Etiquettes des sommets
+    \node[below left] at (A) {\( A \)};
+    \node[below right] at (B) {\( B \)};
+    \node[above right] at (C) {\( C \)};
+    \node[above left] at (D) {\( D \)};
+    
+    % Tracé des diagonales
+    \draw[dashed, blue] (A) -- (C);
+    \draw[dashed, blue] (B) -- (D);
+    
+    % Point d'intersection des diagonales
+    \coordinate (O) at (intersection of A--C and B--D);
+    \filldraw[red] (O) circle (1.5pt) node[below right] {\( O \)};
 
-        \textbf{Exercice 13 :} La distance entre les points \( A(1, 2) \) et \( B(4, 6) \) est donnée par la formule : 
-        \[
-        d = \sqrt{(4-1)^2 + (6-2)^2} = \sqrt{9 + 16} = 5.
-        \]
+\end{tikzpicture}
+\end{center}
 
-        \begin{center}
-        \begin{tikzpicture}[scale=0.6]
-            % Axes
-            \draw[->] (0,0) -- (5,0) node[right] {$x$};
-            \draw[->] (0,0) -- (0,7) node[above] {$y$};
+\textbf{Point d'intersection :} Les diagonales se croisent au centre du carré, que nous notons \( O \). Ce point \( O \) est aussi le centre du cercle circonscrit au carré et se situe à égale distance des sommets \( A \), \( B \), \( C \), et \( D \).
 
-            % Points A et B
-            \filldraw[blue] (1,2) circle (2pt) node[below left] {$A(1,2)$};
-            \filldraw[blue] (4,6) circle (2pt) node[above right] {$B(4,6)$};
+\vspace{0.3cm}
 
-            % Segment AB
-            \draw[thick] (1,2) -- (4,6);
-        \end{tikzpicture}
-        \end{center}
+        \textbf{Exercice 13 :} Pour démontrer que chaque diagonale est un axe de symétrie du losange \( ABCD \), considérons ses diagonales \( AC \) et \( BD \), qui se coupent perpendiculairement en leur milieu \( O \). Chacune d'elles divise le losange en deux triangles superposables : \( AC \) sépare le triangle \( ABC \) et le triangle \( ADC \), tandis que \( BD \) sépare le triangle \( ABD \) et le triangle \( CBD \). Ainsi, \( AC \) et \( BD \) sont des axes de symétrie du losange, et leur intersection perpendiculaire au point \( O \) confirme cette propriété de symétrie.
+
+\begin{center}
+\begin{tikzpicture}[scale=1.5]
+    % Losange ABCD
+    \coordinate (A) at (0,1.5);
+    \coordinate (B) at (2,0);
+    \coordinate (C) at (0,-1.5);
+    \coordinate (D) at (-2,0);
+    
+    % Tracé du losange
+    \draw[thick] (A) -- (B) -- (C) -- (D) -- cycle;
+    
+    % Etiquettes des sommets
+    \node[above] at (A) {\( A \)};
+    \node[right] at (B) {\( B \)};
+    \node[below] at (C) {\( C \)};
+    \node[left] at (D) {\( D \)};
+    
+    % Tracé des diagonales
+    \draw[dashed, blue] (A) -- (C);
+    \draw[dashed, blue] (B) -- (D);
+    
+    % Point d'intersection des diagonales
+    \coordinate (O) at (intersection of A--C and B--D);
+    \filldraw[red] (O) circle (1.5pt) node[below right] {\( O \)};
+    
+    % Marque l'angle droit entre les diagonales
+    \draw[red] (O) ++(0.15,0) -- ++(0,0.15) -- ++(-0.15,0);
+\end{tikzpicture}
+\end{center}
 \end{tcolorbox}
 
 \newpage
@@ -4193,7 +4318,7 @@ Cet exemple montre comment un algorithme fonctionne : il prend des entrées, eff
 \begin{algorithmic}[1]
 \State \textbf{Entrée} : Deux nombres \( a \) et \( b \)
 \State \textbf{Initialisation} : \( P \gets 0 \)
-\State \textbf{ Pour \( i \) allant de \(1 \) à \( b \)}\textbf{faire}  
+\State \textbf{ Pour \( i \) allant de \(1 \) à \( b \)} \textbf{faire}  
     \State \( P \gets P + a \)
 \State \textbf{Fin pour}
 \State \textbf{Sortie} : \( P \)
@@ -4239,7 +4364,6 @@ Pour mieux comprendre, imagine que tu joues à un jeu vidéo. Si tu veux que ton
 
 Cet algorithme commence par demander à l'utilisateur de saisir un nombre \( a \), initialise une variable \( i \) à 1, puis utilise une boucle pour multiplier \( a \) par \( i \) et afficher les résultats de la multiplication de 1 à 10.
 
- \subsubsection{\textcolor{cyan}{Récapitulatif}}
 
 \begin{tcolorbox}[colback=cyan!10!white, colframe=cyan!75!black, title=\textcolor{white}{Récapitulatif}]
 Dans cette section, nous avons appris que :
@@ -4649,7 +4773,7 @@ Voyons ensemble ce que ces termes signifient.
 
 \tcbset{colback=red!10!white, colframe=red!75!black, title=\textcolor{white}{Définition}}
 \begin{tcolorbox}
-\textbf{Effectif} : L'effectif d'une donnée est le nombre de fois où cette donnée apparaît dans un ensemble. Il représente donc une quantité ou une occurrence. En d'autres termes, c'est le nombre total d'éléments que l'on peut compter pour une catégorie donnée.
+\textbf{ L'effectif} d'une donnée est le nombre de fois où cette donnée apparaît dans un ensemble. Il représente donc une quantité ou une occurrence. En d'autres termes, c'est le nombre total d'éléments que l'on peut compter pour une catégorie donnée.
 \end{tcolorbox}
 
 \tcbset{colback=orange!10!white, colframe=orange!75!black, title=\textcolor{white}{Exemple}}
@@ -4684,7 +4808,7 @@ Maintenant que nous comprenons l'effectif, passons à la fréquence.
 
 \tcbset{colback=red!10!white, colframe=red!75!black, title=\textcolor{white}{Définition}}
 \begin{tcolorbox}
-\textbf{Fréquence} : La fréquence indique la proportion ou le pourcentage d'une catégorie par rapport à l'ensemble des données. Elle se calcule en divisant l'effectif d'une catégorie par le nombre total d'éléments. La fréquence nous donne une idée de la part que représente chaque catégorie.
+\textbf{La fréquence} indique la proportion ou le pourcentage d'une catégorie par rapport à l'ensemble des données. Elle se calcule en divisant l'effectif d'une catégorie par le nombre total d'éléments. La fréquence nous donne une idée de la part que représente chaque catégorie.
 \end{tcolorbox}
 
 \vspace{0.15cm}
