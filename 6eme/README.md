@@ -17,7 +17,9 @@
  - **Résolution de problèmes** : Exercices pratiques pour appliquer les concepts appris
 
 ## Ressources recommandées
- - [Notions de base - Introduction aux fractions](https://youtu.be/ChLEy40hK4E) (Khan Academy)
+- [Notions de base - Introduction aux fractions](https://youtu.be/ChLEy40hK4E) (Khan Academy)
+- [La géométrie de base - Les angles](https://youtu.be/3hn4VCXzYLw?list=PLVUDmbpupCaqHaIpFwd14iD6BMA-op0pZ),[ les droites](https://youtu.be/i7PtsYJhs6g?list=PLVUDmbpupCaqEPQHrY1G0IgVgDBXI4oP2) et [les solides ](https://youtu.be/ohtIhC_dwo4?list=PLVUDmbpupCaoZtzpQWEJN1a-oQk8ZKFji) (Ivan Monka)
+- [Calcul et priorités opératoires](https://youtu.be/a-IG_bjKeJc) (Ivan Monka)
 
 ## Note
 Cette ressource est conçue pour être un support d'apprentissage efficace. N'hésitez pas à explorer les vidéos et les exercices interactifs pour mieux assimiler les concepts. La pratique régulière est la clé pour maîtriser les mathématiques !
