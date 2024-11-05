@@ -1,25 +1,8 @@
----
-format:
-  html:
-    html-math-method: mathjax
----
-
 # Mathématiques Essentielles: Tout pour la 6e
 
 ![](Mathematiques.png){width=800px height=360px}
 
 [Voir le PDF du cours](https://github.com/BossdiDiboss/mathematiques/blob/main/classes/6eme/Tout_pour_la_6ème.pdf)
 
-Voici un exemple de tableau en LaTeX :
 
-```{Latex}
-\begin{tabular}{|c|c|}
-\hline
-Nom & Âge \\
-\hline
-Alice & 30 \\
-Bob & 25 \\
-\hline
-\end{tabular}
-```
 
