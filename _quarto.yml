@@ -3,8 +3,8 @@ project:
   type: website
   render:
     - index.qmd
-    - webpage/Tout pour la 6e
-    - webpage/Tout pour la 5e
+    - webpage/Tout pour la 6e/tp.qmd
+    - webpage/Tout pour la 5e/tp.qmd
 
 website:
   back-to-top-navigation: true
@@ -25,8 +25,8 @@ website:
       title: "Cours"
       collapse-level: 3
       contents:
-          - webpage/Tout pour la 6e
-          - webpage/Tout pour la 5e
+          - webpage/Tout pour la 6e/tp.qmd
+          - webpage/Tout pour la 5e/tp.qmd
 
 format:
   html:
