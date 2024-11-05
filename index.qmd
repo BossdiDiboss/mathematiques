@@ -1,7 +1,6 @@
----
-title: "Mathématiques Essentielles : De la 6e à la Terminale"
-description: "Une ressource complète pour apprendre et réviser les mathématiques du collège au lycée."
----
+# Mathématiques Essentielles : De la 6e à la Terminale
+
+![](Mathematiques.png)
 
 Bienvenue sur **Mathématiques Essentielles**, un projet conçu pour centraliser et structurer l'apprentissage des mathématiques du collège au lycée. 
 
@@ -28,12 +27,10 @@ Pour les élèves de 6e, nous avons intégré des vidéos explicatives pour faci
 - [Géométrie de base - Angles et Droites](https://youtu.be/3hn4VCXzYLw?list=PLVUDmbpupCaqHaIpFwd14iD6BMA-op0pZ), [Solides](https://youtu.be/ohtIhC_dwo4?list=PLVUDmbpupCaoZtzpQWEJN1a-oQk8ZKFji) _(Ivan Monka)_
 - [Calcul et priorités opératoires](https://youtu.be/a-IG_bjKeJc) _(Ivan Monka)_
 
-## 🚀 Note Importante
-
-Ce projet est en constante évolution, avec des mises à jour régulières pour améliorer les ressources existantes et intégrer de nouveaux contenus. N'hésitez pas à explorer, contribuer ou proposer des améliorations !
-
 ---
 
 <div style="text-align: center;">
-  **📬 [Contactez-nous](ibrahimattoumani6@gmail.com) **
+  **📬 Contactez-nous : [ibrahimattoumani6@gmail.com](mailto:ibrahimattoumani6@gmail.com)** 
 </div>
+
+<p style="text-align: center;">Explorez et amusez-vous avec les mathématiques ! Si vous constatez des erreurs ou des incohérences, n'hésitez pas à me contacter. Votre retour est précieux pour améliorer ce projet.</p>
