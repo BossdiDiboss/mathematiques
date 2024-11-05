@@ -6,7 +6,7 @@
 
 Voici un exemple de tableau en LaTeX :
 
-```{=latex}
+```{latex}
 \begin{tabular}{|c|c|}
 \hline
 Nom & Âge \\
