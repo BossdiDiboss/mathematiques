@@ -1,3 +1,9 @@
+---
+format:
+  html:
+    html-math-method: mathjax
+---
+
 # Mathématiques Essentielles: Tout pour la 6e
 
 ![](Mathematiques.png){width=800px height=360px}
