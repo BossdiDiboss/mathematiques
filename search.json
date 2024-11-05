@@ -1,12 +1,12 @@
 [
   {
-    "objectID": "webpage/Tout pour la 6e/tp.html",
-    "href": "webpage/Tout pour la 6e/tp.html",
-    "title": "Mathématiques Essentielles: Tout pour la 6e",
+    "objectID": "webpage/Tout pour la 5e/tp.html",
+    "href": "webpage/Tout pour la 5e/tp.html",
+    "title": "Mathématiques Essentielles: Tout pour la 5e",
     "section": "",
-    "text": "Voir le PDF du cours\nVoici un exemple de tableau en LaTeX :\n\\begin{tabular}{|c|c|}\n\\hline\nNom & Âge \\\\\n\\hline\nAlice & 30 \\\\\nBob & 25 \\\\\n\\hline\n\\end{tabular}\n\n\n\n Back to top",
+    "text": "Mathématiques Essentielles: Tout pour la 5e\n\n\n\n\n\n Back to top",
     "crumbs": [
-      "Mathématiques Essentielles: Tout pour la 6e"
+      "Mathématiques Essentielles: Tout pour la 5e"
     ]
   },
   {
@@ -38,13 +38,13 @@
     "text": "Pour les élèves de 6e, nous avons intégré des vidéos explicatives pour faciliter l’apprentissage des concepts de base : - Notions de base - Introduction aux fractions (Khan Academy) - Géométrie de base - Angles et Droites, Solides (Ivan Monka) - Calcul et priorités opératoires (Ivan Monka)\n\n\n📬 Contactez-nous : ibrahimattoumani6@gmail.com\n\n\nExplorez et amusez-vous avec les mathématiques ! Si vous constatez des erreurs ou des incohérences, n’hésitez pas à me contacter. Votre retour est précieux pour améliorer ce projet."
   },
   {
-    "objectID": "webpage/Tout pour la 5e/tp.html",
-    "href": "webpage/Tout pour la 5e/tp.html",
-    "title": "Mathématiques Essentielles: Tout pour la 5e",
+    "objectID": "webpage/Tout pour la 6e/tp.html",
+    "href": "webpage/Tout pour la 6e/tp.html",
+    "title": "Mathématiques Essentielles: Tout pour la 6e",
     "section": "",
-    "text": "Mathématiques Essentielles: Tout pour la 5e\n\n\n\n\n\n Back to top",
+    "text": "Mathématiques Essentielles: Tout pour la 6e\n\nVoir le PDF du cours\nVoici un exemple de tableau en LaTeX :\n\n\n\n\n\n\n\n Back to top",
     "crumbs": [
-      "Mathématiques Essentielles: Tout pour la 5e"
+      "Mathématiques Essentielles: Tout pour la 6e"
     ]
   }
 ]
