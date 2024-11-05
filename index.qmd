@@ -3,8 +3,6 @@ title: "Mathématiques Essentielles : De la 6e à la Terminale"
 description: "Une ressource complète pour apprendre et réviser les mathématiques du collège au lycée."
 ---
 
-# Mathématiques Essentielles : De la 6e à la Terminale
-
 Bienvenue sur **Mathématiques Essentielles**, un projet conçu pour centraliser et structurer l'apprentissage des mathématiques du collège au lycée. 
 
 ## 🎯 Objectifs du Projet
