@@ -18,8 +18,7 @@ website:
     background: navy
     search: true
     left:
-      - sidebar:commune
-      - sidebar:quartier
+      - sidebar:cours
   sidebar:
     - id: cours
       title: "Cours"
