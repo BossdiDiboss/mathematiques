@@ -4,6 +4,7 @@
  - Savoir compter
  - Bien manipuler les nombres
  - [Grille de nombre : Comprendre les nombres de 0 à 100](https://youtu.be/X-j_dhVj88w) — Une vidéo de Khan Academy expliquant comment écrire et comprendre les nombres de 0 à 100
+ - [Prépare ton entré en 6e avec Ivan Monka](https://www.youtube.com/watch?v=1HCt32eow4Y&list=PLVUDmbpupCarUETMYFR4N5AuDRMSLg8TP&pp=iAQB)
 
 ## Objectifs d'apprentissage
  - Comprendre et appliquer les bases des mathématiques (opérations sur les nombres entiers, fractions, géométrie simple, statistiques)
