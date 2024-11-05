@@ -21,9 +21,9 @@ L'objectif de ce projet est de fournir une ressource complète en mathématiques
 
 Pour compléter les notions du livre _Tout pour la 6ème_, voici des liens vers des vidéos explicatives afin de faciliter la lecture et la compréhension rapide :
 
-- [Notions de base - Introduction aux fractions](https://youtu.be/ChLEy40hK4E)
-- [La géométrie de base - Les angles et les droites parallèles](https://www.youtube.com/watch?v=lien_video2)
-- [Calcul et priorités opératoires](https://www.youtube.com/watch?v=lien_video3)
+- [Notions de base - Introduction aux fractions](https://youtu.be/ChLEy40hK4E)(Khan Academy)
+- [La géométrie de base - Les angles](https://youtu.be/3hn4VCXzYLw?list=PLVUDmbpupCaqHaIpFwd14iD6BMA-op0pZ),[ les droites](https://youtu.be/i7PtsYJhs6g?list=PLVUDmbpupCaqEPQHrY1G0IgVgDBXI4oP2) et [les solides ](https://youtu.be/ohtIhC_dwo4?list=PLVUDmbpupCaoZtzpQWEJN1a-oQk8ZKFji)(Ivan Monka)
+- [Calcul et priorités opératoires]([https://www.youtube.com/watch?v=lien_video3](https://youtu.be/a-IG_bjKeJc))(Ivan Monka)
 
 ## Note
 Ce projet est en constante évolution, avec des mises à jour régulières pour ajouter de nouveaux contenus et améliorer les ressources existantes. N'hésitez pas à contribuer ou à suggérer des améliorations !
