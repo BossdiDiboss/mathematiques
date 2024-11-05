@@ -21,7 +21,7 @@ L'objectif de ce projet est de fournir une ressource complète en mathématiques
 
 Pour compléter les notions du livre _Tout pour la 6ème_, voici des liens vers des vidéos explicatives afin de faciliter la lecture et la compréhension rapide :
 
-- [Notions de base - Introduction aux fractions](https://www.youtube.com/watch?v=lien_video1)
+- [Notions de base - Introduction aux fractions](https://youtu.be/ChLEy40hK4E)
 - [La géométrie de base - Les angles et les droites parallèles](https://www.youtube.com/watch?v=lien_video2)
 - [Calcul et priorités opératoires](https://www.youtube.com/watch?v=lien_video3)
 
