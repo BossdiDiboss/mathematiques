@@ -14,11 +14,11 @@ website:
   repo-actions: [source,issue]
   navbar:
     title: "Mathématiques Essentielles"
-    background: blue # Change cette couleur ou ajoute une couleur personnalisée
     search: true
     left:
       - sidebar:cours
-    logo: "Mathematiques.png" # Utilise cette ligne pour inclure une image à côté de la barre
+    # Ici, tu n'as pas besoin de logo
+    # Il faut ensuite utiliser du CSS personnalisé pour mettre l'image en fond
   sidebar:
     - id: cours
       title: "Cours"
@@ -30,5 +30,17 @@ website:
 format:
   html:
     theme: cosmo
-    css: styles.css
     toc: true
+    # Ajout de CSS personnalisé directement dans le YAML
+    css: |
+      .navbar {
+        background-image: url('Mathematiques.png'); /* Met l'image en fond */
+        background-size: cover; /* Ajuste la taille de l'image pour qu'elle couvre l'entièreté de la barre */
+        background-position: center; /* Centrer l'image dans la barre de navigation */
+        height: 100px; /* Ajuste la hauteur de la barre de navigation */
+      }
+
+      /* Assure-toi que le texte dans la barre soit visible */
+      .navbar .navbar-nav a {
+        color: white; /* Change la couleur du texte pour contraster avec l'image */
+      }
