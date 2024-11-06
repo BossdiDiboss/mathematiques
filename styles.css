@@ -2,7 +2,7 @@
 .quarto-navbar {
     background: url("Mathematiques.png") no-repeat center center; /* Place l'image */
     background-size: cover; /* Ajuste l'image pour couvrir toute la zone */
-    color: white; /* Ajuste la couleur du texte pour qu'il reste lisible */
+    color: rgb(241, 221, 221); /* Ajuste la couleur du texte pour qu'il reste lisible */
 }
 
 /* Ajuste l'opacité de l'image de fond pour qu’elle soit plus subtile (facultatif) */
