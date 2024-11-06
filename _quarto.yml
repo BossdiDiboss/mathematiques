@@ -15,7 +15,6 @@ website:
   repo-actions: [source,issue]
   navbar:
     title: "Mathématiques Essentielles"
-    background: blue
     search: true
     left:
       - sidebar:cours
@@ -29,6 +28,5 @@ website:
 
 format:
   html:
-    theme: cosmo
     css: styles.css
     toc: true
