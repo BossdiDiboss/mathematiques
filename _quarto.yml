@@ -16,7 +16,7 @@ website:
   repo-actions: [source, issue]
   navbar:
     title: "Mathématiques Essentielles"
-    background: green
+    background: blue
     search: true
     left:
       - text: "Cours"
