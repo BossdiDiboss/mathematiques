@@ -9,4 +9,87 @@ format:
     background-color: "#d0ebff" # Couleur de fond bleu clair
 ---
 
+# Introduction 
 
+Les mathématiques sont bien plus que des nombres et des formules. Elles nous aident à comprendre le monde, résoudre des problèmes et développer la pensée critique.
+
+Ce slide est une invitation à explorer ce monde fascinant des mathématiques.
+
+---
+
+# Les Branches des Mathématiques Abordées
+
+À travers ce slide, nous allons explorer plusieurs branches des mathématiques abordées en 6ème :
+
+- **Nombres entiers** : Apprendre à manipuler et comprendre leur place dans le système numérique
+- **Géométrie** : Découverte des formes, des lignes, et des angles
+- **Opérations et fractions** : Étude des calculs et introduction aux fractions
+- **Proportionnalité** : Notions de proportionnalité, en lien avec les fractions
+- **Symétrie** : Exploration de la symétrie dans les formes géométriques
+- **Statistiques de base** : Introduction à l'effectif et à la fréquence
+
+Objectif : Familiariser les élèves avec les concepts fondamentaux des mathématiques.
+
+---
+
+# Apprendre par l'Expérience et la Pratique
+
+Chaque séquence est structurée pour favoriser l’apprentissage par la pratique.
+
+- Exemples concrets et exercices
+- Utilisation de la programmation pour explorer les concepts abstraits de manière tangible
+
+Objectif : renforcer la compréhension et rendre les mathématiques engageantes.
+
+---
+
+# Chapitre 1 : Les Nombres Entiers
+
+Les nombres entiers sont essentiels en mathématiques et dans la vie quotidienne pour quantifier les objets et les événements.
+
+Les **entiers naturels** sont les nombres utilisés pour compter. Ils commencent à zéro et continuent à l'infini.
+
+---
+
+# Écriture des Nombres en Toutes Lettres
+
+Voici comment écrire les nombres en toutes lettres :
+- 0 : zéro
+- 1 : un
+- 2 : deux
+- 3 : trois
+- 4 : quatre
+- 5 : cinq
+- 6 : six
+- 7 : sept
+- 8 : huit
+- 9 : neuf
+
+---
+
+# Les Classes des Nombres et Leur Rang
+
+Les nombres sont organisés en classes, chaque chiffre ayant un rang spécifique.
+
+| Classe des milliards | Classe des millions | Classe des milliers | Unités simples |
+|-----------------------|---------------------|----------------------|----------------|
+| Centaines, dizaines, unités | Centaines, dizaines, unités | Centaines, dizaines, unités | Centaines, dizaines, unités |
+
+---
+
+# La Demi-Droite Graduée
+
+La demi-droite graduée est une ligne qui commence à zéro et continue vers la droite, avec des nombres marqués régulièrement pour représenter leur valeur.
+
+\[
+\text{0} \quad \text{1} \quad \text{2} \quad \text{3} \quad \text{4} \quad \text{5} \quad \text{6} \quad \text{7} \quad \text{8} \quad \text{9} \quad \dots
+\]
+
+---
+
+# Remarque : Graduation et Sous-Graduation
+
+Les petits traits tracés pour marquer les unités de longueur sont appelés **graduations**.
+
+- **Sous-graduations** : Utilisées lorsque l'espace entre les graduations est trop grand. 
+- Exemple : graduation de 5 en 5 pour simplifier la lecture sur une longue échelle.
