@@ -1,7 +1,7 @@
 /* Mise en forme du titre */
 .reveal h1, .reveal h2 {
   font-family: 'Arial', sans-serif;
-  color: #129171;
+  color: #fff;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   font-size: 3rem;
@@ -33,11 +33,11 @@
 
 /* Image de fond uniquement pour la première diapositive */
 .reveal .slides > .slide:nth-child(1) {
-  background-image: url('webpage\slides\6e\Mathematiques.png');
+  background-image: url('Mathematiques.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: rgb(211, 140, 140);
+  color: white;
   font-family: 'Arial', sans-serif;
 }
 
@@ -55,5 +55,3 @@
 .reveal ul {
   margin-left: 20px;
 }
-
-  

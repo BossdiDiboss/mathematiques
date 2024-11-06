@@ -6,18 +6,24 @@ format:
   revealjs:
     transition: slide
     background-transition: fade
-    css: styles.css  # Lien vers votre fichier CSS
+    css: styles.css  # Lien vers le fichier CSS externe
+    slide-level: 2  # Définir le niveau de titre pour bien séparer les sections
+    center: true  # Centrer le texte sur les diapositives
+    controls: true  # Ajouter les contrôles de navigation
+    controlsLayout: bottom-right  # Positionner les contrôles en bas à droite
+    width: 1050  # Ajuster la largeur pour la taille du texte
+    height: 700  # Ajuster la hauteur pour avoir assez d'espace
+    margin: 0.1  # Ajouter une marge autour des diapositives
 ---
 
-## Introduction 
+# Introduction
 
 Les mathématiques sont bien plus que des nombres et des formules. Elles nous aident à comprendre le monde, résoudre des problèmes et développer la pensée critique.
 
 Ce slide est une invitation à explorer ce monde fascinant des mathématiques.
 
 
-
-## Les Branches des Mathématiques Abordées
+# Les Branches des Mathématiques Abordées
 
 À travers ce slide, nous allons explorer plusieurs branches des mathématiques abordées en 6ème :
 
@@ -31,8 +37,7 @@ Ce slide est une invitation à explorer ce monde fascinant des mathématiques.
 Objectif : Familiariser les élèves avec les concepts fondamentaux des mathématiques.
 
 
-
-## Apprendre par l'Expérience et la Pratique
+# Apprendre par l'Expérience et la Pratique
 
 Chaque séquence est structurée pour favoriser l’apprentissage par la pratique.
 
@@ -42,29 +47,27 @@ Chaque séquence est structurée pour favoriser l’apprentissage par la pratiqu
 Objectif : renforcer la compréhension et rendre les mathématiques engageantes.
 
 
-
-## Chapitre 1 : Les Nombres Entiers
+# Chapitre 1 : Les Nombres Entiers
 
 Les nombres entiers sont essentiels en mathématiques et dans la vie quotidienne pour quantifier les objets et les événements.
 
 Les **entiers naturels** sont les nombres utilisés pour compter. Ils commencent à zéro et continuent à l'infini.
 
 
-
 ## Écriture des Nombres en Toutes Lettres
 
 Voici comment écrire les nombres en toutes lettres :
-  - 0 : zéro
-  - 1 : un
-  - 2 : deux
-  - 3 : trois
-  - 4 : quatre
-  - 5 : cinq
-  - 6 : six
-  - 7 : sept
-  - 8 : huit
-  - 9 : neuf
 
+- 0 : zéro
+- 1 : un
+- 2 : deux
+- 3 : trois
+- 4 : quatre
+- 5 : cinq
+- 6 : six
+- 7 : sept
+- 8 : huit
+- 9 : neuf
 
 
 ## Les Classes des Nombres et Leur Rang
@@ -74,18 +77,81 @@ Les nombres sont organisés en classes, chaque chiffre ayant un rang spécifique
 ![](rang_nombres.png)
 
 
-
 ## La Demi-Droite Graduée
 
 La demi-droite graduée est une ligne qui commence à zéro et continue vers la droite, avec des nombres marqués régulièrement pour représenter leur valeur.
 
-![La demi-droite draduée](droite_graduee.png)
+![](droite_graduee.png)
 
 
-
-## Remarque : Graduation et Sous-Graduation
+### Remarque : Graduation et Sous-Graduation
 
 Les petits traits tracés pour marquer les unités de longueur sont appelés **graduations**.
 
 - **Sous-graduations** : Utilisées lorsque l'espace entre les graduations est trop grand. 
 - Exemple : graduation de 5 en 5 pour simplifier la lecture sur une longue échelle.
+
+
+## Comparer, Ranger, Encadrer ou Intercaler des Entiers Naturels
+
+Dans cette partie, nous allons apprendre à comparer, ranger, encadrer et intercaler des entiers naturels. Ces compétences sont utiles pour organiser et manipuler les nombres efficacement.
+
+
+## Comparer des Entiers Naturels
+
+Comparer des entiers naturels consiste à déterminer lequel est plus grand ou plus petit. Les signes utilisés pour comparer sont : 
+
+- \(<\) (strictement inférieur à)
+- \(>\) (strictement supérieur à)
+- \(\leq\) (inférieur ou égal à)
+- \(\geq\) (supérieur ou égal à)
+
+### Exemples
+
+- \(3 < 5\) (trois est strictement inférieur à cinq)
+- \(7 > 4\) (sept est strictement supérieur à quatre)
+- \(6 \leq 6\) (six est inférieur ou égal à six)
+- \(9 \geq 2\) (neuf est supérieur ou égal à deux)
+
+
+## Ranger des Entiers Naturels
+
+Ranger des entiers naturels signifie les organiser dans l'ordre croissant (du plus petit au plus grand) ou décroissant (du plus grand au plus petit).
+
+## Ordre Croissant
+
+L'ordre croissant est la manière d'organiser les nombres du plus petit au plus grand.
+
+### Exemple d'Ordre Croissant
+::: {.columns}
+::: {.column}
+Les entiers naturels suivants sont classés dans l'ordre croissant :
+
+\[
+1 < 2 < 3 < 4 < 5 < 6
+\]
+::: 
+::: {.column}
+![](ordre_croissant.png)
+::: 
+::: 
+
+## Ordre Décroissant
+
+L'ordre décroissant est la manière d'organiser les nombres du plus grand au plus petit.
+
+### Exemple d'Ordre décroissant
+::: {.columns}
+::: {.column}
+Les entiers naturels suivants sont classés dans l'ordre croissant :
+
+\[
+6 > 5 > 4 > 3 > 2 > 1
+\]
+::: 
+::: {.column}
+![](ordre_decroissant.png)
+::: 
+::: 
+
+
