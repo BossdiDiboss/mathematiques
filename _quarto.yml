@@ -1,4 +1,3 @@
-
 project:
   type: website
   render:
@@ -15,6 +14,7 @@ website:
   repo-actions: [source,issue]
   navbar:
     title: "Mathématiques Essentielles"
+    background: blue
     search: true
     left:
       - sidebar:cours
@@ -28,5 +28,6 @@ website:
 
 format:
   html:
-    css: styles.css
+    theme: cosmo
+    css: styles.css  # Ajout du fichier CSS pour l'image de fond
     toc: true
