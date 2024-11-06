@@ -4,7 +4,7 @@ author: "ATTOUMANI Ibrahim"
 date: "2024"
 format: 
   revealjs:
-    theme: white # Utilisation d'un thème clair compatible avec revealjs
+    theme: united # Utilisation d'un thème clair compatible avec revealjs
     background-transition: fade
     background-color: "#d0ebff" # Couleur de fond bleu clair
 ---
