@@ -4,8 +4,8 @@ project:
     - index.qmd
     - webpage/Tout pour la 6e/tp.qmd
     - webpage/Tout pour la 5e/tp.qmd
-    - webpage/Tout pour la 6e/sl.qmd
-    - webpage/Tout pour la 5e/sl.qmd
+    - webpage/slides/sl6e.qmd
+    - webpage/slides/sl5e.qmd
 
 website:
   back-to-top-navigation: true
@@ -28,9 +28,9 @@ website:
       - text: "Slides"
         menu:
           - text: "Tout pour la 6e"
-            file: webpage/Tout pour la 6e/sl.qmd
+            file: webpage/slides/sl6e.qmd
           - text: "Tout pour la 5e"
-            file: webpage/Tout pour la 5e/sl.qmd
+            file: webpage/slides/sl5e.qmd
     logo: "Mathematiques.png"
 
   sidebar:
@@ -44,8 +44,8 @@ website:
       title: "Slides"
       collapse-level: 3
       contents:
-        - webpage/Tout pour la 6e/sl.qmd
-        - webpage/Tout pour la 5e/sl.qmd
+        - webpage/slides/sl6e.qmd
+        - webpage/slides/sl5e.qmd
 
 format:
   html:
