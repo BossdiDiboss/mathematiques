@@ -4,6 +4,8 @@ project:
     - index.qmd
     - webpage/Tout pour la 6e/tp.qmd
     - webpage/Tout pour la 5e/tp.qmd
+    - webpage/Tout pour la 6e/sl.qmd
+    - webpage/Tout pour la 5e/sl.qmd
 
 website:
   back-to-top-navigation: true
@@ -14,10 +16,11 @@ website:
   repo-actions: [source,issue]
   navbar:
     title: "Mathématiques Essentielles"
-    background: blue # Change cette couleur ou ajoute une couleur personnalisée
+    background: green # Change cette couleur ou ajoute une couleur personnalisée
     search: true
     left:
       - sidebar:cours
+      - sidebar:slides
     logo: "Mathematiques.png" # Utilise cette ligne pour inclure une image à côté de la barre
   sidebar:
     - id: cours
@@ -26,9 +29,16 @@ website:
       contents:
           - webpage/Tout pour la 6e/tp.qmd
           - webpage/Tout pour la 5e/tp.qmd
+  sidebar:
+    - id: slides
+      title: "Slides"
+      collapse-level: 3
+      contents:
+          - webpage/Tout pour la 6e/sl.qmd
+          - webpage/Tout pour la 5e/sl.qmd
 
 format:
   html:
-    theme: cosmo
+    theme: minty
     css: styles.css
     toc: true
