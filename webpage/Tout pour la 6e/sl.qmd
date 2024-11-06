@@ -5,8 +5,12 @@ date: "2024"
 format: 
   revealjs:
     transition: slide
+    background-image: "Mathematiques.png"  # Spécifie l'image d'arrière-plan
+    background-size: cover  # Ajuste l'image pour couvrir toute la page
+    background-position: center  # Positionne l'image au centre
     background-transition: fade
 ---
+
 
 ## Introduction 
 
