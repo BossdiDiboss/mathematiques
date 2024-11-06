@@ -1,11 +1,12 @@
 ---
-title: "Mathématiques Essentielles: Tout pour la 5e"
+title: "Mathématiques Essentielles: Tout pour la 6e"
 author: "ATTOUMANI Ibrahim"
 date: "2024"
 format: 
   revealjs:
     transition: slide
     background-transition: fade
+    css: styles.css  # Lien vers votre fichier CSS
 ---
 
 
