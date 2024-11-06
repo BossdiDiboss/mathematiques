@@ -48,51 +48,11 @@
     ]
   },
   {
-    "objectID": "webpage/slides/6e/sl.html#introduction",
-    "href": "webpage/slides/6e/sl.html#introduction",
-    "title": "Mathématiques Essentielles: Tout pour la 6e",
-    "section": "Introduction",
-    "text": "Introduction\nLes mathématiques sont bien plus que des nombres et des formules. Elles nous aident à comprendre le monde, résoudre des problèmes et développer la pensée critique.\nCe slide est une invitation à explorer ce monde fascinant des mathématiques.",
-    "crumbs": [
-      "Mathématiques Essentielles: Tout pour la 6e"
-    ]
-  },
-  {
-    "objectID": "webpage/slides/6e/sl.html#les-branches-des-mathématiques-abordées",
-    "href": "webpage/slides/6e/sl.html#les-branches-des-mathématiques-abordées",
-    "title": "Mathématiques Essentielles: Tout pour la 6e",
-    "section": "Les Branches des Mathématiques Abordées",
-    "text": "Les Branches des Mathématiques Abordées\nÀ travers ce slide, nous allons explorer plusieurs branches des mathématiques abordées en 6ème :\n\nNombres entiers : Apprendre à manipuler et comprendre leur place dans le système numérique\nGéométrie : Découverte des formes, des lignes, et des angles\nOpérations et fractions : Étude des calculs et introduction aux fractions\nProportionnalité : Notions de proportionnalité, en lien avec les fractions\nSymétrie : Exploration de la symétrie dans les formes géométriques\nStatistiques de base : Introduction à l’effectif et à la fréquence\n\nObjectif : Familiariser les élèves avec les concepts fondamentaux des mathématiques.",
-    "crumbs": [
-      "Mathématiques Essentielles: Tout pour la 6e"
-    ]
-  },
-  {
-    "objectID": "webpage/slides/6e/sl.html#apprendre-par-lexpérience-et-la-pratique",
-    "href": "webpage/slides/6e/sl.html#apprendre-par-lexpérience-et-la-pratique",
-    "title": "Mathématiques Essentielles: Tout pour la 6e",
-    "section": "Apprendre par l’Expérience et la Pratique",
-    "text": "Apprendre par l’Expérience et la Pratique\nChaque séquence est structurée pour favoriser l’apprentissage par la pratique.\n\nExemples concrets et exercices\nUtilisation de la programmation pour explorer les concepts abstraits de manière tangible\n\nObjectif : renforcer la compréhension et rendre les mathématiques engageantes.",
-    "crumbs": [
-      "Mathématiques Essentielles: Tout pour la 6e"
-    ]
-  },
-  {
-    "objectID": "webpage/slides/6e/sl.html#chapitre-1-les-nombres-entiers",
-    "href": "webpage/slides/6e/sl.html#chapitre-1-les-nombres-entiers",
-    "title": "Mathématiques Essentielles: Tout pour la 6e",
-    "section": "Chapitre 1 : Les Nombres Entiers",
-    "text": "Chapitre 1 : Les Nombres Entiers\nLes nombres entiers sont essentiels en mathématiques et dans la vie quotidienne pour quantifier les objets et les événements.\nLes entiers naturels sont les nombres utilisés pour compter. Ils commencent à zéro et continuent à l’infini.",
-    "crumbs": [
-      "Mathématiques Essentielles: Tout pour la 6e"
-    ]
-  },
-  {
     "objectID": "webpage/slides/6e/sl.html#écriture-des-nombres-en-toutes-lettres",
     "href": "webpage/slides/6e/sl.html#écriture-des-nombres-en-toutes-lettres",
     "title": "Mathématiques Essentielles: Tout pour la 6e",
     "section": "Écriture des Nombres en Toutes Lettres",
-    "text": "Écriture des Nombres en Toutes Lettres\nVoici comment écrire les nombres en toutes lettres : - 0 : zéro - 1 : un - 2 : deux - 3 : trois - 4 : quatre - 5 : cinq - 6 : six - 7 : sept - 8 : huit - 9 : neuf",
+    "text": "Écriture des Nombres en Toutes Lettres\nVoici comment écrire les nombres en toutes lettres :\n\n0 : zéro\n1 : un\n2 : deux\n3 : trois\n4 : quatre\n5 : cinq\n6 : six\n7 : sept\n8 : huit\n9 : neuf",
     "crumbs": [
       "Mathématiques Essentielles: Tout pour la 6e"
     ]
@@ -112,17 +72,57 @@
     "href": "webpage/slides/6e/sl.html#la-demi-droite-graduée",
     "title": "Mathématiques Essentielles: Tout pour la 6e",
     "section": "La Demi-Droite Graduée",
-    "text": "La Demi-Droite Graduée\nLa demi-droite graduée est une ligne qui commence à zéro et continue vers la droite, avec des nombres marqués régulièrement pour représenter leur valeur.\n\nLa demi-droite draduée",
+    "text": "La Demi-Droite Graduée\nLa demi-droite graduée est une ligne qui commence à zéro et continue vers la droite, avec des nombres marqués régulièrement pour représenter leur valeur.\n\nRemarque : Graduation et Sous-Graduation\nLes petits traits tracés pour marquer les unités de longueur sont appelés graduations.\n\nSous-graduations : Utilisées lorsque l’espace entre les graduations est trop grand.\nExemple : graduation de 5 en 5 pour simplifier la lecture sur une longue échelle.",
     "crumbs": [
       "Mathématiques Essentielles: Tout pour la 6e"
     ]
   },
   {
-    "objectID": "webpage/slides/6e/sl.html#remarque-graduation-et-sous-graduation",
-    "href": "webpage/slides/6e/sl.html#remarque-graduation-et-sous-graduation",
+    "objectID": "webpage/slides/6e/sl.html#comparer-ranger-encadrer-ou-intercaler-des-entiers-naturels",
+    "href": "webpage/slides/6e/sl.html#comparer-ranger-encadrer-ou-intercaler-des-entiers-naturels",
     "title": "Mathématiques Essentielles: Tout pour la 6e",
-    "section": "Remarque : Graduation et Sous-Graduation",
-    "text": "Remarque : Graduation et Sous-Graduation\nLes petits traits tracés pour marquer les unités de longueur sont appelés graduations.\n\nSous-graduations : Utilisées lorsque l’espace entre les graduations est trop grand.\nExemple : graduation de 5 en 5 pour simplifier la lecture sur une longue échelle.",
+    "section": "Comparer, Ranger, Encadrer ou Intercaler des Entiers Naturels",
+    "text": "Comparer, Ranger, Encadrer ou Intercaler des Entiers Naturels\nDans cette partie, nous allons apprendre à comparer, ranger, encadrer et intercaler des entiers naturels. Ces compétences sont utiles pour organiser et manipuler les nombres efficacement.",
+    "crumbs": [
+      "Mathématiques Essentielles: Tout pour la 6e"
+    ]
+  },
+  {
+    "objectID": "webpage/slides/6e/sl.html#comparer-des-entiers-naturels",
+    "href": "webpage/slides/6e/sl.html#comparer-des-entiers-naturels",
+    "title": "Mathématiques Essentielles: Tout pour la 6e",
+    "section": "Comparer des Entiers Naturels",
+    "text": "Comparer des Entiers Naturels\nComparer des entiers naturels consiste à déterminer lequel est plus grand ou plus petit. Les signes utilisés pour comparer sont :\n\n(&lt;) (strictement inférieur à)\n(&gt;) (strictement supérieur à)\n() (inférieur ou égal à)\n() (supérieur ou égal à)\n\nExemples\n\n(3 &lt; 5) (trois est strictement inférieur à cinq)\n(7 &gt; 4) (sept est strictement supérieur à quatre)\n(6 ) (six est inférieur ou égal à six)\n(9 ) (neuf est supérieur ou égal à deux)",
+    "crumbs": [
+      "Mathématiques Essentielles: Tout pour la 6e"
+    ]
+  },
+  {
+    "objectID": "webpage/slides/6e/sl.html#ranger-des-entiers-naturels",
+    "href": "webpage/slides/6e/sl.html#ranger-des-entiers-naturels",
+    "title": "Mathématiques Essentielles: Tout pour la 6e",
+    "section": "Ranger des Entiers Naturels",
+    "text": "Ranger des Entiers Naturels\nRanger des entiers naturels signifie les organiser dans l’ordre croissant (du plus petit au plus grand) ou décroissant (du plus grand au plus petit).",
+    "crumbs": [
+      "Mathématiques Essentielles: Tout pour la 6e"
+    ]
+  },
+  {
+    "objectID": "webpage/slides/6e/sl.html#ordre-croissant",
+    "href": "webpage/slides/6e/sl.html#ordre-croissant",
+    "title": "Mathématiques Essentielles: Tout pour la 6e",
+    "section": "Ordre Croissant",
+    "text": "Ordre Croissant\nL’ordre croissant est la manière d’organiser les nombres du plus petit au plus grand.\nExemple d’Ordre Croissant\n\n\nLes entiers naturels suivants sont classés dans l’ordre croissant :\n[ 1 &lt; 2 &lt; 3 &lt; 4 &lt; 5 &lt; 6 ]",
+    "crumbs": [
+      "Mathématiques Essentielles: Tout pour la 6e"
+    ]
+  },
+  {
+    "objectID": "webpage/slides/6e/sl.html#ordre-décroissant",
+    "href": "webpage/slides/6e/sl.html#ordre-décroissant",
+    "title": "Mathématiques Essentielles: Tout pour la 6e",
+    "section": "Ordre Décroissant",
+    "text": "Ordre Décroissant\nL’ordre décroissant est la manière d’organiser les nombres du plus grand au plus petit.\nExemple d’Ordre décroissant\n\n\nLes entiers naturels suivants sont classés dans l’ordre croissant :\n[ 6 &gt; 5 &gt; 4 &gt; 3 &gt; 2 &gt; 1 ]",
     "crumbs": [
       "Mathématiques Essentielles: Tout pour la 6e"
     ]

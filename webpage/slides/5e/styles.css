@@ -1,7 +1,59 @@
+/* Mise en forme du titre */
+.reveal h1, .reveal h2 {
+  font-family: 'Arial', sans-serif;
+  color: #129171;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  font-size: 3rem;
+}
+
+/* Textes des slides */
+.reveal .slides section {
+  font-family: 'Verdana', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+  padding: 20px;  /* Ajouter des espaces autour du texte pour le rendre plus aéré */
+}
+
+/* Ajustement des images pour ne pas écraser le texte */
+.reveal .slides img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);  /* Ombre légère autour des images */
+}
+
+/* Limitation de la taille de l'image pour ne pas occuper trop d'espace */
+.reveal .slides img {
+  max-height: 300px;
+  object-fit: contain;
+}
+
+/* Image de fond uniquement pour la première diapositive */
 .reveal .slides > .slide:nth-child(1) {
-    background-image: url('Mathematiques.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+  background-image: url('webpage\slides\6e\Mathematiques.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(211, 140, 140);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Espacement entre les sections (éviter que les éléments soient trop serrés) */
+.reveal .slides section {
+  margin-bottom: 40px;  /* Ajouter de l'espace entre les slides */
+}
+
+/* Ajustement de la taille du texte dans les diapositives */
+.reveal .slides section h2 {
+  font-size: 2.5rem;
+}
+
+/* Espacement dans les listes */
+.reveal ul {
+  margin-left: 20px;
+}
+
   
