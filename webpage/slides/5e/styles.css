@@ -1,0 +1,7 @@
+.reveal .slides > .slide:nth-child(1) {
+    background-image: url('Mathematiques.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
