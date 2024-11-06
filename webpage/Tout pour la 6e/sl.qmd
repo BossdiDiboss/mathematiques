@@ -1,5 +1,5 @@
 ---
-title: "Mathématiques Essentielles: Tout pour la 6ème"
+title: "Mathématiques Essentielles: Tout pour la 6e"
 author: "ATTOUMANI Ibrahim"
 date: "2024"
 format: 
@@ -14,7 +14,7 @@ Les mathématiques sont bien plus que des nombres et des formules. Elles nous ai
 
 Ce slide est une invitation à explorer ce monde fascinant des mathématiques.
 
----
+
 
 ## Les Branches des Mathématiques Abordées
 
@@ -29,7 +29,7 @@ Ce slide est une invitation à explorer ce monde fascinant des mathématiques.
 
 Objectif : Familiariser les élèves avec les concepts fondamentaux des mathématiques.
 
----
+
 
 ## Apprendre par l'Expérience et la Pratique
 
@@ -40,7 +40,7 @@ Chaque séquence est structurée pour favoriser l’apprentissage par la pratiqu
 
 Objectif : renforcer la compréhension et rendre les mathématiques engageantes.
 
----
+
 
 ## Chapitre 1 : Les Nombres Entiers
 
@@ -48,7 +48,7 @@ Les nombres entiers sont essentiels en mathématiques et dans la vie quotidienne
 
 Les **entiers naturels** sont les nombres utilisés pour compter. Ils commencent à zéro et continuent à l'infini.
 
----
+
 
 ## Écriture des Nombres en Toutes Lettres
 
@@ -64,7 +64,7 @@ Voici comment écrire les nombres en toutes lettres :
 - 8 : huit
 - 9 : neuf
 
----
+
 
 ## Les Classes des Nombres et Leur Rang
 
@@ -74,7 +74,7 @@ Les nombres sont organisés en classes, chaque chiffre ayant un rang spécifique
 |-----------------------|---------------------|----------------------|----------------|
 | Centaines, dizaines, unités | Centaines, dizaines, unités | Centaines, dizaines, unités | Centaines, dizaines, unités |
 
----
+
 
 ## La Demi-Droite Graduée
 
@@ -84,7 +84,7 @@ La demi-droite graduée est une ligne qui commence à zéro et continue vers la 
 \text{0} \quad \text{1} \quad \text{2} \quad \text{3} \quad \text{4} \quad \text{5} \quad \text{6} \quad \text{7} \quad \text{8} \quad \text{9} \quad \dots
 \]
 
----
+
 
 ## Remarque : Graduation et Sous-Graduation
 
