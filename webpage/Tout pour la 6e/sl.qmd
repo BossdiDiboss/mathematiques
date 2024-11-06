@@ -1,11 +1,12 @@
 ---
-title: "Mathématiques Essentielles: Tout pour la 6e"
+title: "Mathématiques Essentielles: Tout pour la 6ème"
 author: "ATTOUMANI Ibrahim"
-date: "2024-2025"
+date: "2024"
 format: 
   revealjs:
-    theme: beamer
+    theme: white # Utilisation d'un thème clair compatible avec revealjs
     background-transition: fade
-    background-color: "#d0ebff" # Un bleu clair comme arrière-plan de la présentation
+    background-color: "#d0ebff" # Couleur de fond bleu clair
 ---
+
 
