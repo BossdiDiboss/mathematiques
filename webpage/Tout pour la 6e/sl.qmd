@@ -1,15 +1,14 @@
 ---
 title: "Mathématiques Essentielles: Tout pour la 6ème"
 author: "ATTOUMANI Ibrahim"
-date: "2024-2025"
+date: "2024"
 format: 
   revealjs:
-    theme: white # Utilisation d'un thème clair compatible avec revealjs
+    transition: slide
     background-transition: fade
-    background-color: "#d0ebff" # Couleur de fond bleu clair
 ---
 
-# Introduction 
+## Introduction 
 
 Les mathématiques sont bien plus que des nombres et des formules. Elles nous aident à comprendre le monde, résoudre des problèmes et développer la pensée critique.
 
@@ -17,7 +16,7 @@ Ce slide est une invitation à explorer ce monde fascinant des mathématiques.
 
 ---
 
-# Les Branches des Mathématiques Abordées
+## Les Branches des Mathématiques Abordées
 
 À travers ce slide, nous allons explorer plusieurs branches des mathématiques abordées en 6ème :
 
@@ -32,7 +31,7 @@ Objectif : Familiariser les élèves avec les concepts fondamentaux des mathéma
 
 ---
 
-# Apprendre par l'Expérience et la Pratique
+## Apprendre par l'Expérience et la Pratique
 
 Chaque séquence est structurée pour favoriser l’apprentissage par la pratique.
 
@@ -43,7 +42,7 @@ Objectif : renforcer la compréhension et rendre les mathématiques engageantes.
 
 ---
 
-# Chapitre 1 : Les Nombres Entiers
+## Chapitre 1 : Les Nombres Entiers
 
 Les nombres entiers sont essentiels en mathématiques et dans la vie quotidienne pour quantifier les objets et les événements.
 
@@ -51,7 +50,7 @@ Les **entiers naturels** sont les nombres utilisés pour compter. Ils commencent
 
 ---
 
-# Écriture des Nombres en Toutes Lettres
+## Écriture des Nombres en Toutes Lettres
 
 Voici comment écrire les nombres en toutes lettres :
 - 0 : zéro
@@ -67,7 +66,7 @@ Voici comment écrire les nombres en toutes lettres :
 
 ---
 
-# Les Classes des Nombres et Leur Rang
+## Les Classes des Nombres et Leur Rang
 
 Les nombres sont organisés en classes, chaque chiffre ayant un rang spécifique.
 
@@ -77,7 +76,7 @@ Les nombres sont organisés en classes, chaque chiffre ayant un rang spécifique
 
 ---
 
-# La Demi-Droite Graduée
+## La Demi-Droite Graduée
 
 La demi-droite graduée est une ligne qui commence à zéro et continue vers la droite, avec des nombres marqués régulièrement pour représenter leur valeur.
 
@@ -87,7 +86,7 @@ La demi-droite graduée est une ligne qui commence à zéro et continue vers la 
 
 ---
 
-# Remarque : Graduation et Sous-Graduation
+## Remarque : Graduation et Sous-Graduation
 
 Les petits traits tracés pour marquer les unités de longueur sont appelés **graduations**.
 
