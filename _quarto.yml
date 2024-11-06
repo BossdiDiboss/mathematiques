@@ -13,15 +13,26 @@ website:
   title: "Mathématiques Essentielles"
   site-url: https://bossdidiboss.github.io/mathematiques/
   repo-url: https://github.com/BossdiDiboss/mathematiques
-  repo-actions: [source,issue]
+  repo-actions: [source, issue]
   navbar:
     title: "Mathématiques Essentielles"
-    background: green # Change cette couleur ou ajoute une couleur personnalisée
+    background: green
     search: true
     left:
-      - sidebar: cours
-      - sidebar: slides
-    logo: "Mathematiques.png" # Utilise cette ligne pour inclure une image à côté de la barre
+      - text: "Cours"
+        menu:
+          - text: "Tout pour la 6e"
+            file: webpage/Tout pour la 6e/tp.qmd
+          - text: "Tout pour la 5e"
+            file: webpage/Tout pour la 5e/tp.qmd
+      - text: "Slides"
+        menu:
+          - text: "Tout pour la 6e"
+            file: webpage/Tout pour la 6e/sl.qmd
+          - text: "Tout pour la 5e"
+            file: webpage/Tout pour la 5e/sl.qmd
+    logo: "Mathematiques.png"
+
   sidebar:
     - id: cours
       title: "Cours"
