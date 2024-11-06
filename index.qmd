@@ -1,6 +1,5 @@
 # Mathématiques Essentielles : De la 6e à la Terminale
 
-![](Mathematiques.png){width=800px height=360px}
 
 Bienvenue sur **Mathématiques Essentielles**, un projet conçu pour centraliser et structurer l'apprentissage des mathématiques du collège au lycée. 
 
