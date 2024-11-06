@@ -19,23 +19,22 @@ website:
     background: green # Change cette couleur ou ajoute une couleur personnalisée
     search: true
     left:
-      - sidebar:cours
-      - sidebar:slides
+      - sidebar: cours
+      - sidebar: slides
     logo: "Mathematiques.png" # Utilise cette ligne pour inclure une image à côté de la barre
   sidebar:
     - id: cours
       title: "Cours"
       collapse-level: 3
       contents:
-          - webpage/Tout pour la 6e/tp.qmd
-          - webpage/Tout pour la 5e/tp.qmd
-  sidebar:
+        - webpage/Tout pour la 6e/tp.qmd
+        - webpage/Tout pour la 5e/tp.qmd
     - id: slides
       title: "Slides"
       collapse-level: 3
       contents:
-          - webpage/Tout pour la 6e/sl.qmd
-          - webpage/Tout pour la 5e/sl.qmd
+        - webpage/Tout pour la 6e/sl.qmd
+        - webpage/Tout pour la 5e/sl.qmd
 
 format:
   html:
