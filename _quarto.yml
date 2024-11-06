@@ -8,16 +8,17 @@ project:
 website:
   back-to-top-navigation: true
   page-navigation: true
-  title: "mathematiques"
+  title: "Mathématiques Essentielles"
   site-url: https://bossdidiboss.github.io/mathematiques/
   repo-url: https://github.com/BossdiDiboss/mathematiques
   repo-actions: [source,issue]
   navbar:
     title: "Mathématiques Essentielles"
-    background: blue
+    background: blue # Change cette couleur ou ajoute une couleur personnalisée
     search: true
     left:
       - sidebar:cours
+    logo: "Mathematiques.png" # Utilise cette ligne pour inclure une image à côté de la barre
   sidebar:
     - id: cours
       title: "Cours"
@@ -29,5 +30,5 @@ website:
 format:
   html:
     theme: cosmo
-    css: styles.css  # Ajout du fichier CSS pour l'image de fond
+    css: styles.css
     toc: true
