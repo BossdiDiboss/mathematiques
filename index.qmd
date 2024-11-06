@@ -23,9 +23,9 @@ Ce site vise à :
 ## 🏫 Tout pour la 6e
 
 Pour les élèves de 6e, nous avons intégré des vidéos explicatives pour faciliter l’apprentissage des concepts de base :
-- [Notions de base - Introduction aux fractions](https://youtu.be/ChLEy40hK4E) _(Khan Academy)_
-- [Géométrie de base - Angles et Droites](https://youtu.be/3hn4VCXzYLw?list=PLVUDmbpupCaqHaIpFwd14iD6BMA-op0pZ), [Solides](https://youtu.be/ohtIhC_dwo4?list=PLVUDmbpupCaoZtzpQWEJN1a-oQk8ZKFji) _(Ivan Monka)_
-- [Calcul et priorités opératoires](https://youtu.be/a-IG_bjKeJc) _(Ivan Monka)_
+- [Notions de base - Introduction aux fractions](https://youtu.be/ChLEy40hK4E) (Khan Academy)
+- [La géométrie de base - Les angles](https://youtu.be/3hn4VCXzYLw?list=PLVUDmbpupCaqHaIpFwd14iD6BMA-op0pZ), [ les droites](https://youtu.be/ohtIhC_dwo4?list=PLVUDmbpupCaoZtzpQWEJN1a-oQk8ZKFji) et [les solides ](https://youtu.be/i7PtsYJhs6g?list=PLVUDmbpupCaqEPQHrY1G0IgVgDBXI4oP2) (Ivan Monka)
+- [Calcul et priorités opératoires](https://youtu.be/a-IG_bjKeJc) (Ivan Monka)
 
 ---
 
