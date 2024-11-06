@@ -1,0 +1,11 @@
+---
+title: "Mathématiques Essentielles: Tout pour la 5e"
+author: "ATTOUMANI Ibrahim"
+date: "2024-2025"
+format: 
+  revealjs:
+    theme: beamer
+    background-transition: fade
+    background-color: "#d0ebff" # Un bleu clair comme arrière-plan de la présentation
+---
+
