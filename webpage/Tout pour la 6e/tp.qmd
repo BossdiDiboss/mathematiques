@@ -2,5 +2,5 @@
 
 ![](Mathematiques.png){width=800px height=360px}
 
-[Voir le PDF du cours](https://github.com/BossdiDiboss/mathematiques/blob/main/classes/6eme/Tout_pour_la_6ème.pdf)
+[Voir le PDF du cours](https://github.com/BossdiDiboss/mathematiques/blob/main/classes/6eme/pour_les_6eme.pdf)
 
