@@ -92,7 +92,7 @@
     "href": "webpage/slides/6e/sl.html#comparer-des-entiers-naturels",
     "title": "Mathématiques Essentielles: Tout pour la 6e",
     "section": "Comparer des Entiers Naturels",
-    "text": "Comparer des Entiers Naturels\nComparer des entiers naturels consiste à déterminer lequel est plus grand ou plus petit. Les signes utilisés pour comparer sont :\n\n(&lt;) (strictement inférieur à)\n(&gt;) (strictement supérieur à)\n() (inférieur ou égal à)\n() (supérieur ou égal à)\n\nExemples\n\n(3 &lt; 5) (trois est strictement inférieur à cinq)\n(7 &gt; 4) (sept est strictement supérieur à quatre)\n(6 ) (six est inférieur ou égal à six)\n(9 ) (neuf est supérieur ou égal à deux)",
+    "text": "Comparer des Entiers Naturels\nComparer des entiers naturels consiste à déterminer lequel est plus grand ou plus petit. Les signes utilisés pour comparer sont :\n\n(&lt;) (strictement inférieur à)\n(&gt;) (strictement supérieur à)\n() (inférieur ou égal à)\n() (supérieur ou égal à)\n\nExemples\n\n(3 &lt; 5) (trois est strictement inférieur à cinq)\n(7 &gt; 4) (sept est strictement supérieur à quatre)\n(6 ) (six est inférieur ou égal à sept)\n(9 ) (neuf est supérieur ou égal à deux)",
     "crumbs": [
       "Mathématiques Essentielles: Tout pour la 6e"
     ]
