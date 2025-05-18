@@ -21,21 +21,25 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Install Python and Dependencies
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4  
         with:
           python-version: '3.11.5'
-          cache: 'pip'
+          cache: 'pip' 
 
-      # Ajoutez une commande pour vérifier la présence de requirements.txt
-      - run: ls -la
-      - run: |
+      - run: pip cache dir  # optionnel : montre le dossier utilisé pour le cache
+
+      - name: Vérification du fichier requirements.txt
+        run: |
           if [ ! -f "requirements.txt" ]; then
             echo "requirements.txt n'existe pas dans le répertoire courant."
             exit 1
           fi
-      
-      - run: python -m pip install --upgrade pip
-      - run: python -m pip install -r requirements.txt
+
+      - name: Mise à jour de pip
+        run: python -m pip install --upgrade pip
+
+      - name: Installation des dépendances
+        run: python -m pip install -r requirements.txt
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
