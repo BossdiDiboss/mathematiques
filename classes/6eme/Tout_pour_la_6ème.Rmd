@@ -3,12 +3,13 @@ output: pdf_document
 fontsize: 12pt
 mainfont: "Times New Roman"
 header-includes:
-  - \usepackage[table,xcdraw]{xcolor}
+  - \usepackage[table]{xcolor}
   - \usepackage{float}
   - \usepackage{graphicx}
   - \usepackage{lscape}
   - \usepackage{caption}
   - \usepackage{tikz}
+  - \usetikzlibrary{arrows.meta} 
   - \usepackage{amsmath}
   - \usepackage{tcolorbox}
   - \usepackage{fancyhdr}
@@ -397,3 +398,238 @@ Le samedi matin, Claire a 30 euros dans son porte-monnaie. Le dimanche, elle dou
 \captionsetup{justification=centering, font=small}
 \captionof{table}{\textbf{Représentation des différentes classes et unités d'un nombre.}}
 \end{center}
+
+\begin{tcolorbox}[colback=cyan!10!white, colframe=red!75!black, title=\textcolor{white}{Définition}, sharp corners=southwest]
+\textcolor{black}{
+Une demi-droite graduée commence à 0 et continue indéfiniment vers la droite. Les nombres y sont placés régulièrement pour représenter leur valeur.
+}
+\vspace{0.3cm}
+
+\begin{center}
+\begin{tikzpicture}
+  \draw[->] (0,0) -- (10,0) node[right] {\textcolor{red}{x}};
+  \foreach \x in {0,1,2,3,4,5,6,7,8,9}
+    \draw (\x,3pt) -- (\x,-3pt) node[below] {\textcolor{red}{\x}};
+\end{tikzpicture}
+\end{center}
+\end{tcolorbox}
+
+\vspace{0.4cm}
+
+\begin{tcolorbox}[colback=cyan!10!white, colframe=lime!75!black, title=\textcolor{black}{Remarque}, sharp corners=southwest]
+\textcolor{black}{
+Les petits traits s'appellent des \textbf{\textcolor{red}{graduations}}.\\
+Quand l'écart est trop grand : on ajoute des \textbf{\textcolor{red}{sous-graduations}}.\\
+Quand il est trop petit : on saute des nombres (par 5, 10…).
+}
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+### \textcolor{green}{Comparer, Ranger des Nombres}
+
+\vspace{0.3cm}
+
+\begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, title=\textcolor{white}{Comparer des entiers}, sharp corners=southwest]
+\begin{itemize}
+  \item \textcolor{red}{\(3 < 5\)} : trois est plus petit que cinq.
+  \item \textcolor{red}{\(7 > 4\)} : sept est plus grand que quatre.
+  \item \textcolor{red}{\(6 \leq 6\)} : six est plus petit ou égal à six.
+  \item \textcolor{red}{\(9 \geq 2\)} : neuf est plus grand ou égal à deux.
+\end{itemize}
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\noindent
+\begin{minipage}{0.48\linewidth}
+\centering
+\includegraphics[width=\linewidth]{vis/ordreCroissant.png}
+
+\vspace{0.2cm}
+\textbf{Ordre Croissant} : \\
+\(1 < 2 < 3 < 4 < 5 < 6\)
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\linewidth}
+\centering
+\includegraphics[width=\linewidth]{vis/ordreDecroissante.png}
+
+\vspace{0.2cm}
+\textbf{Ordre Décroissant} : \\
+\(6 > 5 > 4 > 3 > 2 > 1\)
+\end{minipage}
+
+\begin{tcolorbox}[colback=orange!5!white, colframe=orange!75!black, title=\textcolor{white}{Ranger des entiers}, sharp corners=southwest]
+\textcolor{black}{
+Ranger, c'est mettre les nombres dans l'ordre croissant (du plus petit au plus grand) ou décroissant (du plus grand au plus petit).
+}
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[colback=orange!5!white, colframe=orange!75!black, title=\textcolor{white}{\large Encadrer un nombre}, sharp corners=southwest]
+\textcolor{black}{
+Encadrer un nombre consiste à identifier deux valeurs entre lesquelles ce nombre se situe.
+}
+\end{tcolorbox}
+
+\vspace{0.4cm}
+
+\begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, title=\textcolor{white}{\normalsize Exemple}, sharp corners=southwest]
+\textcolor{red}{\(4 < 6 < 8\)} \quad Cela signifie que le nombre \textbf{6 est compris entre 4 et 8}.
+\end{tcolorbox}
+
+\vspace{0.4cm}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.4]
+  \draw[->] (0,0) -- (7,0) node[anchor=north west] {Nombres};
+  \foreach \x in {0,1,2,3,4,5,6}
+    \draw (\x,0) -- (\x,0.2) node[above] {\x};
+    
+  \draw[thick, -{Latex[length=3mm, width=2mm]}] (1.2,0.5) -- (4.8,0.5);
+  \node at (3, 0.75) {\(a \leq x \leq b\)};
+  
+  \draw[dashed] (1,0) -- (1,0.5);
+  \node[below] at (1,0) {\(a\)};
+  
+  \draw[dashed] (5,0) -- (5,0.5);
+  \node[below] at (5,0) {\(b\)};
+  
+  \node at (3, 0.25) {\(x\)};
+\end{tikzpicture}
+\end{center}
+
+\vspace{0.5cm}
+
+\textcolor{purple}{
+\textbf{Intercaler} un nombre, c’est le positionner précisément entre deux autres, afin de mieux percevoir l’ordre des valeurs.
+}
+
+\vspace{0.4cm}
+
+\begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, title=\textcolor{white}{\normalsize Exemple}, sharp corners=southwest]
+\textcolor{red}{\(x = 2\), \(y = 3\), \(z = 4\)} \quad Ainsi, \textbf{3 est intercalé entre 2 et 4}.
+\end{tcolorbox}
+
+\vspace{0.4cm}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.4]
+  \draw[->] (0,0) -- (7,0) node[anchor=north west] {Nombres};
+  \foreach \x in {1,2,3,4,5,6}
+    \draw (\x,0) -- (\x,0.2) node[above] {\x};
+    
+  \draw[thick, -{Latex[length=3mm, width=2mm]}] (1,0.5) -- (5,0.5);
+  \node at (3, 0.75) {\(x < y < z\)};
+  
+  \draw[dashed] (2,0) -- (2,0.5);
+  \node[below] at (2,0) {\(x\)};
+  
+  \draw[dashed] (4,0) -- (4,0.5);
+  \node[below] at (4,0) {\(z\)};
+  
+  \draw[fill=black] (3,0) circle (1.5pt);
+  \node[below] at (3,0) {\(y\)};
+\end{tikzpicture}
+\end{center}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[colback=orange!10!white, colframe=yellow!80!black, title=\textcolor{white}{\large Exercices d'application}, sharp corners=south]
+\begin{itemize}
+    \item[\textbf{1.}] Écris tous les entiers naturels compris entre 10 et 20.
+    \item[\textbf{2.}] Écris en toutes lettres : 13, 25, 37, 48, 59.
+    \item[\textbf{3.}] Représente sur une demi-droite graduée les nombres : 0, 1, 2, 3, 4 et 5.
+    \item[\textbf{4.}] Compare les paires suivantes : 7 et 9 ; 12 et 12 ; 15 et 8.
+    \item[\textbf{5.}] Classe ces nombres dans l’ordre décroissant : 45, 23, 89, 12, 67.
+    \item[\textbf{6.}] Encadre le nombre 6 entre deux entiers naturels.
+    \item[\textbf{7.}] Intercale le nombre 5 entre 3 et 7.
+\end{itemize}
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[colback=cyan!10!white, colframe=cyan!75!black, title=\textcolor{white}{\large Récapitulatif}, sharp corners=south]
+\textcolor{black}{
+\begin{itemize}
+    \item Les \textbf{entiers naturels} sont les nombres utilisés pour compter : 0, 1, 2, 3, ...
+    \item Chaque chiffre dans un nombre occupe un \textbf{rang} : unités, dizaines, centaines...
+    \item La \textbf{demi-droite graduée} permet de représenter visuellement les entiers.
+    \item \textbf{Comparer} deux nombres revient à déterminer lequel est plus grand, plus petit ou égal.
+    \item \textbf{Ranger} des nombres consiste à les classer par ordre croissant ou décroissant.
+    \item \textbf{Encadrer} un nombre, c’est identifier deux bornes entre lesquelles il se trouve.
+    \item \textbf{Intercaler} un nombre, c’est le situer précisément entre deux autres.
+\end{itemize}
+}
+\end{tcolorbox}
+
+\vspace{0.3cm}
+
+## \textcolor{red}{Les Entiers Relatifs}
+
+\vspace{0.3cm}
+
+\textbf{Un jeu ludique pour explorer les déplacements sur une droite graduée.}
+
+Chaque joueur place son pion sur la graduation marquée « \textbf{Départ} » au centre d’une droite numérique. À tour de rôle, les joueurs piochent une carte numérotée de 1 à 6, tenue par un arbitre. Les cartes sont mélangées et replacées après chaque tirage.
+
+\vspace{0.2cm}
+
+\begin{itemize}
+  \item Si le numéro tiré est \textbf{pair}, le joueur \textbf{avance vers la droite} du nombre de graduations indiqué.
+  \item Si le numéro est \textbf{impair}, il \textbf{recule vers la gauche}.
+\end{itemize}
+
+\vspace{0.2cm}
+
+Après un nombre de tours défini (par exemple 4), le joueur dont le pion est le plus avancé vers la droite remporte la partie.
+
+\vspace{0.2cm}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.2]
+  \draw[->] (-5,0) -- (6.5,0);
+  \foreach \x in {-5,-4,...,6}
+    \draw (\x,0) -- (\x,0.2) node[above] {\x};
+
+  % Marque "Départ" en rouge
+  \draw[very thick, red] (0,-0.15) -- (0,0.35);
+  \node[below, red] at (0,-0.15) {\textbf{Départ}};
+\end{tikzpicture}
+\end{center}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.92\linewidth]{vis/cartes.png}
+\end{figure}
+
+\begin{tcolorbox}[colback=pink!10!white, colframe=navy!75!black, title=\textcolor{white}{Activité : Avance ou recule ?}, sharp corners=south]
+
+\vspace{0.3cm}
+
+\textbf{À partir du tableau ci-dessus, réalise l’activité suivante :}
+
+\vspace{0.3cm}
+
+\begin{minipage}{0.5\textwidth}
+\textbf{Questions :}
+\begin{enumerate}
+  \item Qui était en tête après le premier tour ? Et après le deuxième tour ?
+  \item Reproduis la droite graduée et place une croix représentant le pion de \textbf{Arthur} à l’issue du jeu. Fais de même pour \textbf{Luna}, \textbf{Clara} et \textbf{Noé}.
+  \item Décris la position de ces pions. Propose une manière simple de coder ces positions.
+  \item Les pions d’\textbf{Arthur} et de \textbf{Luna} sont à la même distance du départ mais pas du même côté. Quel élément, dans le codage retenu, permet de les distinguer ?
+\end{enumerate}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{vis/cartelogo.jpg}
+    \caption*{\small Carte utilisée dans le jeu (1 à 6)}
+\end{figure}
+\end{minipage}
+
+\end{tcolorbox}
