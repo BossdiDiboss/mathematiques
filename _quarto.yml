@@ -2,10 +2,10 @@ project:
   type: website
   render:
     - index.qmd
-    - webpage/Tout pour la 6e/tp.qmd
-    - webpage/Tout pour la 5e/tp.qmd
-    - webpage/slides/6e/sl.qmd
-    - webpage/slides/5e/sl.qmd
+    - "webpage/Tout pour la 6e/tp.qmd"
+    - "webpage/Tout pour la 5e/tp.qmd"
+    - "webpage/slides/6e/sl.qmd"
+    - "webpage/slides/5e/sl.qmd"
 
 website:
   back-to-top-navigation: true
@@ -22,15 +22,15 @@ website:
       - text: "Cours"
         menu:
           - text: "Tout pour la 6e"
-            file: webpage/Tout pour la 6e/tp.qmd
+            file: "webpage/Tout pour la 6e/tp.qmd"
           - text: "Tout pour la 5e"
-            file: webpage/Tout pour la 5e/tp.qmd
+            file: "webpage/Tout pour la 5e/tp.qmd"
       - text: "Slides"
         menu:
           - text: "6e"
-            file: webpage/slides/6e/sl.qmd
+            file: "webpage/slides/6e/sl.qmd"
           - text: "5e"
-            file: webpage/slides/5e/sl.qmd
+            file: "webpage/slides/5e/sl.qmd"
     logo: "Mathematiques.png"
 
   sidebar:
@@ -38,14 +38,14 @@ website:
       title: "Cours"
       collapse-level: 3
       contents:
-        - webpage/Tout pour la 6e/tp.qmd
-        - webpage/Tout pour la 5e/tp.qmd
+        - "webpage/Tout pour la 6e/tp.qmd"
+        - "webpage/Tout pour la 5e/tp.qmd"
     - id: slides
       title: "Slides"
       collapse-level: 3
       contents:
-       - webpage/slides/6e/sl.qmd
-       - webpage/slides/5e/sl.qmd
+        - "webpage/slides/6e/sl.qmd"
+        - "webpage/slides/5e/sl.qmd"
 
 format:
   html:
