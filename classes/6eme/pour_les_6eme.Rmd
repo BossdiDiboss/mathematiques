@@ -1,0 +1,399 @@
+---
+output: pdf_document
+fontsize: 12pt
+mainfont: "Times New Roman"
+header-includes:
+  - \usepackage[table,xcdraw]{xcolor}
+  - \usepackage{float}
+  - \usepackage{graphicx}
+  - \usepackage{lscape}
+  - \usepackage{caption}
+  - \usepackage{tikz}
+  - \usepackage{amsmath}
+  - \usepackage{tcolorbox}
+  - \usepackage{fancyhdr}
+  - \usepackage{lipsum}
+  - \setlength{\headheight}{15.35403pt}
+  - \addtolength{\topmargin}{-2.5pt}
+  - \pagestyle{fancy}
+  - \fancyhead[L]{\textcolor{purple}{Collège De Doujani}}
+  - \fancyhead[C]{\textcolor{purple}{Mathématiques Essentielles }}
+  - \fancyhead[R]{\textcolor{purple}{2024 \textbf{-} 2025}}
+  - \fancyfoot[C]{\thepage}
+---
+
+\begin{titlepage}
+\definecolor{umcolor}{RGB}{85, 37, 130}
+
+\begin{center}
+
+% Logo en haut
+\includegraphics[width=0.45\linewidth]{vis/LogoMath.png}\\[1.5cm]
+
+% Etablissement 
+{\Large \textsc{Collège De Doujani}}\\[0.2cm]
+{\large 6ème}\\[1.5cm]
+
+% Encadré du titre
+\tcbset{colback=pink!30, colframe=umcolor, width=\textwidth, arc=3mm, boxrule=0.8mm}
+\begin{tcolorbox}
+    \centering
+    {\huge \bfseries Mathématiques Essentielles :\\ Tout pour la 6ème}\\[0.3cm]
+\end{tcolorbox}
+
+\vfill
+
+% Auteur
+\begin{flushright}
+    \textbf{Réalisé par :}\\
+    ATTOUMANI Ibrahim
+\end{flushright}
+
+\vfill
+
+% Bas de page
+\includegraphics[width=0.15\linewidth]{vis/DBS.png}\\[0.15cm]
+{\Large Année Universitaire 2024 -- 2025}
+
+\end{center}
+\end{titlepage}
+
+\thispagestyle{empty}
+\definecolor{navy}{RGB}{11, 11, 69}
+\definecolor{picker}{RGB}{235, 153, 30}
+
+\newpage
+
+\thispagestyle{empty}
+
+\pagebreak
+\tableofcontents
+\pagebreak
+
+\newpage
+
+# \textcolor{blue}{1. Introduction}
+
+Les mathématiques sont bien plus que des nombres et des formules : ce sont des outils puissants qui nous aident à comprendre le monde qui nous entoure, à résoudre des problèmes complexes et à développer notre capacité à penser de manière critique. Ce livre, conçu spécifiquement pour les élèves de 6ème, est une invitation à explorer ce monde fascinant des mathématiques.
+
+À travers les différentes séquences de ce livre, nous allons plonger dans les principales branches des mathématiques qui seront abordées cette année. Chaque séquence a été soigneusement élaborée pour introduire progressivement les concepts mathématiques fondamentaux, tout en fournissant des exemples concrets et des exercices pour renforcer votre compréhension.
+
+Nous commencerons par explorer les nombres entiers, apprendre à les manipuler et à comprendre leur place dans le système numérique. Ensuite, nous entrerons dans le monde de la géométrie, où nous découvrirons les formes, les lignes et les angles. Les opérations sur les nombres entiers seront également au programme, suivi de l'étude des distances, des cercles et des concepts de fractions.
+
+Chaque séquence offre une opportunité d'apprendre de manière interactive et engageante. Nous utiliserons des outils comme la programmation pour explorer des concepts abstraits d'une manière tangible et pratique. De la proportionnalité à l'étude des angles et des formes géométriques, chaque sujet a été choisi pour enrichir votre compréhension des mathématiques et vous préparer à des défis plus complexes à l'avenir.
+
+Ce livre n'est pas seulement un manuel scolaire, mais un guide pour vous aider à développer des compétences mathématiques essentielles qui vous serviront tout au long de votre parcours éducatif et au-delà. Nous espérons que vous trouverez ce voyage à travers les mathématiques aussi enrichissant que stimulant.
+
+Bienvenue dans le monde captivant des mathématiques de la 6ème année!
+
+\newpage
+
+# \textcolor{blue}{2. Chapitre 1: Les Nombres Entiers}
+
+\vfill
+\begin{tcolorbox}[colback=pink!10!white, colframe=navy!75!black, title=\textcolor{white}{Activités: Les Entiers Naturels}, 
+                  sharp corners=south]
+
+\begin{minipage}[t]{0.48\textwidth}
+Dans le jeu du \textbf{Tir au Panier}, on lance cinq balles vers des paniers disposés devant soi, représentés ci-contre. Chaque panier correspond à un nombre de points différent : par exemple, le premier panier rapporte \textbf{3 points} et le second \textbf{5 points}. À chaque lancer, on remporte le nombre de points indiqué par le panier touché. Si la balle n'atteint aucun panier, elle ne rapporte aucun point. Après les cinq lancers, on fait la somme des points obtenus. \textcolor{red}{a)} Moussy a effectué cinq lancers dans le jeu du \textbf{Tir au Panier}. Voici les résultats de ses lancers :
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\centering
+\vspace{0pt}
+\includegraphics[width=0.8\textwidth]{vis/pannier.jpg} 
+\end{minipage}
+
+\begin{itemize}
+  \item Le premier lancer est réussi et rentre dans le panier 1.
+  \item Le second lancer est également réussi et rentre dans le panier 1.
+  \item Le troisième lancer ne touche aucun panier.
+  \item Le quatrième lancer est réussi et rentre dans le panier 2.
+  \item Le cinquième lancer ne touche aucun panier.
+\end{itemize}
+
+\textbf{Combien de points Moussy a-t-il obtenus au total ?}
+
+\textcolor{red}{b)} Moussy fait une deuxième partie et toutes les balles atteignent le panier 2 sauf une atteignant le panier 1. 
+
+\textbf{Les points obtenus par Moussy lors de cette deuxième partie sont-ils supérieurs à 30 ?}
+
+
+\textcolor{red}{c)} Parmi les scores ci-dessous, lesquels peuvent être obtenus avec cinq tirs ? Justifier votre réponse à l’aide d’un calcul.
+
+\begin{center}
+\textcolor{green}{23} \hspace{2cm} \textcolor{blue}{19} \hspace{2cm} \textcolor{orange}{3} \hspace{2cm} \textcolor{purple}{25} \hspace{2cm} \textcolor{red}{30}
+\end{center}
+
+\textcolor{red}{d)} Quel est le nombre minimal de tir à lancer pour atteindre le score 12, 18 ?
+
+\textcolor{red}{e)} Comment obtenir le score 14 ?
+
+\textcolor{purple}{Pour aller loin:} On suppose qu'on a un troisième panier avec un score de 7. 
+
+\textcolor{red}{f)} Comment obtenir 19, 11 et 29 avec le moins de tir de lancer possible ? Justifier votre réponse à l’aide d’un calcul.
+
+\end{tcolorbox}
+\vfill
+
+\newpage
+
+\begin{tcolorbox}[colback=pink!10!white, colframe=navy!75!black, title=\textcolor{white}{Activités: Durrées}, 
+                  sharp corners=south]
+
+\begin{minipage}[t]{0.48\textwidth}
+\textcolor{red}{a)} Samuel, fraîchement rentré en classe, remarque que ses journées sont bien organisées. Ses cours débutent à 7 h 05 et chaque séance dure 55 minutes. Après deux séances de cours, il a droit à une récréation de 25 minutes.
+
+\textbf{ Peux-tu l’aider à calculer à quelle heure la récréation commence et à quelle heure elle se termine ?}
+
+\vspace{10pt}
+
+\textbf{b.} Après une matinée de quatre séances de cours, Samuel file à la cantine pour une pause bien méritée. Les cours reprennent à 13 h 00. 
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\centering
+\vspace{0pt}
+\includegraphics[width=0.8\textwidth]{vis/horloge.jpg} 
+\end{minipage}
+
+\vspace{10pt}
+
+\textbf{Combien de temps lui restent-elles pour savourer son repas ?}
+
+\end{tcolorbox}
+
+
+\vspace{1cm}
+
+
+\begin{tcolorbox}[colback=pink!10!white, colframe=navy!75!black, title=\textcolor{white}{Activités: Durées}, 
+                  sharp corners=south]
+\textcolor{red}{a)} Associer à chaque problème l’opération ou l’expression qui en donne la solution. Plusieurs réponses sont parfois possibles.
+
+\vspace{10pt}
+
+\begin{minipage}[t]{0.48\textwidth}
+
+\textbf{Problème 1.}  
+Marc a acheté 4 livres à 3 € chacun. Il paye avec un billet de 20 €. Combien d’argent lui reste-t-il ? 
+
+\vspace{10pt} 
+
+\textbf{Problème 2.}  
+Emma possède 30 billes. Elle en donne 8 à son ami et en perd 3. Combien de billes lui reste-t-il ? 
+
+\vspace{10pt} 
+
+\textbf{Problème 3.}  
+Lucas joue au basket. Il marque 7 paniers, puis il rate 3 tirs. Il avait 15 paniers au début du match. Combien de paniers a-t-il réussi à la fin ?
+
+\vspace{10pt} 
+
+\textbf{Problème 4.}  
+Le samedi matin, Claire a 30 euros dans son porte-monnaie. Le dimanche, elle double son montant et le lundi, elle en a 4 fois moins que le mardi. Combien d'euros a-t-elle le mardi soir ?
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.58\textwidth}
+\centering
+\textbf{Opérations}  
+
+\vspace{20pt}
+
+\fbox{\textcolor{blue}{2 × 5 = 10}} \\
+\vspace{5pt}
+\fbox{\textcolor{blue}{20 – 10 = 10}} \\
+
+\vspace{20pt}
+
+\fbox{\textcolor{blue}{30 – 8 = 22}} \\
+\vspace{5pt}
+\fbox{\textcolor{blue}{22 – 3 = 19}} \\
+
+\vspace{20pt} 
+
+\fbox{\textcolor{blue}{15 + 7 = 22}} \\
+\vspace{5pt}
+\fbox{\textcolor{blue}{22 – 3 = 19}} \\
+
+\vspace{20pt} 
+
+\fbox{\textcolor{blue}{30 × 2 = 60}} \\
+\vspace{5pt}
+\fbox{\textcolor{blue}{60 ÷ 4 = 15}} \\
+
+\end{minipage}
+
+\vspace{10pt} 
+
+\textcolor{red}{b)} Rédiger les phrases de conclusion pour chaque problème de la question a.
+
+\textcolor{red}{c)} Dans l’expression 3 × (10 + 5), à quoi servent les parenthèses ?
+
+\end{tcolorbox}
+
+
+## \textcolor{red}{Les Entiers Naturels}
+
+\vspace{7pt}
+
+\begin{tcolorbox}[colback=cyan!10!white, colframe=red!75!black, title=\textcolor{white}{Définition}, sharp corners=southwest]
+\textcolor{black}{Les \textbf{entiers naturels} sont les nombres que nous utilisons pour compter. Ils commencent à zéro et augmentent sans fin. Ces nombres sont très importants en mathématiques et dans la vie quotidienne, car ils nous permettent de quantifier les objets et les événements.}
+\end{tcolorbox}
+
+\vspace{7pt}
+
+\textcolor{purple}{Dans cette sous-section, nous allons apprendre à écrire ces nombres en toutes lettres et à les représenter graphiquement sur une demi-droite graduée.}
+
+\vspace{7pt}
+
+\begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, title=\textcolor{white}{Exemples}, sharp corners=southwest]
+\textcolor{purple}{Voici quelques exemples d'écriture en toutes lettres pour les entiers naturels :}
+\begin{itemize}
+    \item \textcolor{red}{0 se lit « zéro »}
+    \item \textcolor{red}{1 se lit « un »}
+    \item \textcolor{red}{2 se lit « deux »}
+    \item \textcolor{red}{3 se lit « trois »}
+    \item \textcolor{red}{4 se lit « quatre »}
+    \item \textcolor{red}{5 se lit « cinq »}
+    \item \textcolor{red}{6 se lit « six »}
+    \item \textcolor{red}{7 se lit « sept »}
+    \item \textcolor{red}{8 se lit « huit »}
+    \item \textcolor{red}{9 se lit « neuf »}
+\end{itemize}
+\end{tcolorbox}
+
+\vspace{7pt}
+
+\textcolor{purple}{Dans un nombre, chaque chiffre occupe un certain rang détaillé dans le tableau ci-dessous:}
+
+\vspace{7pt}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\setlength{\arrayrulewidth}{0.5mm}
+
+\begin{tikzpicture}
+\node[rounded corners=15pt, thick, draw=gray, fill=gray!10, inner sep=10pt] (table) {
+    \begin{tabular}{>{\columncolor{blue!10}}c|>{\columncolor{orange!10}}c|>{\columncolor{green!10}}c|>{\columncolor{red!10}}c}
+    \hline
+    \textbf{Classe des milliards} & 
+    \textbf{Classe des millions} & 
+    \textbf{Classe des milliers} & 
+    \textbf{Unités simples} \\
+    \hline
+    \begin{tabular}{>{\columncolor{white}}c|>{\columncolor{white}}c|>{\columncolor{white}}c}
+    \rotatebox{90}{\textcolor{black}{centaines}} &
+    \rotatebox{90}{\textcolor{black}{dizaines}} &
+    \rotatebox{90}{\textcolor{black}{unités}}
+    \end{tabular} &
+    \begin{tabular}{>{\columncolor{white}}c|>{\columncolor{white}}c|>{\columncolor{white}}c}
+    \rotatebox{90}{\textcolor{black}{centaines}} &
+    \rotatebox{90}{\textcolor{black}{dizaines}} &
+    \rotatebox{90}{\textcolor{black}{unités}}
+    \end{tabular} &
+    \begin{tabular}{>{\columncolor{white}}c|>{\columncolor{white}}c|>{\columncolor{white}}c}
+    \rotatebox{90}{\textcolor{black}{centaines}} &
+    \rotatebox{90}{\textcolor{black}{dizaines}} &
+    \rotatebox{90}{\textcolor{black}{unités}}
+    \end{tabular} &
+    \begin{tabular}{>{\columncolor{white}}c|>{\columncolor{white}}c|>{\columncolor{white}}c}
+    \rotatebox{90}{\textcolor{black}{centaines}} &
+    \rotatebox{90}{\textcolor{black}{dizaines}} &
+    \rotatebox{90}{\textcolor{black}{unités}}
+    \end{tabular} \\
+    \hline
+    \begin{tabular}{c|c|c}
+    \textcolor{black}{X} &
+    \textcolor{black}{X} &
+    \textcolor{black}{X}
+    \end{tabular} &
+    \begin{tabular}{c|c|c}
+    \textcolor{black}{X} &
+    \textcolor{black}{X} &
+    \textcolor{black}{X}
+    \end{tabular} &
+    \begin{tabular}{c|c|c}
+    \textcolor{black}{X} &
+    \textcolor{black}{X} &
+    \textcolor{black}{X}
+    \end{tabular} &
+    \begin{tabular}{>{\columncolor{red!5}}c|>{\columncolor{red!5}}c|>{\columncolor{red!5}}c}
+    \textcolor{black}{2} &
+    \textcolor{black}{3} &
+    \textcolor{black}{4}
+    \end{tabular} \\
+    \hline
+    \begin{tabular}{c|c|c}
+    \textcolor{black}{X} &
+    \textcolor{black}{X} &
+    \textcolor{black}{X}
+    \end{tabular} &
+    \begin{tabular}{c|c|c}
+    \textcolor{black}{X} &
+    \textcolor{black}{X} &
+    \textcolor{black}{X}
+    \end{tabular} &
+    \begin{tabular}{>{\columncolor{green!5}}c|>{\columncolor{green!5}}c|>{\columncolor{green!5}}c}
+    \textcolor{black}{6} &
+    \textcolor{black}{5} &
+    \textcolor{black}{4}
+    \end{tabular} &
+    \begin{tabular}{>{\columncolor{red!5}}c|>{\columncolor{red!5}}c|>{\columncolor{red!5}}c}
+    \textcolor{black}{3} &
+    \textcolor{black}{2} &
+    \textcolor{black}{1}
+    \end{tabular} \\
+    \hline
+    \begin{tabular}{c|c|c}
+    \textcolor{black}{X} &
+    \textcolor{black}{X} &
+    \textcolor{black}{X}
+    \end{tabular} &
+    \begin{tabular}{>{\columncolor{orange!5}}c|>{\columncolor{orange!5}}c|>{\columncolor{orange!5}}c}
+    \textcolor{black}{1} &
+    \textcolor{black}{2} &
+    \textcolor{black}{3}
+    \end{tabular} &
+    \begin{tabular}{>{\columncolor{green!5}}c|>{\columncolor{green!5}}c|>{\columncolor{green!5}}c}
+    \textcolor{black}{9} &
+    \textcolor{black}{8} &
+    \textcolor{black}{7}
+    \end{tabular} &
+    \begin{tabular}{>{\columncolor{red!5}}c|>{\columncolor{red!5}}c|>{\columncolor{red!5}}c}
+    \textcolor{black}{5} &
+    \textcolor{black}{4} &
+    \textcolor{black}{6}
+    \end{tabular} \\
+    \hline
+    \begin{tabular}{c|c|c}
+    \textcolor{black}{X} &
+    \textcolor{black}{8} &
+    \textcolor{black}{7}
+    \end{tabular} &
+    \begin{tabular}{>{\columncolor{orange!5}}c|>{\columncolor{orange!5}}c|>{\columncolor{orange!5}}c}
+    \textcolor{black}{6} &
+    \textcolor{black}{5} &
+    \textcolor{black}{4}
+    \end{tabular} &
+    \begin{tabular}{>{\columncolor{green!5}}c|>{\columncolor{green!5}}c|>{\columncolor{green!5}}c}
+    \textcolor{black}{3} &
+    \textcolor{black}{2} &
+    \textcolor{black}{1}
+    \end{tabular} &
+    \begin{tabular}{>{\columncolor{red!5}}c|>{\columncolor{red!5}}c|>{\columncolor{red!5}}c}
+    \textcolor{black}{0} &
+    \textcolor{black}{9} &
+    \textcolor{black}{9}
+    \end{tabular} \\
+    \hline
+    \end{tabular}
+};
+\end{tikzpicture}
+
+\captionsetup{justification=centering, font=small}
+\captionof{table}{\textbf{Représentation des différentes classes et unités d'un nombre.}}
+\end{center}

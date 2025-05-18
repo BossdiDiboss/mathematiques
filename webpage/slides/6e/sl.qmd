@@ -110,7 +110,7 @@ Comparer des entiers naturels consiste à déterminer lequel est plus grand ou p
 
 - \(3 < 5\) (trois est strictement inférieur à cinq)
 - \(7 > 4\) (sept est strictement supérieur à quatre)
-- \(6 \leq 6\) (six est inférieur ou égal à six)
+- \(6 \leq 7\) (six est inférieur ou égal à sept)
 - \(9 \geq 2\) (neuf est supérieur ou égal à deux)
 
 
