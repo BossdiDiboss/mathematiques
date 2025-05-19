@@ -633,3 +633,182 @@ Après un nombre de tours défini (par exemple 4), le joueur dont le pion est le
 \end{minipage}
 
 \end{tcolorbox}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[colback=cyan!5!white, colframe=red!80!black, title=\textcolor{white}{\large Définition}, sharp corners=southwest]
+\textcolor{black}{
+Les \textbf{entiers relatifs} sont l'ensemble des entiers naturels (\(0, 1, 2, 3, \dots\)) ainsi que leurs opposés négatifs (\(-1, -2, -3, \dots\)). Ils permettent de représenter des situations de la vie courante où l’on dépasse ou descend en dessous de zéro : comme les températures hivernales, les dettes, ou les déplacements en arrière sur une droite graduée.}
+
+
+
+\begin{itemize}
+  \item Les nombres comportant un signe - sont appelés \textbf{les nombres négatifs}. 
+  \item Les nombres comportant un signe + sont appelés \textbf{les nombres positifs}.
+\end{itemize}
+
+\end{tcolorbox}
+
+\vspace{0.3cm}
+
+\textcolor{purple}{
+Dans cette section, nous apprendrons à lire et écrire correctement ces nombres.
+}
+
+\vspace{0.4cm}
+
+\begin{tcolorbox}[colback=orange!5!white, colframe=orange!80!black, title=\textcolor{white}{\large Lecture des entiers relatifs}, sharp corners=southwest]
+\textcolor{purple}{
+Voici comment lire les entiers relatifs les plus courants :
+}
+
+\vspace{0.2cm}
+
+\begin{itemize}
+    \item \textcolor{red}{-3 se lit « moins trois »}
+    \item \textcolor{red}{-2 se lit « moins deux »}
+    \item \textcolor{red}{-1 se lit « moins un »}
+    \item \textcolor{red}{0 se lit « zéro »}
+    \item \textcolor{red}{1 se lit « un »}
+    \item \textcolor{red}{2 se lit « deux »}
+    \item \textcolor{red}{3 se lit « trois »}
+\end{itemize}.
+\end{tcolorbox}
+
+### \textcolor{green}{Comparer des nombres relatifs}
+
+\vspace{0.3cm}
+
+\begin{tcolorbox}[colback=orange!5!white, colframe=blue!80!black, title=\textcolor{white!70!black}{\Large Nombres opposés et comparaison}]
+
+\textbf{Nombres opposés :}  
+Deux nombres relatifs sont dits \textbf{opposés} lorsqu'ils ont la même distance à zéro mais des signes contraires.
+
+\begin{center}
+\textcolor{red}{Exemple :} \(-5\) et \(+5\) sont opposés.  
+On peut dire que \(-5\) est l’opposé de \(+5\), ou inversement.
+\end{center}
+
+\vspace{0.3cm}
+
+\textbf{Comparer des nombres relatifs :}
+
+\begin{itemize}
+    \item \textbf{Règle 1 — Même signe positif :}  
+    On compare les valeurs comme pour des nombres naturels.  
+    \textcolor{purple}{Exemple :} \(+2{,}3 < +2{,}8\) car \(2{,}3 < 2{,}8\)
+
+    \vspace{0.2cm}
+    
+    \item \textbf{Règle 2 — Même signe négatif :}  
+    Plus un nombre est proche de zéro, plus il est grand.  
+    \textcolor{purple}{Exemple :} \(-2{,}4 > -3{,}2\) car \(2{,}4 < 3{,}2\)
+\end{itemize}
+
+\end{tcolorbox}
+
+
+\vspace{0.3cm}
+
+\begin{tcolorbox}[colback=yellow!10!white, colframe=cyan!80!black, title=\textcolor{black}{Récapitulatif}, sharp corners=southwest]
+\textcolor{purple}{Dans cette leçon, nous avons appris à écrire et à représenter les entiers relatifs. N'oubliez pas que les nombres négatifs sont simplement des entiers avec un signe moins devant, et ils se trouvent à gauche de zéro sur une droite graduée.}
+\end{tcolorbox}
+
+
+## \textcolor{red}{Opérations sur les Nombres Entiers}
+
+\vspace{0.3cm}
+
+\textbf{Notation importante :}  
+Pour éviter la confusion entre les signes des nombres et les signes d'opération, on utilise des \textbf{parenthèses} autour des nombres relatifs.
+
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!80!black, title=\textcolor{blue!70!black}{\normalsize Exemple}]
+Soit \( A \) la somme de \(+3\) et \(-1\).  
+On écrit correctement :  
+\[
+A = (+3) + (-1) = +2
+\]
+\textit{Et non pas : \( A = +3 + -1 \), ce qui prête à confusion.}
+\end{tcolorbox}
+
+\vspace{0.3cm}
+
+### \textcolor{green}{Additions et Soustractions}
+
+\begin{tcolorbox}[colback=pink!10!white, colframe=red!70!black, title=\textcolor{white!40}{\large Règle n°1 : Addition de nombres de même signe}, sharp corners=south]
+
+\textbf{Propriété :}  
+Pour additionner deux nombres relatifs de même signe :
+\begin{itemize}
+    \item On garde ce signe pour le résultat.
+    \item On additionne leurs distances à zéro (valeurs absolues).
+\end{itemize}
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=pink!10!white, colframe=orange!70!black, title=\textcolor{white!40}{\large Addition de nombres de même signe}, sharp corners=south]
+
+
+\begin{minipage}{0.58\textwidth}
+\textcolor{blue}{Interprétation :}  
+\begin{itemize}
+    \item Gagner plusieurs fois → on additionne les gains.
+    \item Perdre plusieurs fois → on additionne les pertes.
+\end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}{0.38\textwidth}
+\textcolor{green}{Exemples :}
+\vspace{0.2cm}
+\begin{itemize}
+    \item \((+2) + (+4) = +6\)  
+    {\small (2 billes gagnées puis 4 billes gagnées = 6 billes gagnées)}
+
+    \vspace{0.2cm}
+
+    \item \((-3) + (-1) = -4\)  
+    {\small (3 billes perdues puis 1 bille perdue = 4 billes perdues)}
+\end{itemize}
+\end{minipage}
+
+
+\end{tcolorbox}
+
+\vspace{0.3cm}
+
+\begin{tcolorbox}[colback=pink!10!white, colframe=red!70!black, title=\textcolor{white!40}{\large Règle n°2 : Addition de nombres de signe contraire}, sharp corners=south]
+
+\textbf{Propriété :}  
+Pour additionner deux nombres relatifs de signe contraire :
+\begin{itemize}
+    \item On garde le signe du nombre qui a la plus grande distance à zéro (valeur absolue).
+    \item On soustrait les distances à zéro.
+\end{itemize}
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=pink!10!white, colframe=orange!60!black, title=\textcolor{white!40}{\large Addition de nombres de signe contraire}, sharp corners=south]
+
+\begin{minipage}{0.58\textwidth}
+\textcolor{blue}{Interprétation :}  
+\begin{itemize}
+    \item Gagner puis perdre, ou perdre puis gagner → on fait la différence.
+    \item Le résultat prend le signe de la quantité la plus « forte ».
+\end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}{0.38\textwidth}
+\textcolor{green}{Exemples :}
+\vspace{0.2cm}
+\begin{itemize}
+    \item \((-5) + (+3) = -2\)  
+    {\small (Perdre 5 billes puis gagner 3 billes = perte de 2 billes)}
+
+    \vspace{0.2cm}
+
+    \item \((-2) + (+7) = +5\)  
+    {\small (Perdre 2 billes puis gagner 7 billes = gain de 5 billes)}
+\end{itemize}
+\end{minipage}
+
+\end{tcolorbox}
