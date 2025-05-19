@@ -9,6 +9,7 @@ header-includes:
   - \usepackage{lscape}
   - \usepackage{caption}
   - \usepackage{tikz}
+  - \usepackage{xlop}
   - \usetikzlibrary{arrows.meta} 
   - \usepackage{amsmath}
   - \usepackage{tcolorbox}
@@ -719,10 +720,10 @@ On peut dire que \(-5\) est l’opposé de \(+5\), ou inversement.
 
 \vspace{0.3cm}
 
-\textbf{Notation importante :}  
+\textcolor{purple}{Notation importante :}  
 Pour éviter la confusion entre les signes des nombres et les signes d'opération, on utilise des \textbf{parenthèses} autour des nombres relatifs.
 
-\begin{tcolorbox}[colback=blue!5!white, colframe=blue!80!black, title=\textcolor{blue!70!black}{\normalsize Exemple}]
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!80!black, title=\textcolor{white!70}{\normalsize Exemple}]
 Soit \( A \) la somme de \(+3\) et \(-1\).  
 On écrit correctement :  
 \[
@@ -774,7 +775,7 @@ Pour additionner deux nombres relatifs de même signe :
 
 \end{tcolorbox}
 
-\vspace{0.3cm}
+\vspace{0.5cm}
 
 \begin{tcolorbox}[colback=pink!10!white, colframe=red!70!black, title=\textcolor{white!40}{\large Règle n°2 : Addition de nombres de signe contraire}, sharp corners=south]
 
@@ -787,7 +788,9 @@ Pour additionner deux nombres relatifs de signe contraire :
 
 \end{tcolorbox}
 
-\begin{tcolorbox}[colback=pink!10!white, colframe=orange!60!black, title=\textcolor{white!40}{\large Addition de nombres de signe contraire}, sharp corners=south]
+\vspace{0.5cm}
+
+\begin{tcolorbox}[colback=pink!10!white, colframe=orange!70!black, title=\textcolor{white!40}{\large Addition de nombres de signe contraire}, sharp corners=south]
 
 \begin{minipage}{0.58\textwidth}
 \textcolor{blue}{Interprétation :}  
@@ -812,3 +815,80 @@ Pour additionner deux nombres relatifs de signe contraire :
 \end{minipage}
 
 \end{tcolorbox}
+
+\vspace{0.5cm}
+
+### \textcolor{green}{Multiplications}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[colback=cyan!10!white, colframe=red!75!black, title=\textcolor{white}{\large Définition}, sharp corners=southwest]
+\textcolor{purple}{La multiplication est une opération qui consiste à ajouter un même nombre plusieurs fois. Nous allons voir comment multiplier des entiers relatifs.}
+\end{tcolorbox}
+
+\vspace{0.4cm}
+
+\textcolor{purple}{\textbf{Règle des signes :}} Lorsqu'on multiplie ou divise des nombres relatifs :
+\begin{itemize}
+    \item \textbf{Même signe} (positif avec positif ou négatif avec négatif) $\Rightarrow$ \textcolor{blue}{résultat positif}.
+    \item \textbf{Signe contraire} (positif avec négatif) $\Rightarrow$ \textcolor{red}{résultat négatif}.
+\end{itemize}
+
+\vspace{0.3cm}
+
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!70!black, title=\textcolor{white}{\large Règle des signes — Multiplication / Division}, sharp corners=southwest]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Opération} & \textbf{Signe du Résultat} & \textbf{Exemple} \\
+\hline
+\cellcolor{gray!10} $(+)\times(+)$ ou $(-)\times(-)$ & \textcolor{blue}{Positif} & $(+3)\times(+4) = +12$ \\
+\hline
+\cellcolor{gray!10} $(+)\times(-)$ ou $(-)\times(+)$ & \textcolor{red}{Négatif} & $(-3)\times(+4) = -12$ \\
+\hline
+\end{tabular}
+\end{tcolorbox}
+
+\vspace{0.3cm}
+
+\begin{tcolorbox}[colback=cyan!10!white, colframe=orange!75!black, title=\textcolor{white}{Exemples}, sharp corners=southwest]
+\centering
+\begin{minipage}{0.45\textwidth}
+\centering
+\textcolor{blue}{Multiplication de 10 avec 5} \\
+\opmul[voperator=bottom, displayshiftintermediary=none]{10}{5}
+\end{minipage}%
+\hfill
+\begin{minipage}{0.45\textwidth}
+\centering
+\textcolor{blue}{Multiplication de 12 avec 11} \\
+\opmul[voperator=bottom, displayshiftintermediary=none]{12}{11}
+\end{minipage}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, sharp corners=south, boxrule=0.8mm, title=Explication des Exemples]
+    \textbf{Multiplication de 10 par 5 :}
+    \[
+    \opmul[voperator=bottom, displayshiftintermediary=none]{10}{5}
+    \]
+    \textcolor{red}{(La multiplication de 10 par 5 est directe : 10 multiplié par 5 donne 50.)}
+    
+    \textbf{Explication :} Nous multiplions 10 par 5. Comme 10 est un nombre entier, nous multiplions simplement les chiffres 10 et 5. Le résultat est 50.
+
+    \textbf{Multiplication de 12 par 11 :}
+    \[
+    \opmul[voperator=bottom, displayshiftintermediary=none]{12}{11}
+    \]
+    \textcolor{red}{(Pour multiplier 12 par 11, nous utilisons la méthode distributive : (10 + 2) × (10 + 1). On obtient 120 + 12 = 132.)}
+    
+    \textbf{Explication :} Nous multiplions 12 par 11 en utilisant la méthode distributive : 
+    \begin{itemize}
+        \item Décomposez 11 en 10 + 1.
+        \item Multipliez 12 par 10 pour obtenir 120.
+        \item Multipliez 12 par 1 pour obtenir 12.
+        \item Additionnez les deux résultats : 120 + 12 = 132.
+    \end{itemize}
+\end{tcolorbox}
+
+\vspace{0.4cm}
