@@ -892,3 +892,139 @@ Pour additionner deux nombres relatifs de signe contraire :
 \end{tcolorbox}
 
 \vspace{0.4cm}
+
+### \textcolor{green}{Division Euclidienne}
+
+\vspace{0.4cm}
+
+\begin{tcolorbox}[colback=pink!10!white, colframe=navy!75!black, title=\textcolor{white}{Activité : Division Euclidienne en Course à Relais}, sharp corners=south]
+
+\begin{minipage}{0.58\textwidth}
+\textbf{Contexte :}  
+Lors d’une grande course à relais, 53 coureurs participent à une épreuve. Chaque équipe doit être composée de \textbf{4 coureurs}.  
+L’objectif est de former le maximum d’équipes complètes.
+
+\vspace{0.3cm}
+\textbf{Questions :}
+\begin{enumerate}
+    \item Combien d’équipes complètes peut-on former ?
+    \item Combien restera-t-il de coureurs sans équipe ?
+    \item Écris la division euclidienne de 53 par 4.
+    \item Quelle interprétation peut-on donner du quotient et du reste dans ce contexte ?
+\end{enumerate}
+\end{minipage}
+\hfill
+\begin{minipage}{0.38\textwidth}
+\centering
+\includegraphics[width=0.9\linewidth]{vis/course_relais.jpg} 
+{\small \textit{Une course à relais passionnante !}}
+\end{minipage}
+
+\end{tcolorbox}
+
+\vspace{0.3cm}
+
+\begin{tcolorbox}[colback=cyan!10!white, colframe=red!75!black, title=\textcolor{white}{Définition}, 
+                  sharp corners=southwest]
+
+\textcolor{black}{La division euclidienne consiste à diviser un nombre, appelé \textcolor{red}{dividende}, par un autre nombre, appelé \textcolor{red}{diviseur}, pour obtenir un \textcolor{red}{quotient} et un \textcolor{red}{reste}. Cette division est utile pour déterminer combien de fois un nombre peut être réparti en parts égales, et ce qui reste.}
+\end{tcolorbox}
+
+\vspace{0.3cm}
+
+\begin{tcolorbox}[colback=pink!10!white, colframe=red!70!black, 
+    title=\textcolor{white}{\large Les termes de la Division Euclidienne}, sharp corners=south]
+
+\begin{minipage}{0.55\textwidth}
+\vspace{0.2cm}
+\textcolor{purple}{Voici les termes importants :}
+\begin{itemize}
+    \item \textcolor{red}{\textbf{Dividende} : Le nombre que l'on souhaite diviser.}
+    \item \textcolor{red}{\textbf{Diviseur} : Le nombre par lequel on divise.}
+    \item \textcolor{red}{\textbf{Quotient} : Le résultat entier de la division.}
+    \item \textcolor{red}{\textbf{Reste} : Ce qui reste après la division.}
+\end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}
+\centering
+\includegraphics[width=0.95\linewidth]{vis/division_euclidienne.png}
+\\[0.2cm]
+{\small \textit{Illustration de la division euclidienne}}
+\end{minipage}
+
+\end{tcolorbox}
+
+\vspace{0.4cm}
+
+
+\begin{tcolorbox}[colback=cyan!5!white, colframe=orange!75!black, title=\textcolor{white}{Division euclidienne de 27 par 4 (avec reste non nul)}, sharp corners=south]
+\centering
+\opidiv[displayintermediary=all, voperation=top]{27}{4}
+\end{tcolorbox}
+
+\vspace{0.3cm}
+
+\textcolor{purple}{\textbf{Explication détaillée :}}
+\begin{enumerate}
+    \item \textbf{Division} : On cherche combien de fois 4 peut entrer dans 27 sans le dépasser. La réponse est 6, car \(4 \times 6 = 24\).
+    \item \textbf{Soustraction} : \(27 - 24 = 3\). Il reste 3.
+    \item \textbf{Conclusion} : Le quotient est 6, le reste est 3.
+\end{enumerate}
+
+\begin{center}
+\textcolor{purple}{\large Résultat : \[ 27 = 4 \times 6 + 3 \]}
+\end{center}
+
+\vspace{0.4cm}
+
+
+\begin{tcolorbox}[colback=cyan!5!white, colframe=orange!75!black, title=\textcolor{white}{Division euclidienne de 27 par 3 (division exacte)}, sharp corners=south]
+\centering
+\opidiv[displayintermediary=all, voperation=top]{27}{3}
+\end{tcolorbox}
+
+\vspace{0.3cm}
+
+\textcolor{purple}{\textbf{Explication détaillée :}}
+\begin{enumerate}
+    \item \textbf{Division} : 3 entre exactement 9 fois dans 27, car \(3 \times 9 = 27\).
+    \item \textbf{Soustraction} : \(27 - 27 = 0\). Le reste est nul.
+    \item \textbf{Conclusion} : Le quotient est 9, le reste est 0.
+\end{enumerate}
+
+\begin{center}
+\textcolor{purple}{\large Résultat : \[ 27 = 3 \times 9 + 0 \]}
+\end{center}
+
+\vspace{0.5cm}
+
+
+\begin{tcolorbox}[colback=cyan!10!white, colframe=red!70!black, title=\textcolor{white}{Les deux types de divisions euclidiennes}, sharp corners=southwest]
+
+\textbf{1. Division avec reste non nul} :  
+Lorsqu’un nombre entier ne peut pas être divisé exactement par un autre, il reste une partie appelée \textbf{reste}.  
+\[
+\text{Exemple : } 27 = 4 \times 6 + 3
+\]
+
+\textbf{2. Division exacte (reste nul)} :  
+Le diviseur se divise parfaitement dans le dividende, sans reste.  
+\[
+\text{Exemple : } 24 = 6 \times 4
+\]
+
+Ces deux formes nous aident à mieux comprendre la structure des entiers et les notions de multiple et diviseur.
+\end{tcolorbox}
+
+\vspace{0.4cm}
+
+
+\begin{tcolorbox}[colback=cyan!10!white, colframe=lime!75!black, title=\textcolor{black}{Remarque importante sur les priorités}, sharp corners=southwest]
+Lorsqu'une expression contient plusieurs opérations :
+\begin{itemize}
+    \item Les \textbf{multiplications} et \textbf{divisions} sont effectuées avant les \textbf{additions} et \textbf{soustractions}.
+    \item L'utilisation de \textbf{parenthèses} permet de clarifier l’ordre des calculs.
+\end{itemize}
+Nous approfondirons cette règle très bientôt.
+\end{tcolorbox}
