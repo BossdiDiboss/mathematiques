@@ -6,6 +6,8 @@ header-includes:
   - \usepackage[table]{xcolor}
   - \usepackage{float}
   - \usepackage{graphicx}
+  - \usepackage{enumitem}
+  - \usepackage{multicol}
   - \usepackage{lscape}
   - \usepackage{caption}
   - \usepackage{tikz}
@@ -14,7 +16,7 @@ header-includes:
   - \usepackage{amsmath}
   - \usepackage{tcolorbox}
   - \usepackage{fancyhdr}
-  - \usepackage{lipsum}
+  - \setlength{\columnseprule}{0.4pt}
   - \setlength{\headheight}{15.35403pt}
   - \addtolength{\topmargin}{-2.5pt}
   - \pagestyle{fancy}
@@ -1077,5 +1079,169 @@ Les priorités opératoires sont des règles qui nous indiquent dans quel ordre 
 
 \vspace{0.2cm}
 
-\textcolor{red!70!white}{
-\textbf{Retiens bien :} Suivre l’ordre des opérations permet de faire les bons calculs et d’éviter les erreurs.}
+\textcolor{red}{Retiens bien :} Suivre l’ordre des opérations permet de faire les bons calculs et d’éviter les erreurs.
+
+## \textcolor{red}{Exercices et Correction}
+
+\begin{tcolorbox}[colback=yellow!10!white, colframe=yellow!75!black, title=Exercices, sharp corners=south, boxrule=0.8mm]
+
+% Capsule rouge pour numéro
+\newtcbox{\numexobox}{nobeforeafter,
+  colback=red!70!white,
+  colframe=red!90!black,
+  boxrule=0.5mm,
+  arc=0mm,
+  boxsep=1pt,
+  left=4pt,
+  right=4pt,
+  top=2pt,
+  bottom=2pt,
+  fontupper=\color{white}\bfseries
+}
+
+\begin{multicols}{2}
+
+\numexobox{1}~\textbf{Addition de nombres :}
+\begin{itemize}[leftmargin=*]
+  \item 45 + 27 \item 76 + 89 \item 123 + 54
+  \item 35 + 48 \item 67 + 29 \item 88 + 32 \item 56 + 44
+\end{itemize}
+
+\vspace{0.4cm}
+
+\numexobox{2}~\textbf{Soustraction de nombres :}
+\begin{itemize}[leftmargin=*]
+  \item 92 - 38 \item 150 - 77 \item 84 - 29
+  \item 100 - 42 \item 60 - 15 \item 70 - 28 \item 45 - 18
+\end{itemize}
+
+\vspace{0.4cm}
+
+\numexobox{3}~\textbf{Multiplication :}
+\begin{itemize}[leftmargin=*]
+  \item 7 × 6 \item 9 × 8 \item 12 × 5
+  \item 4 × 7 \item 15 × 3 \item 6 × 9 \item 8 × 7
+\end{itemize}
+
+\vspace{0.4cm}
+
+\numexobox{4}~\textbf{Division :}
+\begin{itemize}[leftmargin=*]
+  \item 37 ÷ 5 \item 55 ÷ 8 \item 72 ÷ 10
+  \item 50 ÷ 6 \item 83 ÷ 7 \item 99 ÷ 9 \item 63 ÷ 4
+\end{itemize}
+
+\vspace{0.4cm}
+
+\numexobox{5}~\textbf{Problème de multiplication :}  
+Léo a 5 paquets de crayons. Chaque paquet contient 9 crayons. Combien en a-t-il en tout ?
+
+\vspace{0.4cm}
+
+\numexobox{6}~\textbf{Problème de soustraction :}  
+Julie a 50 billes. Elle en donne 23. Combien lui reste-t-il ?
+
+\vspace{0.4cm}
+
+\numexobox{7}~\textbf{Problème de partage :}  
+Une pizza a 8 parts. Si on en mange 3, combien en reste-t-il ?
+
+\vspace{0.4cm}
+
+\numexobox{8}~\textbf{Problème de division :}  
+Une boîte contient 54 bonbons. Si on les partage entre 6 amis, combien chacun reçoit-il ?
+
+\vspace{0.4cm}
+
+\numexobox{9}~\textbf{Poursuis les séries de nombres suivantes.}
+\begin{itemize}[leftmargin=*]
+  \item a. 28 ; 30 ; 32 ; ... ; ... ; ...
+  \item b. 15 ; 10 ; 5 ; ... ; ... ; ...
+  \item c. 100 ; 95 ; 90 ; ... ; ... ; ...
+\end{itemize}
+
+\vspace{0.4cm}
+
+\numexobox{10}~\textbf{Complète chaque expression avec l’entier qui suit ou précède.}
+\begin{itemize}[leftmargin=*]
+  \item a. 3 → \_\_ < 3
+  \item b. \_\_ > –8
+  \item c. –17 < \_\_
+  \item d. \_\_ < –25
+\end{itemize}
+
+\vspace{0.4cm}
+
+\numexobox{11}~\textbf{Compare les nombres suivants.}
+\begin{itemize}[leftmargin=*]
+  \item a. –6 et –1
+  \item b. –2 et 4
+  \item c. –8 et –3
+  \item d. 0 et –9
+  \item e. 7 et –7
+  \item f. –25 et –25
+\end{itemize}
+
+\vspace{0.4cm}
+
+\numexobox{12}~\textbf{Range dans l’ordre croissant les nombres suivants :}
+\begin{itemize}[leftmargin=*]
+  \item a. –13 ; 4 ; –2 ; –9 ; 11 ; 0 ; –6
+  \item b. –1 003 ; –1 500 ; –998 ; –1 000 ; –2 004
+  \item c. 305 ; 208 ; –204 ; 0 ; –99
+\end{itemize}
+
+\end{multicols}
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=yellow!10!white, colframe=yellow!75!black, title=Exercices, sharp corners=south, boxrule=0.8mm]
+
+% Capsule rouge pour numéro
+\newtcbox{\numexobox}{nobeforeafter,
+  colback=red!70!white,
+  colframe=red!90!black,
+  boxrule=0.5mm,
+  arc=0mm,
+  boxsep=1pt,
+  left=4pt,
+  right=4pt,
+  top=2pt,
+  bottom=2pt,
+  fontupper=\color{white}\bfseries
+}
+
+\begin{multicols}{2}
+
+
+\numexobox{13}~\textbf{Complète les séries numériques.}
+\begin{itemize}[leftmargin=*]
+  \item a. 5 ; 10 ; 15 ; ... ; ... ; ...
+  \item b. 12 ; 8 ; 4 ; ... ; ... ; ...
+  \item c. 3.3 ; 3.6 ; 3.9 ; ... ; ... ; ...
+\end{itemize}
+
+\vspace{0.4cm}
+
+\numexobox{14}~\textbf{Trouve l'entier relatif qui suit ou précède.}
+\begin{itemize}[leftmargin=*]
+  \item a. < –10
+  \item b. > 6
+  \item c. > –14
+  \item d. < –2
+\end{itemize}
+
+\vspace{0.4cm}
+
+\numexobox{15}~\textbf{Compare les nombres suivants.}
+\begin{itemize}[leftmargin=*]
+  \item a. –4.2 et –4.3
+  \item b. –3.6 et –3.61
+  \item c. 5.4 et 5.40
+  \item d. –99.2 et –99.19
+  \item e. 1 234,6 et 1 234,60
+\end{itemize}
+
+\end{multicols}
+
+\end{tcolorbox}
