@@ -1485,3 +1485,44 @@ $-0{,}1$ & $+0{,}8$ & $+1{,}5$ & $+2{,}6$ & $+2{,}8$ & \cellcolor{yellow!30} $+3
 \captionsetup{justification=centering, font=small}
 \captionof{table}{\textbf{Représentation des différentes parties d'un nombre entier et décimal.}}
 \end{center}
+
+### \textcolor{green}{Addition de Nombres Décimaux}
+
+\vspace{0.25cm}
+
+
+\begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, sharp corners=south, boxrule=0.8mm, title=Exemple 1 — Addition classique]
+\textbf{Calcul :} $3{,}45 + 2{,}67$
+
+\[
+\opadd[displayintermediary=all,voperation=top]{3,45}{2,67}
+\]
+
+\textcolor{red}{Astuce : veillez à bien aligner les virgules avant de commencer.}
+
+\textbf{Explication :} Les chiffres sont alignés verticalement en fonction des virgules. On additionne de droite à gauche : $5 + 7 = 12$, on écrit $2$ et on retient $1$, puis $4 + 6 + 1 = 11$, etc. Le total obtenu est $6{,}12$.
+\end{tcolorbox}
+
+\vspace{0.2cm}
+
+\textbf{Additionner des nombres décimaux} repose sur les mêmes fondements que l’addition des entiers. Toutefois, une attention particulière doit être portée à l’alignement des virgules pour garantir la justesse du résultat. Suivez ces étapes essentielles :
+
+\begin{itemize}
+    \item \textcolor{purple}{Alignez soigneusement les virgules de chaque nombre.}
+    \item \textcolor{purple}{Additionnez les chiffres en partant de la droite, colonne par colonne.}
+    \item \textcolor{purple}{En cas de dépassement (somme supérieure à 10), reportez l’unité à la colonne suivante.}
+\end{itemize}
+
+\vspace{0.2cm}
+
+\begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, sharp corners=south, boxrule=0.8mm, title=Exemple 2 — Alignement avec décimale manquante]
+\textbf{Calcul :} $7{,}89 + 4{,}1$
+
+\[
+\opadd[displayintermediary=all,voperation=top]{7,89}{4,10}
+\]
+
+\textcolor{red}{Astuce : ajoutez un zéro à la fin de $4{,}1$ pour former $4{,}10$ et garantir une addition alignée.}
+
+\textbf{Explication :} L’ajout d’un zéro à $4{,}1$ permet de l’aligner avec précision sous $7{,}89$. On procède ensuite à l’addition colonne par colonne. Le résultat final est $11{,}99$.
+\end{tcolorbox}
