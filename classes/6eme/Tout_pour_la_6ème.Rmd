@@ -958,6 +958,25 @@ L’objectif est de former le maximum d’équipes complètes.
 \vspace{0.4cm}
 
 
+\begin{tcolorbox}[colback=cyan!10!white, colframe=red!70!black, title=\textcolor{white}{Les deux types de divisions euclidiennes}, sharp corners=southwest]
+
+\textbf{1. Division avec reste non nul} :  
+Lorsqu’un nombre entier ne peut pas être divisé exactement par un autre, il reste une partie appelée \textbf{reste}.  
+\[
+\text{Exemple : } 27 = 4 \times 6 + 3
+\]
+
+\textbf{2. Division exacte (reste nul)} :  
+Le diviseur se divise parfaitement dans le dividende, sans reste.  
+\[
+\text{Exemple : } 24 = 6 \times 4
+\]
+
+Ces deux formes nous aident à mieux comprendre la structure des entiers et les notions de multiple et diviseur.
+\end{tcolorbox}
+
+\vspace{0.4cm}
+
 \begin{tcolorbox}[colback=cyan!5!white, colframe=orange!75!black, title=\textcolor{white}{Division euclidienne de 27 par 4 (avec reste non nul)}, sharp corners=south]
 \centering
 \opidiv[displayintermediary=all, voperation=top]{27}{4}
@@ -976,7 +995,7 @@ L’objectif est de former le maximum d’équipes complètes.
 \textcolor{purple}{\large Résultat : \[ 27 = 4 \times 6 + 3 \]}
 \end{center}
 
-\vspace{0.4cm}
+\vspace{0.2cm}
 
 
 \begin{tcolorbox}[colback=cyan!5!white, colframe=orange!75!black, title=\textcolor{white}{Division euclidienne de 27 par 3 (division exacte)}, sharp corners=south]
@@ -997,28 +1016,7 @@ L’objectif est de former le maximum d’équipes complètes.
 \textcolor{purple}{\large Résultat : \[ 27 = 3 \times 9 + 0 \]}
 \end{center}
 
-\vspace{0.5cm}
-
-
-\begin{tcolorbox}[colback=cyan!10!white, colframe=red!70!black, title=\textcolor{white}{Les deux types de divisions euclidiennes}, sharp corners=southwest]
-
-\textbf{1. Division avec reste non nul} :  
-Lorsqu’un nombre entier ne peut pas être divisé exactement par un autre, il reste une partie appelée \textbf{reste}.  
-\[
-\text{Exemple : } 27 = 4 \times 6 + 3
-\]
-
-\textbf{2. Division exacte (reste nul)} :  
-Le diviseur se divise parfaitement dans le dividende, sans reste.  
-\[
-\text{Exemple : } 24 = 6 \times 4
-\]
-
-Ces deux formes nous aident à mieux comprendre la structure des entiers et les notions de multiple et diviseur.
-\end{tcolorbox}
-
-\vspace{0.4cm}
-
+\vspace{0.2cm}
 
 \begin{tcolorbox}[colback=cyan!10!white, colframe=lime!75!black, title=\textcolor{black}{Remarque importante sur les priorités}, sharp corners=southwest]
 Lorsqu'une expression contient plusieurs opérations :
@@ -1028,3 +1026,56 @@ Lorsqu'une expression contient plusieurs opérations :
 \end{itemize}
 Nous approfondirons cette règle très bientôt.
 \end{tcolorbox}
+
+
+### \textcolor{green}{Priorités Opératoires}
+
+\begin{tcolorbox}[colback=cyan!10!white, colframe=red!75!black, title=\textcolor{white}{Définition}, sharp corners=southwest]
+\textcolor{black}{
+Les priorités opératoires sont des règles qui nous indiquent dans quel ordre faire les calculs pour obtenir le bon résultat.}
+\end{tcolorbox}
+
+\vspace{0.2cm}
+
+\textcolor{purple}{\textbf{Voici les règles à suivre dans un calcul :}}
+
+\begin{enumerate}
+    \item \textcolor{red}{\textbf{D'abord les parenthèses}} : on commence toujours par les calculs à l'intérieur des parenthèses.
+    \item \textcolor{red}{\textbf{Ensuite les multiplications et les divisions}} : on les fait de gauche à droite.
+    \item \textcolor{red}{\textbf{Enfin les additions et les soustractions}} : elles aussi de gauche à droite.
+\end{enumerate}
+
+\vspace{0.2cm}
+
+\begin{tcolorbox}[colback=orange!10!white, colframe=orange!80, title=\textcolor{white}{\large Exemples illustrés}, sharp corners=southwest]
+
+\begin{itemize}
+    \item \textbf{Exemple 1 :} \( 4 + 3 \times 2 \)
+    \begin{itemize}
+        \item On fait la multiplication en premier : \( 3 \times 2 = 6 \)
+        \item Puis l’addition : \( 4 + 6 = 10 \)
+    \end{itemize}
+
+    \vspace{0.2cm}
+
+    \item \textbf{Exemple 2 :} \( (8 - 3) \times 2 \)
+    \begin{itemize}
+        \item On commence par la parenthèse : \( 8 - 3 = 5 \)
+        \item Puis on multiplie : \( 5 \times 2 = 10 \)
+    \end{itemize}
+
+    \vspace{0.2cm}
+
+    \item \textbf{Exemple 3 :} \( 6 \div 2 + 1 \)
+    \begin{itemize}
+        \item On commence par la division : \( 6 \div 2 = 3 \)
+        \item Puis on ajoute : \( 3 + 1 = 4 \)
+    \end{itemize}
+\end{itemize}
+
+\end{tcolorbox}
+
+\vspace{0.2cm}
+
+\textcolor{red!70!white}{
+\textbf{Retiens bien :} Suivre l’ordre des opérations permet de faire les bons calculs et d’éviter les erreurs.}
