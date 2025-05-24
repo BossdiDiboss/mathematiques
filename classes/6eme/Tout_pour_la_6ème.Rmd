@@ -1526,3 +1526,83 @@ $-4{,}1$ & $+0{,}2$ & $+1{,}5$ & $+2{,}6$ & $+4{,}8$ & \cellcolor{yellow!30} $+5
 
 \textbf{Explication :} L’ajout d’un zéro à $4{,}1$ permet de l’aligner avec précision sous $7{,}89$. On procède ensuite à l’addition colonne par colonne. Le résultat final est $11{,}99$.
 \end{tcolorbox}
+
+### \textcolor{green}{Soustraction de Nombres Décimaux}
+
+\vspace{0.25cm}
+
+\textbf{Soustraire des nombres décimaux} suit une méthode similaire à celle utilisée pour les entiers, à la différence qu’un soin particulier doit être apporté à l’alignement des virgules. Voici les étapes clés :
+
+\begin{itemize}
+    \item \textcolor{purple}{Alignez les nombres en veillant à ce que les virgules soient parfaitement superposées.}
+    \item \textcolor{purple}{Soustrayez les chiffres en commençant par la droite, colonne après colonne.}
+    \item \textcolor{purple}{Si la soustraction dans une colonne n’est pas possible, empruntez une unité à la colonne voisine.}
+\end{itemize}
+
+\vspace{0.2cm}
+
+\begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, sharp corners=south, boxrule=0.8mm, title=Exemple 1 — Soustraction simple]
+\textbf{Calcul :} $8{,}3 - 5{,}6$
+
+\[
+\opsub[displayintermediary=all,voperation=top]{8,30}{5,60}
+\]
+
+\textcolor{red}{Astuce : ajoutez un zéro à $5{,}6$ pour former $5{,}60$, ce qui facilite la soustraction.}
+
+\textbf{Explication :} Après avoir égalisé le nombre de décimales, la soustraction est effectuée colonne par colonne. En cas de besoin, on emprunte comme pour les entiers. Résultat final : $2{,}70$.
+\end{tcolorbox}
+
+\vspace{0.2cm}
+
+\begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, sharp corners=south, boxrule=0.8mm, title=Exemple 2 — Soustraction avec décimale manquante]
+\textbf{Calcul :} $6{,}2 - 3{,}45$
+
+\[
+\opsub[displayintermediary=all,voperation=top]{6,20}{3,45}
+\]
+
+\textcolor{red}{Astuce : pour faciliter la soustraction, complétez le nombre $6{,}2$ en $6{,}20$ en ajoutant un zéro.}
+
+\textbf{Explication :} Les deux nombres sont mis au même format décimal. On effectue ensuite la soustraction en empruntant si nécessaire. Le résultat est $2{,}75$.
+\end{tcolorbox}
+
+### \textcolor{green}{Multiplication de Nombres Décimaux}
+
+\vspace{0.25cm}
+
+\textbf{Multiplier des nombres décimaux} demande un peu plus d’attention que pour les entiers, notamment en ce qui concerne le placement de la virgule dans le résultat. Voici les étapes à suivre :
+
+\begin{itemize}
+    \item \textcolor{purple}{Ignorez temporairement les virgules et effectuez la multiplication comme s’il s’agissait de nombres entiers.}
+    \item \textcolor{purple}{Comptez le nombre total de chiffres situés après la virgule dans les deux facteurs.}
+    \item \textcolor{purple}{Placez la virgule dans le produit final en respectant ce total.}
+\end{itemize}
+
+\vspace{0.2cm}
+
+\begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, sharp corners=south, boxrule=0.8mm, title=Exemple 1 — Multiplication de deux décimaux simples]
+\textbf{Calcul :} $2{,}5 \times 3{,}4$
+
+\[
+\opmul[displayintermediary=all]{2,5}{3,4}
+\]
+
+\textcolor{red}{Astuce : Multipliez $25 \times 34 = 850$, puis insérez la virgule après deux chiffres car chaque facteur possède un chiffre après la virgule.}
+
+\textbf{Résultat final :} $8{,}50$
+\end{tcolorbox}
+
+\vspace{0.2cm}
+
+\begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, sharp corners=south, boxrule=0.8mm, title=Exemple 2 — Multiplication avec plus de décimales]
+\textbf{Calcul :} $4{,}12 \times 1{,}3$
+
+\[
+\opmul[displayintermediary=all]{4.12}{1.3}
+\]
+
+\textcolor{red}{Astuce : Multipliez $412 \times 13 = 5356$, puis insérez la virgule après \textbf{trois chiffres}, car $4{,}12$ a deux décimales et $1{,}3$ en a une.}
+
+\textbf{Résultat final :} $5{,}356$
+\end{tcolorbox}
