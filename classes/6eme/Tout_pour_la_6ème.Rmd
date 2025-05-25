@@ -1571,13 +1571,7 @@ $-4{,}1$ & $+0{,}2$ & $+1{,}5$ & $+2{,}6$ & $+4{,}8$ & \cellcolor{yellow!30} $+5
 
 \vspace{0.25cm}
 
-\textbf{Multiplier des nombres décimaux} demande un peu plus d’attention que pour les entiers, notamment en ce qui concerne le placement de la virgule dans le résultat. Voici les étapes à suivre :
-
-\begin{itemize}
-    \item \textcolor{purple}{Ignorez temporairement les virgules et effectuez la multiplication comme s’il s’agissait de nombres entiers.}
-    \item \textcolor{purple}{Comptez le nombre total de chiffres situés après la virgule dans les deux facteurs.}
-    \item \textcolor{purple}{Placez la virgule dans le produit final en respectant ce total.}
-\end{itemize}
+\textbf{Multiplier des nombres décimaux} demande un peu plus d’attention que pour les entiers, notamment en ce qui concerne le placement de la virgule dans le résultat.
 
 \vspace{0.2cm}
 
@@ -1606,3 +1600,13 @@ $-4{,}1$ & $+0{,}2$ & $+1{,}5$ & $+2{,}6$ & $+4{,}8$ & \cellcolor{yellow!30} $+5
 
 \textbf{Résultat final :} $5{,}356$
 \end{tcolorbox}
+
+\vspace{0.2cm}
+
+ Voici les étapes à suivre :
+
+\begin{itemize}
+    \item \textcolor{purple}{Ignorez temporairement les virgules et effectuez la multiplication comme s’il s’agissait de nombres entiers.}
+    \item \textcolor{purple}{Comptez le nombre total de chiffres situés après la virgule dans les deux facteurs.}
+    \item \textcolor{purple}{Placez la virgule dans le produit final en respectant ce total.}
+\end{itemize}
