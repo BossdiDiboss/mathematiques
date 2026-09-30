@@ -3,20 +3,39 @@ output: pdf_document
 fontsize: 12pt
 mainfont: "Times New Roman"
 header-includes:
+
+# les packages
   - \usepackage[table]{xcolor}
   - \usepackage{float}
   - \usepackage{graphicx}
   - \usepackage{enumitem}
   - \usepackage{multicol}
+  - \usepackage{geometry}
   - \usepackage{lscape}
   - \usepackage{caption}
   - \usepackage{tikz}
   - \usepackage{array}
   - \usepackage{rotating}
+  - \usepackage{eurosym}
   - \usepackage{xlop}
   - \usetikzlibrary{arrows.meta} 
   - \usepackage{amsmath}
+  - \usepackage[T1]{fontenc}
+  - \usepackage{textcomp}
   - \usepackage{tcolorbox}
+  
+# On definit des couleurs
+  - \definecolor{bleu}{RGB}{85, 37, 130}
+  - \definecolor{navy}{RGB}{3, 34, 76}
+  - \definecolor{picker}{RGB}{235, 153, 30}
+  - \definecolor{cafe}{RGB}{70, 46, 1}
+  - \definecolor{olive}{RGB}{112, 141, 35}
+  - \definecolor{ponceau}{RGB}{198, 8, 0}
+  - \definecolor{vert}{RGB}{6, 106, 9}
+  - \definecolor{nacarat}{RGB}{252, 93, 93}
+  - \definecolor{ambre}{RGB}{240, 195, 0}
+  
+# Le style del'en-tete
   - \usepackage{fancyhdr}
   - \setlength{\columnseprule}{0.4pt}
   - \setlength{\headheight}{15.35403pt}
@@ -63,7 +82,6 @@ header-includes:
 
 \end{center}
 \end{titlepage}
-
 \thispagestyle{empty}
 \definecolor{navy}{RGB}{11, 11, 69}
 \definecolor{picker}{RGB}{235, 153, 30}
@@ -78,7 +96,14 @@ header-includes:
 
 \newpage
 
-# \textcolor{blue}{Introduction}
+\newgeometry{
+    top=3.5cm,
+    bottom=3.5cm,
+    left=3.5cm,
+    right=3.5cm
+}
+
+\section*{\textcolor{blue}{Introduction}}
 
 Les mathématiques sont bien plus que des nombres et des formules : ce sont des outils puissants qui nous aident à comprendre le monde qui nous entoure, à résoudre des problèmes complexes et à développer notre capacité à penser de manière critique. Ce livre, conçu spécifiquement pour les élèves de 6ème, est une invitation à explorer ce monde fascinant des mathématiques.
 
@@ -92,6 +117,7 @@ Ce livre n'est pas seulement un manuel scolaire, mais un guide pour vous aider �
 
 Bienvenue dans le monde captivant des mathématiques de la 6ème année!
 
+\restoregeometry
 \newpage
 
 # \textcolor{blue}{Chapitre 1: Les Nombres Entiers}
@@ -171,11 +197,9 @@ Dans le jeu du \textbf{Tir au Panier}, on lance cinq balles vers des paniers dis
 
 \end{tcolorbox}
 
-
 \vspace{1cm}
 
-
-\begin{tcolorbox}[colback=pink!10!white, colframe=navy!75!black, title=\textcolor{white}{Activités: Durées}, 
+\begin{tcolorbox}[colback=pink!10!white, colframe=navy!75!black, title=\textcolor{white}{Activités: Problèmes et opérations}, 
                   sharp corners=south]
 \textcolor{red}{a)} Associer à chaque problème l’opération ou l’expression qui en donne la solution. Plusieurs réponses sont parfois possibles.
 
@@ -241,7 +265,6 @@ Le samedi matin, Claire a 30 euros dans son porte-monnaie. Le dimanche, elle dou
 
 \end{tcolorbox}
 
-
 ## \textcolor{red}{Les Entiers Naturels}
 
 \vspace{7pt}
@@ -278,136 +301,23 @@ Le samedi matin, Claire a 30 euros dans son porte-monnaie. Le dimanche, elle dou
 
 \vspace{7pt}
 
-\begin{center}
-\renewcommand{\arraystretch}{1.5}
-\setlength{\arrayrulewidth}{0.5mm}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.99\linewidth]{vis/numeration}
+    \caption{\textbf{Numération : représentation des classes et des rangs.}}
+    \label{fig:numeration}
+\end{figure}
 
-\begin{tikzpicture}
-\node[rounded corners=15pt, thick, draw=gray, fill=gray!10, inner sep=10pt] (table) {
-    \begin{tabular}{>{\columncolor{blue!10}}c|>{\columncolor{orange!10}}c|>{\columncolor{green!10}}c|>{\columncolor{red!10}}c}
-    \hline
-    \textbf{Classe des milliards} & 
-    \textbf{Classe des millions} & 
-    \textbf{Classe des milliers} & 
-    \textbf{Unités simples} \\
-    \hline
-    \begin{tabular}{>{\columncolor{white}}c|>{\columncolor{white}}c|>{\columncolor{white}}c}
-    \rotatebox{90}{\textcolor{black}{centaines}} &
-    \rotatebox{90}{\textcolor{black}{dizaines}} &
-    \rotatebox{90}{\textcolor{black}{unités}}
-    \end{tabular} &
-    \begin{tabular}{>{\columncolor{white}}c|>{\columncolor{white}}c|>{\columncolor{white}}c}
-    \rotatebox{90}{\textcolor{black}{centaines}} &
-    \rotatebox{90}{\textcolor{black}{dizaines}} &
-    \rotatebox{90}{\textcolor{black}{unités}}
-    \end{tabular} &
-    \begin{tabular}{>{\columncolor{white}}c|>{\columncolor{white}}c|>{\columncolor{white}}c}
-    \rotatebox{90}{\textcolor{black}{centaines}} &
-    \rotatebox{90}{\textcolor{black}{dizaines}} &
-    \rotatebox{90}{\textcolor{black}{unités}}
-    \end{tabular} &
-    \begin{tabular}{>{\columncolor{white}}c|>{\columncolor{white}}c|>{\columncolor{white}}c}
-    \rotatebox{90}{\textcolor{black}{centaines}} &
-    \rotatebox{90}{\textcolor{black}{dizaines}} &
-    \rotatebox{90}{\textcolor{black}{unités}}
-    \end{tabular} \\
-    \hline
-    \begin{tabular}{c|c|c}
-    \textcolor{black}{X} &
-    \textcolor{black}{X} &
-    \textcolor{black}{X}
-    \end{tabular} &
-    \begin{tabular}{c|c|c}
-    \textcolor{black}{X} &
-    \textcolor{black}{X} &
-    \textcolor{black}{X}
-    \end{tabular} &
-    \begin{tabular}{c|c|c}
-    \textcolor{black}{X} &
-    \textcolor{black}{X} &
-    \textcolor{black}{X}
-    \end{tabular} &
-    \begin{tabular}{>{\columncolor{red!5}}c|>{\columncolor{red!5}}c|>{\columncolor{red!5}}c}
-    \textcolor{black}{2} &
-    \textcolor{black}{3} &
-    \textcolor{black}{4}
-    \end{tabular} \\
-    \hline
-    \begin{tabular}{c|c|c}
-    \textcolor{black}{X} &
-    \textcolor{black}{X} &
-    \textcolor{black}{X}
-    \end{tabular} &
-    \begin{tabular}{c|c|c}
-    \textcolor{black}{X} &
-    \textcolor{black}{X} &
-    \textcolor{black}{X}
-    \end{tabular} &
-    \begin{tabular}{>{\columncolor{green!5}}c|>{\columncolor{green!5}}c|>{\columncolor{green!5}}c}
-    \textcolor{black}{6} &
-    \textcolor{black}{5} &
-    \textcolor{black}{4}
-    \end{tabular} &
-    \begin{tabular}{>{\columncolor{red!5}}c|>{\columncolor{red!5}}c|>{\columncolor{red!5}}c}
-    \textcolor{black}{3} &
-    \textcolor{black}{2} &
-    \textcolor{black}{1}
-    \end{tabular} \\
-    \hline
-    \begin{tabular}{c|c|c}
-    \textcolor{black}{X} &
-    \textcolor{black}{X} &
-    \textcolor{black}{X}
-    \end{tabular} &
-    \begin{tabular}{>{\columncolor{orange!5}}c|>{\columncolor{orange!5}}c|>{\columncolor{orange!5}}c}
-    \textcolor{black}{1} &
-    \textcolor{black}{2} &
-    \textcolor{black}{3}
-    \end{tabular} &
-    \begin{tabular}{>{\columncolor{green!5}}c|>{\columncolor{green!5}}c|>{\columncolor{green!5}}c}
-    \textcolor{black}{9} &
-    \textcolor{black}{8} &
-    \textcolor{black}{7}
-    \end{tabular} &
-    \begin{tabular}{>{\columncolor{red!5}}c|>{\columncolor{red!5}}c|>{\columncolor{red!5}}c}
-    \textcolor{black}{5} &
-    \textcolor{black}{4} &
-    \textcolor{black}{6}
-    \end{tabular} \\
-    \hline
-    \begin{tabular}{c|c|c}
-    \textcolor{black}{X} &
-    \textcolor{black}{8} &
-    \textcolor{black}{7}
-    \end{tabular} &
-    \begin{tabular}{>{\columncolor{orange!5}}c|>{\columncolor{orange!5}}c|>{\columncolor{orange!5}}c}
-    \textcolor{black}{6} &
-    \textcolor{black}{5} &
-    \textcolor{black}{4}
-    \end{tabular} &
-    \begin{tabular}{>{\columncolor{green!5}}c|>{\columncolor{green!5}}c|>{\columncolor{green!5}}c}
-    \textcolor{black}{3} &
-    \textcolor{black}{2} &
-    \textcolor{black}{1}
-    \end{tabular} &
-    \begin{tabular}{>{\columncolor{red!5}}c|>{\columncolor{red!5}}c|>{\columncolor{red!5}}c}
-    \textcolor{black}{0} &
-    \textcolor{black}{9} &
-    \textcolor{black}{9}
-    \end{tabular} \\
-    \hline
-    \end{tabular}
-};
-\end{tikzpicture}
 
-\captionsetup{justification=centering, font=small}
-\captionof{table}{\textbf{Représentation des différentes classes et unités d'un nombre.}}
-\end{center}
 
-\begin{tcolorbox}[colback=cyan!10!white, colframe=red!75!black, title=\textcolor{white}{Définition}, sharp corners=southwest]
+\begin{tcolorbox}[colback=cyan!10!white, 
+                   colframe=red!75!black, title=\textcolor{white}{Définition}, 
+                   sharp corners=southwest]
+                   
 \textcolor{black}{
 Une demi-droite graduée commence à 0 et continue indéfiniment vers la droite. Les nombres y sont placés régulièrement pour représenter leur valeur.
 }
+
 \vspace{0.3cm}
 
 \begin{center}
@@ -421,12 +331,17 @@ Une demi-droite graduée commence à 0 et continue indéfiniment vers la droite.
 
 \vspace{0.4cm}
 
-\begin{tcolorbox}[colback=cyan!10!white, colframe=lime!75!black, title=\textcolor{black}{Remarque}, sharp corners=southwest]
+\begin{tcolorbox}[colback=cyan!10!white, 
+                   colframe=lime!75!black, 
+                   title=\textcolor{black}{Remarque}, 
+                   sharp corners=southwest]
+                   
 \textcolor{black}{
 Les petits traits s'appellent des \textbf{\textcolor{red}{graduations}}.\\
 Quand l'écart est trop grand : on ajoute des \textbf{\textcolor{red}{sous-graduations}}.\\
 Quand il est trop petit : on saute des nombres (par 5, 10…).
 }
+
 \end{tcolorbox}
 
 \vspace{0.5cm}
@@ -436,18 +351,31 @@ Quand il est trop petit : on saute des nombres (par 5, 10…).
 \vspace{0.3cm}
 
 \begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, title=\textcolor{white}{Comparer des entiers}, sharp corners=southwest]
+
+Pour comparer deux nombres, on utilise les signes :
+
 \begin{itemize}
-  \item \textcolor{red}{\(3 < 5\)} : trois est plus petit que cinq.
-  \item \textcolor{red}{\(7 > 4\)} : sept est plus grand que quatre.
-  \item \textcolor{red}{\(6 \leq 6\)} : six est plus petit ou égal à six.
-  \item \textcolor{red}{\(9 \geq 2\)} : neuf est plus grand ou égal à deux.
+    \item \(<\) : « est plus petit que »
+    \item \(>\) : « est plus grand que »
+    \item \(=\) : « est égal à »
+\end{itemize}
+
+\medskip
+
+\textbf{Exemples :}
+
+\begin{itemize}
+    \item \textcolor{red}{\(3 < 5\)} : trois est plus petit que cinq.
+    \item \textcolor{red}{\(7 > 4\)} : sept est plus grand que quatre.
+    \item \textcolor{red}{\(6 = 6\)} : six est égal à six.
 \end{itemize}
 \end{tcolorbox}
 
 \vspace{0.5cm}
 
 \noindent
-\begin{minipage}{0.48\linewidth}
+
+\begin{minipage}{0.36\linewidth}
 \centering
 \includegraphics[width=\linewidth]{vis/ordreCroissant.png}
 
@@ -456,7 +384,7 @@ Quand il est trop petit : on saute des nombres (par 5, 10…).
 \(1 < 2 < 3 < 4 < 5 < 6\)
 \end{minipage}
 \hfill
-\begin{minipage}{0.48\linewidth}
+\begin{minipage}{0.36\linewidth}
 \centering
 \includegraphics[width=\linewidth]{vis/ordreDecroissante.png}
 
@@ -464,7 +392,6 @@ Quand il est trop petit : on saute des nombres (par 5, 10…).
 \textbf{Ordre Décroissant} : \\
 \(6 > 5 > 4 > 3 > 2 > 1\)
 \end{minipage}
-
 \begin{tcolorbox}[colback=orange!5!white, colframe=orange!75!black, title=\textcolor{white}{Ranger des entiers}, sharp corners=southwest]
 \textcolor{black}{
 Ranger, c'est mettre les nombres dans l'ordre croissant (du plus petit au plus grand) ou décroissant (du plus grand au plus petit).
@@ -604,13 +531,10 @@ Après un nombre de tours défini (par exemple 4), le joueur dont le pion est le
   \node[below, red] at (0,-0.15) {\textbf{Départ}};
 \end{tikzpicture}
 \end{center}
-
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.92\linewidth]{vis/cartes.png}
 \end{figure}
-
 \begin{tcolorbox}[colback=pink!10!white, colframe=navy!75!black, title=\textcolor{white}{Activité : Avance ou recule ?}, sharp corners=south]
 
 \vspace{0.3cm}
@@ -712,19 +636,17 @@ On peut dire que \(-5\) est l’opposé de \(+5\), ou inversement.
 
 \end{tcolorbox}
 
-
 \vspace{0.3cm}
 
 \begin{tcolorbox}[colback=yellow!10!white, colframe=cyan!80!black, title=\textcolor{black}{Récapitulatif}, sharp corners=southwest]
 \textcolor{purple}{Dans cette leçon, nous avons appris à écrire et à représenter les entiers relatifs. N'oubliez pas que les nombres négatifs sont simplement des entiers avec un signe moins devant, et ils se trouvent à gauche de zéro sur une droite graduée.}
 \end{tcolorbox}
 
-
 ## \textcolor{red}{Opérations sur les Nombres Entiers}
 
 \vspace{0.3cm}
 
-\textcolor{purple}{Notation importante :}  
+\textcolor{purple}{Notation importante :}\
 Pour éviter la confusion entre les signes des nombres et les signes d'opération, on utilise des \textbf{parenthèses} autour des nombres relatifs.
 
 \begin{tcolorbox}[colback=blue!5!white, colframe=blue!80!black, title=\textcolor{white!70}{\normalsize Exemple}]
@@ -750,7 +672,6 @@ Pour additionner deux nombres relatifs de même signe :
 \end{itemize}
 
 \end{tcolorbox}
-
 \begin{tcolorbox}[colback=pink!10!white, colframe=orange!70!black, title=\textcolor{white!40}{\large Addition de nombres de même signe}, sharp corners=south]
 
 
@@ -833,6 +754,7 @@ Pour additionner deux nombres relatifs de signe contraire :
 \vspace{0.4cm}
 
 \textcolor{purple}{\textbf{Règle des signes :}} Lorsqu'on multiplie ou divise des nombres relatifs :
+
 \begin{itemize}
     \item \textbf{Même signe} (positif avec positif ou négatif avec négatif) $\Rightarrow$ \textcolor{blue}{résultat positif}.
     \item \textbf{Signe contraire} (positif avec négatif) $\Rightarrow$ \textcolor{red}{résultat négatif}.
@@ -870,7 +792,6 @@ Pour additionner deux nombres relatifs de signe contraire :
 \opmul[voperator=bottom, displayshiftintermediary=none]{12}{11}
 \end{minipage}
 \end{tcolorbox}
-
 \begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, sharp corners=south, boxrule=0.8mm, title=Explication des Exemples]
     \textbf{Multiplication de 10 par 5 :}
     \[
@@ -961,7 +882,6 @@ L’objectif est de former le maximum d’équipes complètes.
 
 \vspace{0.4cm}
 
-
 \begin{tcolorbox}[colback=cyan!10!white, colframe=red!70!black, title=\textcolor{white}{Les deux types de divisions euclidiennes}, sharp corners=southwest]
 
 \textbf{1. Division avec reste non nul} :  
@@ -989,18 +909,17 @@ Ces deux formes nous aident à mieux comprendre la structure des entiers et les 
 \vspace{0.3cm}
 
 \textcolor{purple}{\textbf{Explication détaillée :}}
+
 \begin{enumerate}
     \item \textbf{Division} : On cherche combien de fois 4 peut entrer dans 27 sans le dépasser. La réponse est 6, car \(4 \times 6 = 24\).
     \item \textbf{Soustraction} : \(27 - 24 = 3\). Il reste 3.
     \item \textbf{Conclusion} : Le quotient est 6, le reste est 3.
 \end{enumerate}
-
 \begin{center}
 \textcolor{purple}{\large Résultat : \[ 27 = 4 \times 6 + 3 \]}
 \end{center}
 
 \vspace{0.2cm}
-
 
 \begin{tcolorbox}[colback=cyan!5!white, colframe=orange!75!black, title=\textcolor{white}{Division euclidienne de 27 par 3 (division exacte)}, sharp corners=south]
 \centering
@@ -1010,12 +929,12 @@ Ces deux formes nous aident à mieux comprendre la structure des entiers et les 
 \vspace{0.3cm}
 
 \textcolor{purple}{\textbf{Explication détaillée :}}
+
 \begin{enumerate}
     \item \textbf{Division} : 3 entre exactement 9 fois dans 27, car \(3 \times 9 = 27\).
     \item \textbf{Soustraction} : \(27 - 27 = 0\). Le reste est nul.
     \item \textbf{Conclusion} : Le quotient est 9, le reste est 0.
 \end{enumerate}
-
 \begin{center}
 \textcolor{purple}{\large Résultat : \[ 27 = 3 \times 9 + 0 \]}
 \end{center}
@@ -1030,7 +949,6 @@ Lorsqu'une expression contient plusieurs opérations :
 \end{itemize}
 Nous approfondirons cette règle très bientôt.
 \end{tcolorbox}
-
 
 ### \textcolor{green}{Priorités Opératoires}
 
@@ -1103,6 +1021,10 @@ Les priorités opératoires sont des règles qui nous indiquent dans quel ordre 
 
 \begin{multicols}{2}
 
+%------------------------------------------------
+% EXERCICE 1
+%------------------------------------------------
+
 \numexobox{1}~\textbf{Addition de nombres :}
 \begin{itemize}[leftmargin=*]
   \item 45 + 27 \item 76 + 89 \item 123 + 54
@@ -1110,6 +1032,10 @@ Les priorités opératoires sont des règles qui nous indiquent dans quel ordre 
 \end{itemize}
 
 \vspace{0.4cm}
+
+%------------------------------------------------
+% EXERCICE 2
+%------------------------------------------------
 
 \numexobox{2}~\textbf{Soustraction de nombres :}
 \begin{itemize}[leftmargin=*]
@@ -1119,6 +1045,10 @@ Les priorités opératoires sont des règles qui nous indiquent dans quel ordre 
 
 \vspace{0.4cm}
 
+%------------------------------------------------
+% EXERCICE 3
+%------------------------------------------------
+
 \numexobox{3}~\textbf{Multiplication :}
 \begin{itemize}[leftmargin=*]
   \item 7 × 6 \item 9 × 8 \item 12 × 5
@@ -1126,6 +1056,10 @@ Les priorités opératoires sont des règles qui nous indiquent dans quel ordre 
 \end{itemize}
 
 \vspace{0.4cm}
+
+%------------------------------------------------
+% EXERCICE 4
+%------------------------------------------------
 
 \numexobox{4}~\textbf{Division :}
 \begin{itemize}[leftmargin=*]
@@ -1135,25 +1069,45 @@ Les priorités opératoires sont des règles qui nous indiquent dans quel ordre 
 
 \vspace{0.4cm}
 
+%------------------------------------------------
+% EXERCICE 5
+%------------------------------------------------
+
 \numexobox{5}~\textbf{Problème de multiplication :}  
 Léo a 5 paquets de crayons. Chaque paquet contient 9 crayons. Combien en a-t-il en tout ?
 
 \vspace{0.4cm}
+
+%------------------------------------------------
+% EXERCICE 6
+%------------------------------------------------
 
 \numexobox{6}~\textbf{Problème de soustraction :}  
 Julie a 50 billes. Elle en donne 23. Combien lui reste-t-il ?
 
 \vspace{0.4cm}
 
+%------------------------------------------------
+% EXERCICE 7
+%------------------------------------------------
+
 \numexobox{7}~\textbf{Problème de partage :}  
 Une pizza a 8 parts. Si on en mange 3, combien en reste-t-il ?
 
 \vspace{0.4cm}
 
+%------------------------------------------------
+% EXERCICE 8
+%------------------------------------------------
+
 \numexobox{8}~\textbf{Problème de division :}  
 Une boîte contient 54 bonbons. Si on les partage entre 6 amis, combien chacun reçoit-il ?
 
 \vspace{0.4cm}
+
+%------------------------------------------------
+% EXERCICE 9
+%------------------------------------------------
 
 \numexobox{9}~\textbf{Poursuis les séries de nombres suivantes.}
 \begin{itemize}[leftmargin=*]
@@ -1164,6 +1118,10 @@ Une boîte contient 54 bonbons. Si on les partage entre 6 amis, combien chacun r
 
 \vspace{0.4cm}
 
+%------------------------------------------------
+% EXERCICE 10
+%------------------------------------------------
+
 \numexobox{10}~\textbf{Complète chaque expression avec l’entier qui suit ou précède.}
 \begin{itemize}[leftmargin=*]
   \item a. 3 → \_\_ < 3
@@ -1173,6 +1131,10 @@ Une boîte contient 54 bonbons. Si on les partage entre 6 amis, combien chacun r
 \end{itemize}
 
 \vspace{0.4cm}
+
+%------------------------------------------------
+% EXERCICE 11
+%------------------------------------------------
 
 \numexobox{11}~\textbf{Compare les nombres suivants.}
 \begin{itemize}[leftmargin=*]
@@ -1186,6 +1148,10 @@ Une boîte contient 54 bonbons. Si on les partage entre 6 amis, combien chacun r
 
 \vspace{0.4cm}
 
+%------------------------------------------------
+% EXERCICE 12
+%------------------------------------------------
+
 \numexobox{12}~\textbf{Range dans l’ordre croissant les nombres suivants :}
 \begin{itemize}[leftmargin=*]
   \item a. –13 ; 4 ; –2 ; –9 ; 11 ; 0 ; –6
@@ -1196,7 +1162,6 @@ Une boîte contient 54 bonbons. Si on les partage entre 6 amis, combien chacun r
 \end{multicols}
 
 \end{tcolorbox}
-
 \begin{tcolorbox}[colback=yellow!10!white, colframe=yellow!75!black, title=Exercices, sharp corners=south, boxrule=0.8mm]
 
 % Capsule rouge pour numéro
@@ -1215,6 +1180,9 @@ Une boîte contient 54 bonbons. Si on les partage entre 6 amis, combien chacun r
 
 \begin{multicols}{2}
 
+%------------------------------------------------
+% EXERCICE 13
+%------------------------------------------------
 
 \numexobox{13}~\textbf{Complète les séries numériques.}
 \begin{itemize}[leftmargin=*]
@@ -1225,6 +1193,10 @@ Une boîte contient 54 bonbons. Si on les partage entre 6 amis, combien chacun r
 
 \vspace{0.4cm}
 
+%------------------------------------------------
+% EXERCICE 14
+%------------------------------------------------
+
 \numexobox{14}~\textbf{Trouve l'entier relatif qui suit ou précède.}
 \begin{itemize}[leftmargin=*]
   \item a. < –10
@@ -1234,6 +1206,10 @@ Une boîte contient 54 bonbons. Si on les partage entre 6 amis, combien chacun r
 \end{itemize}
 
 \vspace{0.4cm}
+
+%------------------------------------------------
+% EXERCICE 15
+%------------------------------------------------
 
 \numexobox{15}~\textbf{Compare les nombres suivants.}
 \begin{itemize}[leftmargin=*]
@@ -1251,6 +1227,7 @@ Une boîte contient 54 bonbons. Si on les partage entre 6 amis, combien chacun r
 \newpage
 
 # \textcolor{blue}{Chapitre 2: Les nombres Décimaux}
+
 
 \begin{tcolorbox}[colback=pink!10!white, colframe=navy!75!black, 
     title=\textcolor{white}{Activité 1 : Parcours croissants et décroissants}, sharp corners=south, boxrule=0.8mm]
@@ -1381,7 +1358,7 @@ $-4{,}1$ & $+0{,}2$ & $+1{,}5$ & $+2{,}6$ & $+4{,}8$ & \cellcolor{yellow!30} $+5
 \end{itemize}
 \end{minipage}
 
-\end{tcolorbox} 
+\end{tcolorbox}
 
 \vspace{0.5cm}
 
@@ -1406,7 +1383,6 @@ $-4{,}1$ & $+0{,}2$ & $+1{,}5$ & $+2{,}6$ & $+4{,}8$ & \cellcolor{yellow!30} $+5
 
 \end{tcolorbox}
 
-
 ## \textcolor{red}{Définition et Représentation des nombres décimaux}
 
 \vspace{0.2cm}
@@ -1418,78 +1394,18 @@ $-4{,}1$ & $+0{,}2$ & $+1{,}5$ & $+2{,}6$ & $+4{,}8$ & \cellcolor{yellow!30} $+5
 
 \end{tcolorbox}
 
-\begin{center}
-\small
-\renewcommand{\arraystretch}{1.2}
-\setlength{\arrayrulewidth}{0.5mm}
-\setlength{\tabcolsep}{2pt}
-\begin{tikzpicture}
-\node[rounded corners=15pt, thick, draw=gray, fill=gray!10, inner sep=6pt] (table) {
-    \begin{tabular}{>{\columncolor{green!10}}c|>{\columncolor{red!10}}c|>{\columncolor{gray!20}}c|>{\columncolor{green!10}}c|>{\columncolor{orange!10}}c|>{\columncolor{red!10}}c|>{\columncolor{yellow!10}}c}
-    \hline
-    \textbf{Classe des milliers} & 
-    \textbf{Unités simples} & 
-    \textbf{Virgule} & 
-    \textbf{Dixièmes} & 
-    \textbf{Centièmes} & 
-    \textbf{Millièmes} & 
-    \textbf{Dix-millièmes} \\
-    \hline
-    \begin{tabular}{>{\columncolor{green!5}}c|c|c}
-    \rotatebox{90}{centaines} &
-    \rotatebox{90}{dizaines} &
-    \rotatebox{90}{unités}
-    \end{tabular} &
-    \begin{tabular}{>{\columncolor{red!5}}c|c|c}
-    \rotatebox{90}{centaines} &
-    \rotatebox{90}{dizaines} &
-    \rotatebox{90}{unités}
-    \end{tabular} &
-    \rotatebox{90}{Virgule} &
-    \rotatebox{90}{Dixièmes} &
-    \rotatebox{90}{Centièmes} &
-    \rotatebox{90}{Millièmes} &
-    \rotatebox{90}{Dix-millièmes} \\
-    \hline
-    \begin{tabular}{c|c|c}
-    X & X & X
-    \end{tabular} &
-    \begin{tabular}{c|c|c}
-    X & X & 0
-    \end{tabular} &
-    , &
-    0 & 6 & 7 & 9 \\
-    \hline
-    \begin{tabular}{c|c|c}
-    X & X & X
-    \end{tabular} &
-    \begin{tabular}{c|c|c}
-    9 & 0 & 1
-    \end{tabular} &
-    , &
-    2 & 3 & 4 & 5 \\
-    \hline
-    \begin{tabular}{c|c|c}
-    X & 9 & 0
-    \end{tabular} &
-    \begin{tabular}{c|c|c}
-    0 & 1 & 8
-    \end{tabular} &
-    , &
-    6 & 7 & 8 & 9 \\
-    \hline
-    \end{tabular}
-};
-\end{tikzpicture}
 
-\captionsetup{justification=centering, font=small}
-\captionof{table}{\textbf{Représentation des différentes parties d'un nombre entier et décimal.}}
-\end{center}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.99\linewidth]{vis/decimaux}
+    \caption{\textbf{Décimaux : représentation des différentes parties d’un nombre.}}
+    \label{fig:decimaux}
+\end{figure}
+
 
 ### \textcolor{green}{Addition de Nombres Décimaux}
 
 \vspace{0.25cm}
-
 
 \begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, sharp corners=south, boxrule=0.8mm, title=Exemple 1 — Addition classique]
 \textbf{Calcul :} $3{,}45 + 2{,}67$
@@ -1571,42 +1487,367 @@ $-4{,}1$ & $+0{,}2$ & $+1{,}5$ & $+2{,}6$ & $+4{,}8$ & \cellcolor{yellow!30} $+5
 
 \vspace{0.25cm}
 
-\textbf{Multiplier des nombres décimaux} demande un peu plus d’attention que pour les entiers, notamment en ce qui concerne le placement de la virgule dans le résultat.
+Multiplier des nombres décimaux demande un peu plus d’attention que pour les entiers, notamment pour le placement de la virgule dans le résultat.
 
 \vspace{0.2cm}
 
-\begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, sharp corners=south, boxrule=0.8mm, title=Exemple 1 — Multiplication de deux décimaux simples]
+\begin{tcolorbox}[
+    colback=orange!10!white,
+    colframe=orange!75!black,
+    sharp corners=south,
+    boxrule=0.8mm,
+    title=Exemple 1 — Multiplication de deux décimaux simples
+]
+
 \textbf{Calcul :} $2{,}5 \times 3{,}4$
 
 \[
-\opmul[displayintermediary=all]{2,5}{3,4}
+\opmul[displayintermediary=all]{25}{34}
 \]
 
-\textcolor{red}{Astuce : Multipliez $25 \times 34 = 850$, puis insérez la virgule après deux chiffres car chaque facteur possède un chiffre après la virgule.}
+\textcolor{red}{\textbf{Astuce :} On ignore d'abord les virgules et on calcule
+$25 \times 34 = 850$. Comme il y a deux chiffres après la virgule
+au total, on place la virgule dans $850$ en laissant deux chiffres à droite.}
 
 \textbf{Résultat final :} $8{,}50$
+
 \end{tcolorbox}
 
 \vspace{0.2cm}
 
-\begin{tcolorbox}[colback=orange!10!white, colframe=orange!75!black, sharp corners=south, boxrule=0.8mm, title=Exemple 2 — Multiplication avec plus de décimales]
+\begin{tcolorbox}[
+    colback=orange!10!white,
+    colframe=orange!75!black,
+    sharp corners=south,
+    boxrule=0.8mm,
+    title=Exemple 2 — Multiplication avec plus de décimales
+]
+
 \textbf{Calcul :} $4{,}12 \times 1{,}3$
 
 \[
-\opmul[displayintermediary=all]{4.12}{1.3}
+\opmul[displayintermediary=all]{412}{13}
 \]
 
-\textcolor{red}{Astuce : Multipliez $412 \times 13 = 5356$, puis insérez la virgule après \textbf{trois chiffres}, car $4{,}12$ a deux décimales et $1{,}3$ en a une.}
+\textcolor{red}{\textbf{Astuce :} On ignore d'abord les virgules et on calcule
+$412 \times 13 = 5356$. Comme il y a trois chiffres après la virgule
+au total, on place la virgule dans $5356$ en laissant trois chiffres à droite.}
 
 \textbf{Résultat final :} $5{,}356$
+
 \end{tcolorbox}
 
 \vspace{0.2cm}
 
- Voici les étapes à suivre :
+\textbf{Voici les étapes à suivre en pratique :}
 
 \begin{itemize}
     \item \textcolor{purple}{Ignorez temporairement les virgules et effectuez la multiplication comme s’il s’agissait de nombres entiers.}
     \item \textcolor{purple}{Comptez le nombre total de chiffres situés après la virgule dans les deux facteurs.}
-    \item \textcolor{purple}{Placez la virgule dans le produit final en respectant ce total.}
+    \item \textcolor{purple}{Placez la virgule dans le produit final en laissant ce nombre de chiffres à sa droite.}
 \end{itemize}
+
+\begin{tcolorbox}[
+    colback=cyan!10!white,
+    colframe=lime!75!black,
+    title=\textcolor{black}{Remarque importante : pourquoi déplace-t-on la virgule ?},
+    sharp corners=southwest
+]
+
+Dans le calcul $2{,}5 \times 3{,}4$, nous avons obtenu :
+
+\[
+25 \times 34 = 850
+\]
+
+Mais pourquoi le résultat final est-il $8{,}50$ ?
+
+Pour le comprendre, on peut remarquer que :
+
+\[
+2{,}5 = \frac{25}{10}
+\qquad\text{et}\qquad
+3{,}4 = \frac{34}{10}
+\]
+
+Ainsi :
+
+\[
+2{,}5 \times 3{,}4
+=
+\frac{25 \times 34}{10 \times 10}
+=
+\frac{850}{100}
+=
+8{,}50
+\]
+
+\textcolor{red}{Cette explication utilise les fractions, qui seront étudiées plus loin dans le livre.}
+
+Pour l'instant, retenons simplement la règle pratique :
+
+\begin{center}
+\textbf{On compte le nombre total de chiffres après les virgules.}
+\end{center}
+
+Ici, il y en a $2$ au total : un dans $2{,}5$ et un dans $3{,}4$.
+
+On place donc la virgule dans $850$ en laissant \textbf{deux chiffres à droite} :
+
+\[
+850 \longrightarrow 8{,}50
+\]
+
+\end{tcolorbox}
+
+
+## \textcolor{red}{Exercices et Correction}
+
+\begin{tcolorbox}[
+    colback=yellow!10!white,
+    colframe=yellow!75!black,
+    title=Exercices,
+    sharp corners=south,
+    boxrule=0.8mm
+]
+
+% Capsule rouge pour les numéros
+\newtcbox{\numexobox}{nobeforeafter,
+  colback=red!70!white,
+  colframe=red!90!black,
+  boxrule=0.5mm,
+  arc=0mm,
+  boxsep=1pt,
+  left=4pt,
+  right=4pt,
+  top=2pt,
+  bottom=2pt,
+  fontupper=\color{white}\bfseries
+}
+
+\begin{multicols}{2}
+
+%------------------------------------------------
+% EXERCICE 1
+%------------------------------------------------
+
+\numexobox{1}~\textbf{Écriture des nombres décimaux :}
+
+Écrivez les nombres décimaux suivants avec une virgule :
+
+\begin{itemize}[leftmargin=*]
+    \item[(a)] $17$ unités et $5$ dixièmes
+    \item[(b)] $92$ unités et $34$ centièmes
+    \item[(c)] $123$ unités et $7$ dixièmes
+    \item[(d)] $50$ unités et $8$ centièmes
+    \item[(e)] $1000$ unités et $125$ millièmes
+\end{itemize}
+
+\vspace{0.4cm}
+
+%------------------------------------------------
+% EXERCICE 2
+%------------------------------------------------
+
+\numexobox{2}~\textbf{Lecture :}
+
+Écrivez en toutes lettres les nombres décimaux suivants :
+
+\begin{itemize}[leftmargin=*]
+    \item[(a)] $0{,}85$
+    \item[(b)] $4{,}32$
+    \item[(c)] $7{,}1$
+    \item[(d)] $12{,}9$
+    \item[(e)] $0{,}007$
+\end{itemize}
+
+\vspace{0.4cm}
+
+%------------------------------------------------
+% EXERCICE 3
+%------------------------------------------------
+
+\numexobox{3}~\textbf{Comparaison :}
+
+Placez les nombres décimaux suivants dans l'ordre croissant :
+
+\begin{itemize}[leftmargin=*]
+    \item[(a)] $3{,}56$ ; $3{,}5$ ; $3{,}60$
+    \item[(b)] $2{,}75$ ; $2{,}7$ ; $2{,}76$
+    \item[(c)] $1{,}89$ ; $1{,}8$ ; $1{,}88$
+\end{itemize}
+
+\vspace{0.4cm}
+
+%------------------------------------------------
+% EXERCICE 4
+%------------------------------------------------
+
+\numexobox{4}~\textbf{Arrondissement :}
+
+Arrondissez les nombres décimaux suivants à deux chiffres après la virgule :
+
+\begin{itemize}[leftmargin=*]
+    \item[(a)] $5{,}678$
+    \item[(b)] $9{,}123$
+    \item[(c)] $3{,}456$
+    \item[(d)] $7{,}891$
+    \item[(e)] $2{,}345$
+\end{itemize}
+
+\vspace{0.4cm}
+
+%------------------------------------------------
+% EXERCICE 5
+%------------------------------------------------
+
+\numexobox{5}~\textbf{Addition :}
+
+Effectuez les additions suivantes :
+
+\begin{itemize}[leftmargin=*]
+    \item[(a)] $4{,}56 + 3{,}45$
+    \item[(b)] $12{,}78 + 2{,}34$
+    \item[(c)] $7{,}90 + 0{,}65$
+    \item[(d)] $5{,}12 + 8{,}22$
+\end{itemize}
+
+\vspace{0.4cm}
+
+%------------------------------------------------
+% EXERCICE 6
+%------------------------------------------------
+
+\numexobox{6}~\textbf{Soustraction :}
+
+Effectuez les soustractions suivantes :
+
+\begin{itemize}[leftmargin=*]
+    \item[(a)] $9{,}87 - 4{,}56$
+    \item[(b)] $15{,}00 - 3{,}21$
+    \item[(c)] $7{,}45 - 2{,}30$
+    \item[(d)] $10{,}10 - 5{,}05$
+\end{itemize}
+
+\vspace{0.4cm}
+
+%------------------------------------------------
+% EXERCICE 7
+%------------------------------------------------
+
+\numexobox{7}~\textbf{Multiplication :}
+
+Effectuez les multiplications suivantes :
+
+\begin{itemize}[leftmargin=*]
+    \item[(a)] $2{,}5 \times 4$
+    \item[(b)] $6{,}3 \times 3$
+    \item[(c)] $1{,}2 \times 7$
+    \item[(d)] $5{,}6 \times 5$
+\end{itemize}
+
+\vspace{0.4cm}
+
+%------------------------------------------------
+% EXERCICE 8
+%------------------------------------------------
+
+\numexobox{8}~\textbf{Division :}
+
+Effectuez les divisions suivantes :
+
+\begin{itemize}[leftmargin=*]
+    \item[(a)] $8{,}4 \div 2$
+    \item[(b)] $9{,}6 \div 3$
+    \item[(c)] $7{,}5 \div 5$
+    \item[(d)] $12{,}0 \div 4$
+\end{itemize}
+
+\vspace{0.4cm}
+
+%------------------------------------------------
+% EXERCICE 9
+%------------------------------------------------
+
+\numexobox{9}~\textbf{Calcul en ligne :}
+
+Effectuez les calculs suivants :
+
+\begin{itemize}[leftmargin=*]
+    \item[(a)] $3{,}5 + 2{,}4$
+    \item[(b)] $8{,}7 - 3{,}2$
+    \item[(c)] $2{,}5 \times 4$
+    \item[(e)] $12{,}5 + 3{,}75$
+    \item[(f)] $15{,}8 - 6{,}35$
+\end{itemize}
+
+\vspace{0.4cm}
+
+%------------------------------------------------
+% EXERCICE 10
+%------------------------------------------------
+
+\numexobox{10}~\textbf{Problème :}
+
+Un élève achète 3 cahiers à $2{,}50 $€ l'unité et un stylo à $1{,}80 $€.
+
+\begin{enumerate}[leftmargin=*]
+    \item Quel est le prix des 3 cahiers ?
+    \item Quel est le montant total de ses achats ?
+    \item Il donne $10 $€. Combien lui reste-t-il ?
+\end{enumerate}
+
+\end{multicols}
+
+\end{tcolorbox}
+
+\newpage
+
+# \textcolor{blue}{Chapitre 3 : Fraction et Proportionnalité}
+
+\begin{tcolorbox}[
+    colback=pink!10!white,
+    colframe=navy!75!black,
+    title=\textcolor{white}{Activité 1 : Partager l’unité},
+    sharp corners=south,
+    boxrule=0.8mm
+]
+
+\textbf{Objectif :} Comprendre qu’une fraction permet de représenter une partie d’une unité.
+
+\vspace{0.2cm}
+
+\textbf{Consigne 1 :} 
+On considère un disque partagé en 2 parts égales.
+Colorie une seule part.
+
+\vspace{0.2cm}
+
+\textbf{Consigne 2 :}
+Le même disque est maintenant partagé en 4 parts égales.
+Colorie 2 parts.
+
+\vspace{0.2cm}
+
+\textbf{Consigne 3 :}
+Observe les deux représentations.
+\begin{itemize}[leftmargin=1.2cm]
+    \item Quelle part du disque est coloriée dans chaque cas ?
+    \item Les deux représentations représentent-elles la même quantité ?
+    \item Combien faut-il de parts pour reconstituer l’unité dans chaque cas ?
+\end{itemize}
+
+\vspace{0.2cm}
+
+\textbf{Consigne 4 :}
+Complète les phrases suivantes :
+
+\begin{center}
+Une unité est partagée en \underline{\hspace{1.5cm}} parts égales.
+    
+\vspace{0.2cm}
+
+On prend \underline{\hspace{1.5cm}} de ces parts.
+\end{center}
+
+\end{tcolorbox}
