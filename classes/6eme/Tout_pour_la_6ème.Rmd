@@ -1808,46 +1808,91 @@ Un élève achète 3 cahiers à $2{,}50 $€ l'unité et un stylo à $1{,}80 $�
 \begin{tcolorbox}[
     colback=pink!10!white,
     colframe=navy!75!black,
-    title=\textcolor{white}{Activité 1 : Partager l’unité},
+    title=\textcolor{white}{Activité 1 : Le partage de la pizza},
     sharp corners=south,
     boxrule=0.8mm
 ]
 
-\textbf{Objectif :} Comprendre qu’une fraction permet de représenter une partie d’une unité.
+\begin{minipage}[t]{0.65\textwidth}
+\textbf{Objectif :} Découvrir comment représenter une partie d’un tout.
 
 \vspace{0.2cm}
 
-\textbf{Consigne 1 :} 
-On considère un disque partagé en 2 parts égales.
-Colorie une seule part.
+\textbf{Situation :}
 
-\vspace{0.2cm}
+Kamil, Raphaël et Samira viennent de réussir un examen de mathématiques.
+Pour les féliciter, la mère de Samira leur offre une grande pizza.
+
+Elle souhaite que les trois amis se partagent la pizza de manière parfaitement équitable.
+
+\vspace{0.3cm}
+
+\textbf{Consigne 1 :}
+
+La pizza doit être partagée en trois parts identiques.
+Comment faut-il la découper ?
+
+\textit{Représente le partage sur le dessin.}
+
+\vspace{0.3cm}
 
 \textbf{Consigne 2 :}
-Le même disque est maintenant partagé en 4 parts égales.
-Colorie 2 parts.
 
-\vspace{0.2cm}
+Chaque ami reçoit une part de la pizza.
 
-\textbf{Consigne 3 :}
-Observe les deux représentations.
 \begin{itemize}[leftmargin=1.2cm]
-    \item Quelle part du disque est coloriée dans chaque cas ?
-    \item Les deux représentations représentent-elles la même quantité ?
-    \item Combien faut-il de parts pour reconstituer l’unité dans chaque cas ?
+    \item Quelle partie de la pizza reçoit Kamil ?
+    \item Quelle partie de la pizza reçoit Raphaël ?
+    \item Quelle partie de la pizza reçoit Samira ?
 \end{itemize}
 
 \vspace{0.2cm}
 
+\textbf{Consigne 3 :}
+
+La mère de Samira décide finalement de couper chaque part en deux
+pour que les morceaux soient plus faciles à manger.
+
+La pizza est alors constituée de 6 morceaux identiques.
+
+\begin{itemize}[leftmargin=1.2cm]
+    \item Combien de morceaux reçoit chaque enfant ?
+    \item Quelle partie de la pizza reçoit chacun ?
+\end{itemize}
+
+\vspace{0.3cm}
+
 \textbf{Consigne 4 :}
-Complète les phrases suivantes :
+
+Compare les deux situations.
 
 \begin{center}
-Une unité est partagée en \underline{\hspace{1.5cm}} parts égales.
-    
-\vspace{0.2cm}
-
-On prend \underline{\hspace{1.5cm}} de ces parts.
+\textit{Une part sur trois et deux parts sur six représentent-elles
+la même quantité de pizza ?}
 \end{center}
 
+\vspace{0.2cm}
+
+\textbf{Question de recherche :}
+
+\begin{center}
+\textit{Comment peut-on écrire simplement une partie d’un tout ?}
+\end{center}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.30\textwidth}
+\centering
+
+\vspace{0.3cm}
+
+\includegraphics[
+    width=\linewidth,
+    height=13cm,
+    keepaspectratio
+]{vis/pizza_partage.png}
+
+\end{minipage}
+
 \end{tcolorbox}
+
