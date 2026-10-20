@@ -2415,8 +2415,13 @@ Pour obtenir l'écriture décimale d'une fraction, on divise son numérateur par
 
 \medskip
 \noindent
-\textcolor{red}{\underline{\textbf{Attention :}}}
-Dans une fraction, le numérateur et le dénominateur sont des entiers relatifs, mais le dénominateur doit être différent de zéro.
+\fcolorbox{red}{white}{%
+    \parbox{0.92\linewidth}{%
+        \textcolor{red}{\underline{\textbf{Attention :}}}
+
+        Dans une fraction, le numérateur et le dénominateur sont des entiers relatifs, mais le dénominateur doit être différent de zéro.
+    }%
+}
 
 ## \textcolor{red}{Opérations sur les frations}
 
@@ -2452,9 +2457,178 @@ Les parties \textcolor{blue}{bleue}, \textcolor{green}{verte} et \textcolor{red}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\linewidth]{vis/comparaison_frac.png}
+    \includegraphics[width=0.95\linewidth]{vis/comparaison_frac.png}
     \caption{Des fractions équivalentes : $\frac{2}{3}=\frac{8}{12}=\frac{16}{24}$.}
     \label{fig:fractions-equivalentes}
 \end{figure}
 
+Pour comparer des fractions entre elles, il faut d’abord qu’elles aient le même dénominateur pour ensuite comparer leurs numérateurs.Il existe trois méthodes pour y parvenir.
+
+\begin{tcolorbox}[
+    colback=cyan!10!white,
+    colframe=purple!75!black,
+    title=\textcolor{white}{Méthode 1 : Utiliser les tables de multiplication},
+    sharp corners=southwest
+]
+
+On cherche si les deux dénominateurs se trouvent dans la même table de multiplication. Si oui, on repère le plus grand dénominateur, puis on cherche par quel nombre entier multiplier le plus petit pour obtenir le plus grand.
+
+On multiplie ensuite le numérateur et le dénominateur de la fraction ayant le plus petit dénominateur par ce nombre.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[
+    colback=orange!10!white,
+    colframe=orange!75!black,
+    title=\textcolor{white}{Exemples : },
+    sharp corners=southwest
+]
+Mettre \(\frac{2}{3}\) et \(\frac{5}{6}\) au même dénominateur :
+
+\begin{itemize}
+    \item Les dénominateurs sont \(3\) et \(6\)
+    \item \(3\) et \(6\) sont dans la même table
+    \item \(6\) est le plus grand dénominateur
+    \item \(3\times2=6\)
+\end{itemize}
+
+On multiplie donc le numérateur et le dénominateur de la première fraction par \(2\).
+\[
+\frac{2}{3}=\frac{2\times2}{3\times2}=\frac{4}{6}
+\]
+
+La deuxième fraction reste inchangée.
+
+d'où :
+\[
+\boxed{\frac{4}{6} < \frac{5}{6} \quad \text{car} \quad 5 > 4}
+\]
+\end{tcolorbox}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.00\linewidth]{vis/denom_commun.png}
+    \caption{Mettre \(\frac{2}{3}\) et \(\frac{5}{6}\) au même dénominateur}
+    \label{fig:denominateur-commun}
+\end{figure}
+
+
+\begin{tcolorbox}[
+    colback=cyan!10!white,
+    colframe=purple!75!black,
+    title=\textcolor{white}{Méthode 2 : Chercher un dénominateur commun},
+    sharp corners=southwest
+]
+
+Lorsque la première méthode ne fonctionne pas, on cherche un nombre qui se trouve à la fois dans la table de multiplication du premier dénominateur et dans celle du deuxième. On transforme ensuite chaque fraction pour obtenir ce même dénominateur.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[
+    colback=orange!10!white,
+    colframe=orange!75!black,
+    title=\textcolor{white}{Exemples : },
+    sharp corners=southwest
+]
+Mettre \(\frac{2}{3}\) et \(\frac{3}{4}\) au même dénominateur.
+
+On cherche un multiple commun à \(3\) et \(4\), c'est-àdire, on cherche un nombre qui est à la fois dans la table \(3\) et \(4\). On peut choisir \(12\), car :
+
+\begin{itemize}
+    \item \(3\times4=12\)
+    \item \(4\times3=12\)
+\end{itemize}
+
+On transforme les deux fractions :
+\[
+\frac{2}{3}=\frac{2\times4}{3\times4}=\frac{8}{12}
+\quad \text{et} \quad
+\frac{3}{4}=\frac{3\times3}{4\times3}=\frac{9}{12}
+\]
+
+
+d'où :
+
+\[
+\boxed{\frac{8}{12} < \frac{9}{12} \quad \text{car} \quad 9 > 8}
+\]
+\end{tcolorbox}
+
+\vspace{0.4cm}
+
+\begin{tcolorbox}[
+    colback=cyan!10!white,
+    colframe=purple!75!black,
+    title=\textcolor{white}{Méthode 3 : Multiplier chaque fraction par le dénominateur de l'autre},
+    sharp corners=southwest
+]
+
+On multiplie le numérateur et le dénominateur de la première fraction par le dénominateur de la deuxième fraction. Puis on multiplie le numérateur et le dénominateur de la deuxième fraction par le dénominateur de la première.
+
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[
+    colback=orange!10!white,
+    colframe=orange!75!black,
+    title=\textcolor{white}{Exemples : },
+    sharp corners=southwest
+]
+On multiplie la première fraction par \(\frac{5}{5}\) et la deuxième par \(\frac{2}{2}\).
+
+\[
+\frac{1}{2}=\frac{1\times5}{2\times5}=\frac{5}{10}
+\quad \text{et} \quad
+\frac{2}{5}=\frac{2\times2}{5\times2}=\frac{4}{10}
+\]
+
+
+d'où :
+
+\[
+\boxed{\frac{5}{10} > \frac{4}{10} \quad \text{car} \quad 5 > 4}
+\]
+\end{tcolorbox}
+
 ### \textcolor{green}{Additions et soustractions de frations}
+
+\begin{tcolorbox}[
+    colback=cyan!10!white,
+    colframe=purple!75!black,
+    title=\textcolor{white}{Règle 1 : Additionner deux fractions de même dénominateur},
+    sharp corners=southwest
+]
+
+Lorsqu’on additionne deux fractions qui ont le même dénominateur, on additionne leurs numérateurs et on conserve le dénominateur commun.
+
+\end{tcolorbox}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.80\linewidth]{vis/addition_frac.png}
+    \caption{Addition de fractions de même dénominateur : $\frac{1}{5}+\frac{2}{5}=\frac{3}{5}$.}
+    \label{fig:addition-fractions}
+\end{figure}
+
+\begin{tcolorbox}[
+    colback=cyan!10!white,
+    colframe=purple!75!black,
+    title=\textcolor{white}{Règle 2 : Additionner deux fractions de dénominateurs différents},
+    sharp corners=southwest
+]
+Pour additionner deux fractions de dénominateurs différents, on commence par les mettre au même dénominateur. Ensuite, on applique la règle 1.
+
+\end{tcolorbox}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{vis/addit_denom_diff.png}
+    \caption{Addition de fractions de dénominateurs différents : $\frac{3}{4}+\frac{1}{8}=\frac{7}{8}$.}
+    \label{fig:addition_denom_diff-fractions}
+\end{figure}
+
+\medskip
+\noindent
+\textcolor{purple}{\underline{\textbf{Note :}}}
+Lorsqu’on soustrait deux fractions de même dénominateur, on applique la même méthode que pour l’addition.
